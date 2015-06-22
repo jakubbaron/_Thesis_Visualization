@@ -19,8 +19,9 @@ public class OptimizedDataLoader extends DataLoader {
 	// Double>>> optParticles;
 	private ExecutorService taskExecutor;
 
-	public OptimizedDataLoader(ViewModifier vm, int time) {
-		super(vm, time);
+	public OptimizedDataLoader(ViewModifier vm, int time, String pathToFile,
+			String filePrefix, String fileAppendix, String fileExtension) {
+		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension);
 		sequence = new int[vm.getProcNo()];
 
 		counter = 0;
@@ -101,14 +102,14 @@ public class OptimizedDataLoader extends DataLoader {
 
 	@Override
 	protected void readFile(int procNo, int dataType, int maxLoc) {
-		String filename = Parameters.getFilePrefix()
+		String filename = this.getFilePrefix()
 				.concat(String.format("%03d", procNo))
 				.concat(String.format("%02d", this.getTime()))
-				.concat(Parameters.getFileAppendix())
-				.concat(Parameters.getFileExtension());
+				.concat(this.getFileAppendix())
+				.concat(this.getFileExtension());
 
 		// System.out.println(filename);
-		
+
 		// TODO TUTAJ PORPAWIC
 		int perLev = vm.getProcRows() * vm.getProcColumns();// how many levels,
 															// so we calc
@@ -128,7 +129,7 @@ public class OptimizedDataLoader extends DataLoader {
 		String valSpacer = Parameters.getValueSpacer();
 		int x = 0, y = 0, z = 0;
 		int xx = 0, yy = 0, zz = 0;
-		try (BufferedReader br = new BufferedReader(new FileReader(Parameters
+		try (BufferedReader br = new BufferedReader(new FileReader(this
 				.getPathToFiles()
 				.concat(Integer.toString(this.getTime()) + "\\")
 				.concat(filename)))) {

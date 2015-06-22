@@ -10,8 +10,9 @@ import baron.jakub.model.Parameters;
 
 public class BasicDataLoader extends DataLoader {
 	private int counter = 0;
-	public BasicDataLoader(ViewModifier vm, int time) {
-		super(vm, time);
+	public BasicDataLoader(ViewModifier vm, int time, String pathToFile,
+			String filePrefix, String fileAppendix, String fileExtension) {
+		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -63,8 +64,8 @@ public class BasicDataLoader extends DataLoader {
 		String filename = Parameters.getFilePrefix()
 				.concat(String.format("%03d", procNo))
 				.concat(String.format("%02d", this.getTime()))
-				.concat(Parameters.getFileAppendix())
-				.concat(Parameters.getFileExtension());
+				.concat(this.getFileAppendix())
+				.concat(this.getFileExtension());
 
 		System.out.println(filename);
 		int level = procNo / 16; // z coords
@@ -73,7 +74,7 @@ public class BasicDataLoader extends DataLoader {
 		System.out.println(level + " " + col + " " + row);
 
 		String line;
-		try (BufferedReader br = new BufferedReader(new FileReader(Parameters
+		try (BufferedReader br = new BufferedReader(new FileReader(this
 				.getPathToFiles().concat(filename)))) {
 
 			for (int z = 0; z < maxLoc; ++z) {

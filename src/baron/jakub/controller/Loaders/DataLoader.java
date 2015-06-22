@@ -17,15 +17,34 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	private double minVal = 0;
 	protected double[][][] particles;
 	private int time;
+	private String filePrefix;
+	private String fileAppendix;
+	private String fileExtension;
+	private String pathToFiles;
 	protected ViewModifier vm;
 
-	public DataLoader(ViewModifier vm, int time) {
+	public DataLoader(ViewModifier vm, int time, String pathToFiles, String filePrefix, String fileAppendix, String fileExtension) {
 		this.vm = vm;
 		this.time = time;
+		this.pathToFiles = pathToFiles;
+		this.filePrefix = filePrefix;
+		this.fileAppendix = fileAppendix;
+		this.fileExtension=fileExtension;
 		setMaxVal(Double.MIN_VALUE);
 		setMinVal(Double.MAX_VALUE);
 	}
-
+	protected String getFilePrefix(){
+		return filePrefix;
+	}
+	protected String getFileAppendix(){
+		return fileAppendix;
+	}
+	protected String getFileExtension(){
+		return fileExtension;
+	}
+	protected String getPathToFiles(){
+		return pathToFiles;
+	}
 	@Override
 	protected Void doInBackground() throws Exception {
 		// Parameters.setFileAppendix("2");

@@ -7,8 +7,9 @@ import baron.jakub.controller.ViewModifier;
 import baron.jakub.model.Parameters;
 
 public class BinaryDataLoader extends DataLoader {
-	public BinaryDataLoader(ViewModifier vm, int time) {
-		super(vm, time);
+	public BinaryDataLoader(ViewModifier vm, int time, String pathToFile,
+			String filePrefix, String fileAppendix, String fileExtension) {
+		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -30,11 +31,11 @@ public class BinaryDataLoader extends DataLoader {
 		long startTime = System.nanoTime();
 		Parameters.setFileAppendix("bin");
 		for (int i = 0; i < procNo; ++i) {
-			String filename = Parameters.getFilePrefix()
+			String filename = this.getFilePrefix()
 					.concat(String.format("%03d", i))
 					.concat(String.format("%02d", this.getTime()))
-					.concat(Parameters.getFileAppendix())
-					.concat(Parameters.getFileExtension());
+					.concat(this.getFileAppendix())
+					.concat(this.getFileExtension());
 
 			System.out.println(filename);
 			int level = i / 16; // z coords
@@ -43,7 +44,7 @@ public class BinaryDataLoader extends DataLoader {
 			System.out.println(level + " " + col + " " + row);
 
 			try (DataInputStream dis = new DataInputStream(new FileInputStream(
-					Parameters.getPathToFiles().concat(filename)))) {
+					this.getPathToFiles().concat(filename)))) {
 
 				for (int z = 0; z < maxLoc; ++z) {
 					int zz = level * maxLoc + z;
