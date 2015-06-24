@@ -18,6 +18,7 @@ public class OptimizedDataLoader extends DataLoader {
 	// private Hashtable<Integer, Hashtable<Integer, Hashtable<Integer,
 	// Double>>> optParticles;
 	private ExecutorService taskExecutor;
+	private long startTime;
 
 	public OptimizedDataLoader(ViewModifier vm, int time, String pathToFile,
 			String filePrefix, String fileAppendix, String fileExtension) {
@@ -35,7 +36,7 @@ public class OptimizedDataLoader extends DataLoader {
 	protected Void doInBackground() throws Exception {
 		int type = Parameters.getDataType();
 		int maxLoc = Parameters.getMaxlocal();
-		long startTime = System.nanoTime();
+		
 		if (vm.getMaxThreads() <= Runtime.getRuntime().availableProcessors()) {
 			maxThreads = vm.getMaxThreads();
 			vm.addLogMessage("Assigning: " + maxThreads
@@ -46,8 +47,11 @@ public class OptimizedDataLoader extends DataLoader {
 					+ ") of the availables threads to do the work", Color.RED);
 		}
 		setProgress(0);
-		vm.addLogMessage("Start reading files", Color.BLACK);
 		counter = 0;
+		vm.addLogMessage("Start reading files", Color.BLACK);
+		
+		startTime = System.nanoTime();
+		
 		taskExecutor = Executors.newFixedThreadPool(maxThreads);
 		for (int i = 0; i < sequence.length; i = i + maxThreads) {
 			for (int j : Arrays.copyOfRange(sequence, i, i + maxThreads)) {
@@ -60,10 +64,10 @@ public class OptimizedDataLoader extends DataLoader {
 			}
 		}
 		taskExecutor.shutdown();
-		vm.addLogMessage(
-				"Time elapsed: "
-						+ Double.toString((System.nanoTime() - startTime) / 1000000000.0)
-						+ " s", Color.BLACK);
+//		vm.addLogMessage(
+//				"Time elapsed: "
+//						+ Double.toString((System.nanoTime() - startTime) / 1000000000.0)
+//						+ " s", Color.BLACK);
 		setLoaded(true);
 		return null;
 	}
@@ -157,6 +161,8 @@ public class OptimizedDataLoader extends DataLoader {
 		}
 		setProgress(++counter);
 		publish("Loaded " + Integer.toString(counter) + " files - timestep: "
-				+ getTime());
+				+ getTime() + ". Time elapsed: "
+				+ Double.toString((System.nanoTime() - startTime) / 1000000000.0)
+				+ " s");
 	}
 }
