@@ -105,7 +105,7 @@ public class MainView extends JFrame {
 			hdl.put(i,
 					new OptimizedDataLoader(vm, i, vm.getPathToFiles(), vm
 							.getFilePrefix(), vm.getFileAppendix(), vm
-							.getFileExtension()));
+							.getFileExtension(), vm.isUnix()));
 		}
 		this.dl = hdl.get(vm.getSelectedTime());
 

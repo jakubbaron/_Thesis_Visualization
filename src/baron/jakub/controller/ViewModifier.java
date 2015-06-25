@@ -15,6 +15,11 @@ public class ViewModifier {
 		X, Y, Z
 	}
 
+	public String[] getListOfFiles() {
+		String[] list = new String[1];
+		return list;
+	}
+
 	public static void main(String[] args) {
 		Parameters.loadProperties("config2015-06-18.properties");
 		ViewModifier vm = new ViewModifier();
@@ -213,5 +218,9 @@ public class ViewModifier {
 	public int getProcLevels() {
 		// TODO Auto-generated method stub
 		return Parameters.getProcessorsLevels();
+	}
+
+	public String isUnix() {
+		return Parameters.isUnix() ? "/" : "\\";
 	}
 }

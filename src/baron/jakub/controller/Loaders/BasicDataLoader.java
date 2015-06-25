@@ -10,9 +10,12 @@ import baron.jakub.model.Parameters;
 
 public class BasicDataLoader extends DataLoader {
 	private int counter = 0;
+
 	public BasicDataLoader(ViewModifier vm, int time, String pathToFile,
-			String filePrefix, String fileAppendix, String fileExtension) {
-		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension);
+			String filePrefix, String fileAppendix, String fileExtension,
+			String pathSeparator) {
+		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension,
+				pathSeparator);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -27,16 +30,16 @@ public class BasicDataLoader extends DataLoader {
 
 		setProgress(0);
 		vm.addLogMessage("Start reading files", Color.BLACK);
-		
+
 		for (int i = 0; i < procNo; ++i) {
 			readFile(i, type, maxLoc);
-			
+
 		}
 		vm.addLogMessage(
 				"Time elapsed: "
 						+ Double.toString((System.nanoTime() - startTime) / 1000000000.0)
 						+ " s", Color.BLACK);
-//		setProgress(100);
+		// setProgress(100);
 		vm.addLogMessage("Finished reading files", Color.BLACK);
 		setLoaded(true);
 		return null;
@@ -64,8 +67,7 @@ public class BasicDataLoader extends DataLoader {
 		String filename = Parameters.getFilePrefix()
 				.concat(String.format("%03d", procNo))
 				.concat(String.format("%02d", this.getTime()))
-				.concat(this.getFileAppendix())
-				.concat(this.getFileExtension());
+				.concat(this.getFileAppendix()).concat(this.getFileExtension());
 
 		System.out.println(filename);
 		int level = procNo / 16; // z coords

@@ -22,29 +22,38 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	private String fileExtension;
 	private String pathToFiles;
 	protected ViewModifier vm;
+	private String pathSeparator;
 
-	public DataLoader(ViewModifier vm, int time, String pathToFiles, String filePrefix, String fileAppendix, String fileExtension) {
+	public DataLoader(ViewModifier vm, int time, String pathToFiles,
+			String filePrefix, String fileAppendix, String fileExtension,
+			String pathSeparator) {
 		this.vm = vm;
 		this.time = time;
 		this.pathToFiles = pathToFiles;
 		this.filePrefix = filePrefix;
 		this.fileAppendix = fileAppendix;
-		this.fileExtension=fileExtension;
+		this.fileExtension = fileExtension;
+		this.pathSeparator = pathSeparator;
 		setMaxVal(Double.MIN_VALUE);
 		setMinVal(Double.MAX_VALUE);
 	}
-	protected String getFilePrefix(){
+
+	protected String getFilePrefix() {
 		return filePrefix;
 	}
-	protected String getFileAppendix(){
+
+	protected String getFileAppendix() {
 		return fileAppendix;
 	}
-	protected String getFileExtension(){
+
+	protected String getFileExtension() {
 		return fileExtension;
 	}
-	protected String getPathToFiles(){
+
+	protected String getPathToFiles() {
 		return pathToFiles;
 	}
+
 	@Override
 	protected Void doInBackground() throws Exception {
 		// Parameters.setFileAppendix("2");
@@ -121,6 +130,7 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 		// TODO Auto-generated method stub
 
 	}
+
 	// TODO TUTAJ PORPAWIC, chyba! sprawdzic wspolrzedne!
 	protected void defaultParticles() {
 		int perLev = vm.getProcLevels();// how many levels
@@ -182,5 +192,12 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	@Override
 	public void setMinVal(double min) {
 		this.minVal = min;
+	}
+
+	/**
+	 * @return the pathSeparator
+	 */
+	public String getPathSeparator() {
+		return pathSeparator;
 	}
 }

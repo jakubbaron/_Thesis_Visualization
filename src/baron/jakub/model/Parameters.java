@@ -50,6 +50,8 @@ public final class Parameters {
 	private static int processorsLevels = 4;
 	private static int processorsPerRow = 4;
 	private static int processorsPerColumn = 4;
+	private static boolean unix = false;
+	private static String[] listOfPathsToFiles = { "" };
 
 	/**
 	 * @return the avalilableTimes
@@ -188,6 +190,10 @@ public final class Parameters {
 			Parameters.maxLocalCubeSize = s2i(prop
 					.getProperty("maxLocalCubeSize"));
 			Parameters.procNo = s2i(prop.getProperty("numberOfProcessors"));
+			if (procNo == 0) {
+				Parameters.listOfPathsToFiles = parseReadStringArray(prop
+						.getProperty("listOfPathsToFiles"));
+			}
 			Parameters.availableTimes = parseReadIntArray(prop
 					.getProperty("availableTimes"));
 			Parameters.normalized = s2b(prop.getProperty("normalized"));
@@ -218,6 +224,7 @@ public final class Parameters {
 					.getProperty("processorsPerRow"));
 			Parameters.processorsPerColumn = s2i(prop
 					.getProperty("processorsPerColumn"));
+			Parameters.unix = s2b(prop.getProperty("unix"));
 
 		} catch (IOException io) {
 			io.printStackTrace();
@@ -276,16 +283,23 @@ public final class Parameters {
 				+ "\ntensTicks=true"
 				+ "\nfileAppendix=2"
 				+ "\nticks=true"
-				+ "\nnumberOfProcessors=64"
+				+ "\nnumberOfProcessors=64 if this parameters is zero, then please provide a list of files"
+				+ " which are suppoed to be loaded,\nseparated with comas,"
+				+ " e.g. C:\\\\time10\\proc000102.res, C:\\\\time10\\\\proc001102.res etc. in the property listOfPathsToFiles"
+				+ "\nif it is set to zero, then the rest of parameters like pathToFiles, filePrefix etc. have no effect matter"
+				+"\nplease note that double \\ are needed in case of \\t or \\n"
 				+ "\nvisualizationWidth=800"
 				+ "\nvisualizationHeight=800"
 				+ "\nwidth=1024"
 				+ "\nheight=1000"
 				+ "\ndataValues=[Density, Energy, C Variable, Pressure, u, v, w]"
-				+ "\navailableTimes=[10, 40, 80]" + "\nnormalized=true";
+				+ "\navailableTimes=[10, 40, 80]"
+				+ "\nnormalized=true"
+				+ "\nunix=false -> if it's true, then the paths will be using / instead of \\ for the Windows";
 		try {
 			output = new FileOutputStream(filename);
-
+			prop.setProperty("listOfPathsToFiles",
+					Arrays.toString(listOfPathsToFiles));
 			prop.setProperty("cubeSize", Integer.toString(cubeSize));
 			prop.setProperty("maxLocalCubeSize",
 					Integer.toString(maxLocalCubeSize));
@@ -321,6 +335,7 @@ public final class Parameters {
 					Integer.toString(processorsPerRow));
 			prop.setProperty("processorsPerColumn",
 					Integer.toString(processorsPerColumn));
+			prop.setProperty("unix", Boolean.toString(unix));
 
 			prop.store(output, comment);
 		} catch (IOException io) {
@@ -540,6 +555,17 @@ public final class Parameters {
 	 */
 	public static void setProcessorsPerColumn(int processorsPerColumn) {
 		Parameters.processorsPerColumn = processorsPerColumn;
+	}
+
+	/**
+	 * @return the unix
+	 */
+	public static boolean isUnix() {
+		return unix;
+	}
+
+	public static String[] getListOfPathsToFiles() {
+		return Parameters.listOfPathsToFiles;
 	}
 
 }

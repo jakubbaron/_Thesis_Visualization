@@ -8,8 +8,8 @@ import baron.jakub.model.Parameters;
 
 public class BinaryDataLoader extends DataLoader {
 	public BinaryDataLoader(ViewModifier vm, int time, String pathToFile,
-			String filePrefix, String fileAppendix, String fileExtension) {
-		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension);
+			String filePrefix, String fileAppendix, String fileExtension, String pathSeparator) {
+		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension,pathSeparator);
 		// TODO Auto-generated constructor stub
 	}
 

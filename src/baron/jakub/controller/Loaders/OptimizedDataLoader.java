@@ -21,8 +21,8 @@ public class OptimizedDataLoader extends DataLoader {
 	private long startTime;
 
 	public OptimizedDataLoader(ViewModifier vm, int time, String pathToFile,
-			String filePrefix, String fileAppendix, String fileExtension) {
-		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension);
+			String filePrefix, String fileAppendix, String fileExtension, String pathSeparator) {
+		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension, pathSeparator);
 		sequence = new int[vm.getProcNo()];
 
 		counter = 0;
