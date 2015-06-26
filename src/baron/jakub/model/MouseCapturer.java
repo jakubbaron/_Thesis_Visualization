@@ -20,7 +20,7 @@ public class MouseCapturer implements MouseListener, MouseMotionListener,
 	private float zoom;
 
 	public MouseCapturer() {
-		pressedAngles = new int[] { 0, 0 };
+		pressedAngles = new int[] { 0, 0, 0 };
 		angles = new float[] { 0f, 0f, 0f };
 		positions = new float[] { -0f, -0f, -0f };
 		pressedPositions = new int[] { 0, 0 };
@@ -54,7 +54,7 @@ public class MouseCapturer implements MouseListener, MouseMotionListener,
 		} else if (SwingUtilities.isRightMouseButton(e)) {
 			updatePositions(e);
 		} else if (SwingUtilities.isMiddleMouseButton(e)) {
-
+			updateZAngle(e);
 		}
 	}
 
@@ -84,7 +84,7 @@ public class MouseCapturer implements MouseListener, MouseMotionListener,
 			pressedPositions[0] = e.getX();
 			pressedPositions[1] = e.getY();
 		} else if (SwingUtilities.isMiddleMouseButton(e)) {
-
+			pressedAngles[2] = e.getX();
 		}
 	}
 
@@ -109,7 +109,7 @@ public class MouseCapturer implements MouseListener, MouseMotionListener,
 
 	}
 
-	public void setActive(boolean b){
+	public void setActive(boolean b) {
 		active = b;
 	}
 
@@ -129,13 +129,21 @@ public class MouseCapturer implements MouseListener, MouseMotionListener,
 		pressedAngles[0] = x;
 		pressedAngles[1] = y;
 	}
+
 	private void updatePositions(MouseEvent e) {
 		int x = e.getX();
 		int y = e.getY();
-		positions[0] -= (pressedPositions[0] - x) / 300f;
+		positions[0] += (pressedPositions[0] - x) / 300f;
 		positions[1] += (pressedPositions[1] - y) / 300f;
 		pressedPositions[0] = x;
 		pressedPositions[1] = y;
+
+	}
+
+	private void updateZAngle(MouseEvent e) {
+		int z = e.getX();
+		angles[2] += (pressedAngles[2] - z) / 5f;
+		pressedAngles[2] = z;
 
 	}
 

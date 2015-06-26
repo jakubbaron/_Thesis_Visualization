@@ -110,8 +110,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 							floatbuffer.put((float) val);
 							floatbuffer.put(0.0f);
 							floatbuffer.put(1.0f - (float) val);
-						}
-						else{
+						} else {
 							++correction;
 						}
 					}
@@ -193,8 +192,9 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		angles = mouseCapturer.getAngles();
 		positions = mouseCapturer.getPositions();
 		distance = mouseCapturer.getZoom();
-		rotate(gl2);
 		translate(gl2);
+		rotate(gl2);
+		
 
 		int[] aiNumOfVertices = createAndFillVertexBuffer(gl2);
 		int[] axisNumOfVertices = drawAxis(gl2);
@@ -489,8 +489,8 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 	}
 
 	private void rotate(GL2 gl2) {
-		gl2.glLoadIdentity();
-		gl2.glRotatef(angles[0], 0f, 1f, 0f);
+//		gl2.glLoadIdentity();
+		gl2.glRotatef(-angles[0], 0f, 1f, 0f);
 		gl2.glRotatef(angles[1], 1f, 0f, 0f);
 		gl2.glRotatef(angles[2], 0f, 0f, 1f);
 	}
@@ -503,8 +503,9 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		// Perspective.
 		float widthHeightRatio = (float) getWidth() / (float) getHeight();
 		glu.gluPerspective(45, widthHeightRatio, 1, 1000);
-		glu.gluLookAt(0, 0, distance, 0, 0, 0, 0, 1, 0);
-
+		glu.gluLookAt(	0, 0, distance, 
+						0, 0, 0, 
+						0, 1, 0);
 		// Change back to model view matrix.
 		gl.glMatrixMode(GL2.GL_MODELVIEW);
 		gl.glLoadIdentity();
@@ -576,8 +577,8 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 	}
 
 	private void translate(GL2 gl2) {
-		// gl2.glLoadIdentity();
-		gl2.glTranslatef(positions[0], positions[1], positions[2]);
+//		 gl2.glLoadIdentity();
+		gl2.glTranslatef(-positions[0], positions[1], 0);//-positions[2]);
 	}
 
 }

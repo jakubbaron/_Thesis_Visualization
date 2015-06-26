@@ -123,8 +123,9 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		angles = mouseCapturer.getAngles();
 		positions = mouseCapturer.getPositions();
 		distance = mouseCapturer.getZoom();
-		rotate(gl);
 		translate(gl);
+		rotate(gl);
+		
 
 		gl.glBegin(GL2.GL_POINTS);// static field
 
@@ -342,9 +343,8 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 
 		gl.glEnable(GL.GL_DEPTH_TEST);
 		gl.glDepthFunc(GL.GL_LEQUAL);
-		;
 
-		gl.glShadeModel(GL2.GL_SMOOTH);
+//		gl.glShadeModel(GL2.GL_SMOOTH);
 
 		gl.glClearColor(0f, 0f, 0f, 0f);
 
@@ -362,8 +362,8 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	}
 
 	private void rotate(GL2 gl2) {
-		gl2.glLoadIdentity();
-		gl2.glRotatef(angles[0], 0f, 1f, 0f);
+//		gl2.glLoadIdentity();
+		gl2.glRotatef(-angles[0], 0f, 1f, 0f);
 		gl2.glRotatef(angles[1], 1f, 0f, 0f);
 		gl2.glRotatef(angles[2], 0f, 0f, 1f);
 	}
@@ -407,7 +407,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 
 	private void translate(GL2 gl2) {
 		// gl2.glLoadIdentity();
-		gl2.glTranslatef(positions[0], positions[1], positions[2]);
+		gl2.glTranslatef(-positions[0], positions[1], positions[2]);
 	}
 
 }
