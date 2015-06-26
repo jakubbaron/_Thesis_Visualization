@@ -19,40 +19,41 @@ public final class Parameters {
 	}
 
 	private static String[] availableTimes;// = { "10", "40", "80" };
-	private static int cubeSize = 384;
-	private static int dataType = 1;
-	private static String[] dataValues = new String[] { "Density", "Energy",
-			"C Variable", "Pressure", "u", "v", "w" };
+	private static int cubeSize;// = 384;
+	private static int dataType;// = 1;
+	private static String[] dataValues;// = new String[] { "Density", "Energy",
+										// "C Variable", "Pressure", "u", "v",
+										// "w" };
 	private static DateFormat dateFormat = new SimpleDateFormat(
 			"yyyy/MM/dd HH:mm:ss");
-	private static String fileAppendix = "2";
-	private static String fileExtension = ".res";
+	private static String fileAppendix;// = "2";
+	private static String fileExtension;// = ".res";
 
-	private static String filePrefix = "proc";
-	private static boolean inversed = false;
-	private static int maxLocalCubeSize = 96;
-	private static int maxThreads = 4;
-	private static boolean normalized = true;
+	private static String filePrefix;// = "proc";
+	private static boolean inversed;// = false;
+	private static int maxLocalCubeSize;// = 96;
+	private static int maxThreads;// = 4;
+	private static boolean normalized;// = true;
 
-	private static String pathToFiles = "C:\\time";
+	private static String pathToFiles;// = "C:\\time";
 
-	private static String[] plotTypes = new String[] { "OpenGL", "jzy3D",
-			"ImprovedOpenGL" };
-	private static int procNo = 64;
+	private static String[] plotTypes;// = new String[] { "OpenGL", "jzy3D",
+										// "ImprovedOpenGL" };
+	private static int procNo;// = 64;
 	private static String selectedTime;
-	private static boolean tensTicks = true;
-	private static boolean ticks = true;
+	private static boolean tensTicks;// = true;
+	private static boolean ticks;// = true;
 
-	private static String valueSpacer = " +";
-	private static int tensTicksFrequency = 10;
-	private static int visualizationWidth = 800;
-	private static int visualizationHeight = 800;
-	private static int width = 1024;
-	private static int height = 1000;
-	private static int processorsLevels = 4;
-	private static int processorsPerRow = 4;
-	private static int processorsPerColumn = 4;
-	private static boolean unix = false;
+	private static String valueSpacer;// = " +";
+	private static int tensTicksFrequency;// = 10;
+	private static int visualizationWidth;// = 800;
+	private static int visualizationHeight;// = 800;
+	private static int width;// = 1024;
+	private static int height;// = 1000;
+	private static int processorsLevels;// = 4;
+	private static int processorsPerRow;// = 4;
+	private static int processorsPerColumn;// = 4;
+	private static boolean unix;// = false;
 	private static Hashtable<String, ProcessorFile[]> listOfPathsToFiles;
 
 	/**
@@ -98,7 +99,11 @@ public final class Parameters {
 	 * @return the fileExtension
 	 */
 	public static String getFileExtension() {
-		return fileExtension;
+		if (fileExtension.contains(".")) {
+			fileExtension = fileExtension.replaceAll("\\.", "");
+		}
+		return fileExtension.equals("") || fileExtension == null ? "" : "."
+				.concat(fileExtension);
 	}
 
 	/**
@@ -226,18 +231,6 @@ public final class Parameters {
 			Parameters.maxLocalCubeSize = s2i(prop
 					.getProperty("maxLocalCubeSize"));
 			Parameters.procNo = s2i(prop.getProperty("numberOfProcessors"));
-			if (procNo == 0) {
-				Parameters.listOfPathsToFiles = parseReadStringToHashTable(prop
-						.getProperty("listOfPathsToFiles"));
-			} else {
-				Parameters.availableTimes = parseReadStringArray(prop
-						.getProperty("availableTimes"));
-				Parameters.filePrefix = prop.getProperty("filePrefix");
-				Parameters.fileAppendix = prop.getProperty("fileAppendix");
-				Parameters.fileExtension = prop.getProperty("fileExtension");
-				Parameters.pathToFiles = prop.getProperty("pathToFiles");
-			}
-
 			Parameters.normalized = s2b(prop.getProperty("normalized"));
 			Parameters.inversed = s2b(prop.getProperty("inversed"));
 			Parameters.ticks = s2b(prop.getProperty("ticks"));
@@ -263,6 +256,19 @@ public final class Parameters {
 			Parameters.processorsPerColumn = s2i(prop
 					.getProperty("processorsPerColumn"));
 			Parameters.unix = s2b(prop.getProperty("unix"));
+			if (procNo == 0) {
+				Parameters.listOfPathsToFiles = parseReadStringToHashTable(prop
+						.getProperty("listOfPathsToFiles"));
+			} else {
+				Parameters.availableTimes = parseReadStringArray(prop
+						.getProperty("availableTimes"));
+				selectedTime = availableTimes[0];
+				Parameters.filePrefix = prop.getProperty("filePrefix");
+				Parameters.fileAppendix = prop.getProperty("fileAppendix");
+				Parameters.fileExtension = prop.getProperty("fileExtension");
+				Parameters.pathToFiles = prop.getProperty("pathToFiles");
+				Parameters.listOfPathsToFiles = feedListOfPathsToFiles();
+			}
 
 		} catch (IOException io) {
 			io.printStackTrace();
@@ -277,14 +283,6 @@ public final class Parameters {
 		}
 	}
 
-	// private static int[] parseReadIntArray(String readArray) {
-	// String[] parsingArray = parseReadStringArray(readArray);
-	// int[] result = new int[parsingArray.length];
-	// for (int i = 0; i < parsingArray.length; ++i)
-	// result[i] = Integer.parseInt(parsingArray[i]);
-	// return result;
-	// }
-
 	private static String[] parseReadStringArray(String readArray) {
 		String[] parsingArray = readArray.replaceAll("\\[|\\]|\\s", "").split(
 				"\\,");
@@ -297,6 +295,27 @@ public final class Parameters {
 
 	private static int s2i(String a) {
 		return Integer.parseInt(a);
+	}
+
+	private static Hashtable<String, ProcessorFile[]> feedListOfPathsToFiles() {
+		Hashtable<String, ProcessorFile[]> result = new Hashtable<String, ProcessorFile[]>();
+		for (String s : availableTimes) {
+			ProcessorFile[] list = new ProcessorFile[Parameters.getProcNo()];
+			for (int i = 0; i < list.length; ++i) {
+				list[i] = new ProcessorFile(i, getPathToFiles()
+						.concat(s + isUnix()).concat(getFilePrefix())
+						.concat(String.format("%03d", i)).concat(s)
+						.concat(Parameters.getFileAppendix())
+						.concat(Parameters.getFileExtension()));
+			}
+			result.put(s, list);
+		}
+		return result;
+		// if (Parameters.getListOfPathsToFiles() != null)
+		// return Parameters.getListOfPathsToFiles().get(time);
+		// list = new ProcessorFile[getProcNo()];
+		// for (int i = 0; i < list.length; ++i) {
+
 	}
 
 	public static void saveProperties(String filename) {
@@ -336,8 +355,7 @@ public final class Parameters {
 				+ "\nunix=false -> if it's true, then the paths will be using / instead of \\ for the Windows";
 		try {
 			output = new FileOutputStream(filename);
-			// prop.setProperty("listOfPathsToFiles",
-			// Arrays.toString(listOfPathsToFiles));
+			prop.setProperty("listOfPathsToFiles", saveListOfFiles());
 			prop.setProperty("cubeSize", Integer.toString(cubeSize));
 			prop.setProperty("maxLocalCubeSize",
 					Integer.toString(maxLocalCubeSize));
@@ -348,11 +366,13 @@ public final class Parameters {
 			prop.setProperty("inversed", Boolean.toString(inversed));
 			prop.setProperty("ticks", Boolean.toString(ticks));
 			prop.setProperty("tensTicks", Boolean.toString(tensTicks));
-			prop.setProperty("filePrefix", filePrefix);
-			prop.setProperty("fileAppendix", fileAppendix);
-			prop.setProperty("fileExtension", fileExtension);
+			if (procNo != 0) {
+				prop.setProperty("filePrefix", filePrefix);
+				prop.setProperty("fileAppendix", fileAppendix);
+				prop.setProperty("fileExtension", fileExtension);
+				prop.setProperty("pathToFiles", pathToFiles);
+			}
 			prop.setProperty("valueSpacer", valueSpacer);
-			prop.setProperty("pathToFiles", pathToFiles);
 			prop.setProperty("dataValues", Arrays.toString(dataValues));
 			prop.setProperty("plotTypes", Arrays.toString(plotTypes));
 			prop.setProperty("maxThreads", Integer.toString(maxThreads));
@@ -389,6 +409,19 @@ public final class Parameters {
 		}
 	}
 
+	private static String saveListOfFiles() {
+		// TODO Auto-generated method stub
+		String result = Arrays.toString(availableTimes);
+		for (String s : availableTimes) {
+			result += ";[";
+			for (ProcessorFile p : getListOfPathsToFiles(s)) {
+				result += p + ", ";
+			}
+			result += "]";
+		}
+		return result;
+	}
+
 	public static void setDataType(int _dataType) {
 		Parameters.dataType = _dataType + 1;
 	}
@@ -406,10 +439,9 @@ public final class Parameters {
 	 *            the fileExtension to set
 	 */
 	public static void setFileExtension(String fileExtension) {
-		if (fileExtension.contains(".")) {
-			fileExtension.replaceAll(".", "");
-		}
-		Parameters.fileExtension = ".".concat(fileExtension);
+		if (fileExtension.contains("."))
+			fileExtension = fileExtension.replaceAll("\\.", "");
+		Parameters.fileExtension = fileExtension;
 	}
 
 	/**
@@ -489,7 +521,7 @@ public final class Parameters {
 	}
 
 	public static boolean updateAll(String maxLocal, String procNo,
-			String dataType, String time, String filePrefix,
+			String dataType, String fileExtension, String filePrefix,
 			String fileAppendix, String valueSpacer, String pathToFiles) {
 		try {
 			Parameters.maxLocalCubeSize = maxLocal != null ? Integer
@@ -500,9 +532,8 @@ public final class Parameters {
 					: Parameters.dataType;
 			// Parameters.setTime(time != null ? Integer.parseInt(time)
 			// : Parameters.getTime());
-			Parameters.setSelectedTime(time != null ? (time) : Parameters
-					.getSelectedTime());
-
+			Parameters.setFileExtension(fileExtension != null ? (fileExtension)
+					: Parameters.getFileExtension());
 			Parameters.filePrefix = filePrefix != null ? filePrefix
 					: Parameters.filePrefix;
 			Parameters.fileAppendix = fileAppendix != null ? fileAppendix
@@ -511,6 +542,7 @@ public final class Parameters {
 					: Parameters.valueSpacer;
 			Parameters.pathToFiles = pathToFiles != null ? pathToFiles
 					: Parameters.pathToFiles;
+			listOfPathsToFiles = feedListOfPathsToFiles();
 			return true;
 		} catch (Exception e) {
 			System.out.println("Parsing error " + e.getMessage());
@@ -598,12 +630,12 @@ public final class Parameters {
 	/**
 	 * @return the unix
 	 */
-	public static boolean isUnix() {
-		return unix;
+	public static String isUnix() {
+		return Parameters.unix ? "/" : "\\";
 	}
 
-	public static Hashtable<String, ProcessorFile[]> getListOfPathsToFiles() {
-		return Parameters.listOfPathsToFiles;
+	public static ProcessorFile[] getListOfPathsToFiles(String time) {
+		return Parameters.listOfPathsToFiles.get(time);
 	}
 
 }

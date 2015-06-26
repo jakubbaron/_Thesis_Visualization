@@ -3,7 +3,6 @@ package baron.jakub.controller.Loaders;
 import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -116,7 +115,7 @@ public class OptimizedDataLoader extends DataLoader {
 		int row = (procNo % perLev) / perRow; // y coordse
 
 		String line;
-		String valSpacer = Parameters.getValueSpacer();
+		String valSpacer = vm.getValueSpacer();
 		String filename = proc.filename;
 
 		int x = 0, y = 0, z = 0;

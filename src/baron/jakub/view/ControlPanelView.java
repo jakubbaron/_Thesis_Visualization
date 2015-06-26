@@ -37,7 +37,6 @@ public class ControlPanelView extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
 			JButton source = (JButton) e.getSource();
 			if (source == settingBtn) {
 				Settings set = new Settings(vm);
@@ -74,7 +73,6 @@ public class ControlPanelView extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
 			JCheckBox source = (JCheckBox) e.getSource();
 			if (source == invBox) {
 				Parameters.setInversed(invBox.isSelected());
@@ -95,7 +93,6 @@ public class ControlPanelView extends JPanel {
 
 		@Override
 		public void stateChanged(ChangeEvent e) {
-			// TODO Auto-generated method stub
 			RangeSlider source = (RangeSlider) e.getSource();
 			if (source == sliders[0].getSlider()) {
 				vm.updateFilter(sliders[0].getValues(), ViewModifier.AXIS.X);
@@ -167,6 +164,7 @@ public class ControlPanelView extends JPanel {
 
 		settingBtn = new JButton("Settings");
 		settingBtn.addActionListener(bl);
+//		settingBtn.setToolTipText("Unavailable if the procNo <= 0");
 		this.add(settingBtn);
 
 		loadBtn = new JButton("Load data");
@@ -250,8 +248,8 @@ public class ControlPanelView extends JPanel {
 	}
 
 	private void addProgressBar() {
-		// TODO Auto-generated method stub
-		progressBar = new JProgressBar(0, vm.getProcNo());
+		progressBar = new JProgressBar(0,
+				vm.getListOfFiles(dl.getSeries()).length);
 		progressBar.setVisible(true);
 		progressBar.setStringPainted(true);
 	}
@@ -310,8 +308,9 @@ public class ControlPanelView extends JPanel {
 
 	@SuppressWarnings("unchecked")
 	public void changeDL(IDataLoader dl2) {
-		// TODO Auto-generated method stub
 		this.dl = dl2;
+		if (progressBar != null)
+			progressBar.setMaximum(vm.getListOfFiles(dl.getSeries()).length);
 		((SwingWorker<String, Void>) dl)
 				.addPropertyChangeListener(new PropertyChangeListener() {
 

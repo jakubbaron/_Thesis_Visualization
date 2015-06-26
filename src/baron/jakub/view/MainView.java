@@ -125,7 +125,7 @@ public class MainView extends JFrame {
 
 		setLocation(10, 10);
 
-		setMinimumSize(new Dimension(vm.getWidth(), vm.getHeight()));
+		setSize(new Dimension(vm.getWidth(), vm.getHeight()));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 

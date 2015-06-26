@@ -8,4 +8,9 @@ public class ProcessorFile {
 		this.number = number;
 		this.filename = file;
 	}
+
+	@Override
+	public String toString() {
+		return number + "-" + filename;
+	}
 }
