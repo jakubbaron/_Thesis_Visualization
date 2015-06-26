@@ -20,17 +20,6 @@ public class ViewModifier {
 	}
 
 	public ProcessorFile[] getListOfFiles(String time) {
-//		ProcessorFile[] list;
-//		if (Parameters.getListOfPathsToFiles() != null)
-//			return Parameters.getListOfPathsToFiles().get(time);
-//		list = new ProcessorFile[getProcNo()];
-//		for (int i = 0; i < list.length; ++i) {
-//			list[i] = new ProcessorFile(i, getPathToFiles()
-//					.concat(time + isUnix()).concat(getFilePrefix())
-//					.concat(String.format("%03d", i)).concat(time)
-//					.concat(this.getFileAppendix())
-//					.concat(this.getFileExtension()));
-//		}
 		return Parameters.getListOfPathsToFiles(time);
 	}
 

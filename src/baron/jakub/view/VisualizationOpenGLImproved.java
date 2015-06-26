@@ -57,7 +57,6 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 	private IColorValues fun;
 	protected GLContext glcontext;
 	private GLU glu;
-	private long lastPosition = 0;
 	private double max;
 	private double min;
 	private MouseCapturer mouseCapturer;
@@ -93,9 +92,10 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		floatbuffer.put(0f);
 	}
 
-	private void addVerticesAndColors(FloatBuffer floatbuffer) {
+	private int addVerticesAndColors(FloatBuffer floatbuffer) {
 		int z = 0, y = 0, x = 0;
 		double[] valueLimits = Filter.getValues();
+		int correction = 0;
 		try {
 			for (z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]; ++z) {
 				for (y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]; ++y) {
@@ -103,8 +103,6 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 						double par = particles[z][y][x];
 						if (par != Double.MIN_VALUE && par >= valueLimits[0]
 								&& par <= valueLimits[1]) {
-							// if (par >= valueLimits[0] && par <=
-							// valueLimits[1]) {
 							double val = fun.getValue(par, getMin(), getMax());
 							floatbuffer.put((base + (float) x / divider));
 							floatbuffer.put((base + (float) z / divider));
@@ -113,6 +111,9 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 							floatbuffer.put(0.0f);
 							floatbuffer.put(1.0f - (float) val);
 						}
+						else{
+							++correction;
+						}
 					}
 				}
 			}
@@ -120,21 +121,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 			System.out.println(e);
 			System.out.println("Error at X: " + x + " Y: " + y + " Z: " + z);
 		}
-		if (lastPosition > floatbuffer.position()) {
-			long newPos = floatbuffer.position();
-			float b = base * 1.1f;
-			for (long i = lastPosition; i > newPos; i = i - 6) {
-				floatbuffer.put(b);
-				floatbuffer.put(b);
-				floatbuffer.put(b);
-				floatbuffer.put(0);
-				floatbuffer.put(0);
-				floatbuffer.put(0);
-			}
-			lastPosition = newPos;
-		} else {
-			lastPosition = floatbuffer.position();
-		}
+		return correction;
 	}
 
 	@Override
@@ -166,6 +153,8 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 
 			// create vertex buffer data store without initial copy
 			gl2.glBindBuffer(GL.GL_ARRAY_BUFFER, aiVertexBufferIndices[0]);
+			aiNumOfVertices[0] = vm.getCubeSize() * vm.getCubeSize()
+					* vm.getCubeSize();
 			gl2.glBufferData(GL.GL_ARRAY_BUFFER, aiNumOfVertices[0] * 3
 					* Buffers.SIZEOF_FLOAT * 2, null, GL2.GL_DYNAMIC_DRAW);
 		}
@@ -177,10 +166,10 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		FloatBuffer floatbuffer = bytebuffer.order(ByteOrder.nativeOrder())
 				.asFloatBuffer();
 
-		addVerticesAndColors(floatbuffer);
+		int corr = addVerticesAndColors(floatbuffer);
 
 		gl2.glUnmapBuffer(GL.GL_ARRAY_BUFFER);
-
+		aiNumOfVertices[0] = aiNumOfVertices[0] - corr;
 		return (aiNumOfVertices);
 	}
 
@@ -260,7 +249,8 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 	}
 
 	protected int[] drawAxis(GL2 gl2) {
-		int[] aiNumVertices = new int[] { vm.getCubeSize()*3};//{13 + 38 * 6 + 18 };
+		int[] aiNumVertices = new int[] { vm.getCubeSize() * 3 };// {13 + 38 * 6
+																	// + 18 };
 
 		gl2.glGenBuffers(1, axisVertexBufferIndices, 0);
 
