@@ -105,15 +105,15 @@ public class OptimizedDataLoader extends DataLoader {
 															// rows*cols to get
 															// the number per
 															// level
-		int perCol = vm.getProcRows(); // how many are they in the column, so we
+		int rows = vm.getProcRows(); // how many are they in the column, so we
 										// need how many rows
-		int perRow = vm.getProcColumns(); // how many are they in the row, so we
-		int procNo = proc.number; // need how many cols
+		int cols = vm.getProcColumns(); // how many are they in the row, so we
+		 // need how many cols
 		// TODO TUTAJ PORPAWIC
+		int procNo = proc.number;
 		int level = procNo / perLev; // z coords
-		int col = procNo % perCol; // x coords
-		int row = (procNo % perLev) / perRow; // y coordse
-
+		int col = procNo % rows; // x coords
+		int row = (procNo % perLev) / cols; // y coordse
 		String line;
 		String valSpacer = vm.getValueSpacer();
 		String filename = proc.filename;

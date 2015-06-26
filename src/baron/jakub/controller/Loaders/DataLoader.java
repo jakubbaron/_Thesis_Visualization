@@ -116,29 +116,33 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 
 	// TODO TUTAJ PORPAWIC, chyba! sprawdzic wspolrzedne!
 	protected void defaultParticles() {
-		int perLev = vm.getProcLevels();// how many levels
+		int levels = vm.getProcLevels();// how many levels
 
-		int perCol = vm.getProcRows(); // how many are they in the column, so we
+		int columns = vm.getProcRows(); // how many are they in the column, so we
 		// need how many rows
-		int perRow = vm.getProcColumns(); // how many are they in the row, so we
+		int rows = vm.getProcColumns(); // how many are they in the row, so we
 		// need how many cols
 		int maxLoc = vm.getMaxlocal();
 
 		int size = vm.getCubeSize();
-		if (perLev * maxLoc > size || perCol * maxLoc > size
-				|| perRow * maxLoc > size) {
+		
+		if (levels * maxLoc > size || columns * maxLoc > size
+				|| rows * maxLoc > size) {
 			vm.addLogMessage("Invalid sizes, check config", Color.RED);
-			vm.addLogMessage("col: " + perRow + " row: " + perCol + " Lev: "
-					+ perLev + "maxLoc: " + maxLoc + " size: " + perLev,
+			vm.addLogMessage("col: " + rows + " row: " + columns + " Lev: "
+					+ levels + "maxLoc: " + maxLoc + " size: " + levels,
 					Color.RED);
 		}
-		particles = new double[maxLoc * perLev][maxLoc * perCol][maxLoc
-				* perRow];
+		
+		
+		particles = new double[maxLoc * levels][maxLoc * columns][maxLoc
+				* rows];
 		for (double[][] a : particles) {
 			for (double[] b : a) {
 				Arrays.fill(b, Double.MIN_VALUE);
 			}
 		}
+		
 		setLoaded(false);
 	}
 
