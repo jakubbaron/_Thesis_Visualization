@@ -19,7 +19,7 @@ public interface IDataLoader {
 
 	public double[][][] getRandomData();
 
-	public int getTime();
+	public String getSeries();
 
 	/**
 	 * @return the loaded

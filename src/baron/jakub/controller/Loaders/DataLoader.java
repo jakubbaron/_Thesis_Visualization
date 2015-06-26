@@ -7,6 +7,7 @@ import java.util.Random;
 import javax.swing.SwingWorker;
 
 import baron.jakub.controller.ViewModifier;
+import baron.jakub.model.ProcessorFile;
 
 public abstract class DataLoader extends SwingWorker<Void, String> implements
 		IDataLoader {
@@ -16,42 +17,24 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	private double maxVal = 1;
 	private double minVal = 0;
 	protected double[][][] particles;
-	private int time;
-	private String filePrefix;
-	private String fileAppendix;
-	private String fileExtension;
-	private String pathToFiles;
+	private String series;
 	protected ViewModifier vm;
-	private String pathSeparator;
+	protected ProcessorFile[] fileList;
 
-	public DataLoader(ViewModifier vm, int time, String pathToFiles,
-			String filePrefix, String fileAppendix, String fileExtension,
-			String pathSeparator) {
+	public DataLoader(ViewModifier vm, String time) {
 		this.vm = vm;
-		this.time = time;
-		this.pathToFiles = pathToFiles;
-		this.filePrefix = filePrefix;
-		this.fileAppendix = fileAppendix;
-		this.fileExtension = fileExtension;
-		this.pathSeparator = pathSeparator;
+		this.series = time;
+		this.fileList = vm.getListOfFiles(getSeries());
 		setMaxVal(Double.MIN_VALUE);
 		setMinVal(Double.MAX_VALUE);
 	}
 
-	protected String getFilePrefix() {
-		return filePrefix;
+	protected ProcessorFile[] getFileList() {
+		return fileList;
 	}
 
-	protected String getFileAppendix() {
-		return fileAppendix;
-	}
-
-	protected String getFileExtension() {
-		return fileExtension;
-	}
-
-	protected String getPathToFiles() {
-		return pathToFiles;
+	protected String getFileName(int i) {
+		return fileList[i].filename;
 	}
 
 	@Override
@@ -114,8 +97,8 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	/**
 	 * @return the time
 	 */
-	public int getTime() {
-		return time;
+	public String getSeries() {
+		return series;
 	}
 
 	/**
@@ -167,7 +150,7 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 			minVal = val;
 	}
 
-	protected void readFile(int procNo, int dataType, int maxLoc) {
+	protected void readFile(ProcessorFile file, int dataType, int maxLoc) {
 
 	}
 
@@ -192,12 +175,5 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	@Override
 	public void setMinVal(double min) {
 		this.minVal = min;
-	}
-
-	/**
-	 * @return the pathSeparator
-	 */
-	public String getPathSeparator() {
-		return pathSeparator;
 	}
 }

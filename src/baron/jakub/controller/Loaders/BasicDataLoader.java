@@ -7,22 +7,19 @@ import java.util.Arrays;
 
 import baron.jakub.controller.ViewModifier;
 import baron.jakub.model.Parameters;
+import baron.jakub.model.ProcessorFile;
 
 public class BasicDataLoader extends DataLoader {
 	private int counter = 0;
 
-	public BasicDataLoader(ViewModifier vm, int time, String pathToFile,
-			String filePrefix, String fileAppendix, String fileExtension,
-			String pathSeparator) {
-		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension,
-				pathSeparator);
+	public BasicDataLoader(ViewModifier vm, String time) {
+		super(vm, time);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	protected Void doInBackground() throws Exception {
 		counter = 0;
-		int procNo = Parameters.getProcNo();
 		int type = Parameters.getDataType();
 		int maxLoc = Parameters.getMaxlocal();
 		long startTime = System.nanoTime();
@@ -30,9 +27,9 @@ public class BasicDataLoader extends DataLoader {
 
 		setProgress(0);
 		vm.addLogMessage("Start reading files", Color.BLACK);
-
-		for (int i = 0; i < procNo; ++i) {
-			readFile(i, type, maxLoc);
+		ProcessorFile[] fileList = vm.getListOfFiles(getSeries());
+		for (int i = 0; i < fileList.length; ++i) {
+			readFile(fileList[i], type, maxLoc);
 
 		}
 		vm.addLogMessage(
@@ -63,21 +60,19 @@ public class BasicDataLoader extends DataLoader {
 	}
 
 	@Override
-	protected void readFile(int procNo, int dataType, int maxLoc) {
-		String filename = Parameters.getFilePrefix()
-				.concat(String.format("%03d", procNo))
-				.concat(String.format("%02d", this.getTime()))
-				.concat(this.getFileAppendix()).concat(this.getFileExtension());
+	protected void readFile(ProcessorFile proc, int dataType, int maxLoc) {
+		int procNo = proc.number;
+		String filename = proc.filename;
 
 		System.out.println(filename);
+
 		int level = procNo / 16; // z coords
 		int col = procNo % 4; // x coords
 		int row = (procNo % 16) / 4; // y coords
 		System.out.println(level + " " + col + " " + row);
 
 		String line;
-		try (BufferedReader br = new BufferedReader(new FileReader(this
-				.getPathToFiles().concat(filename)))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
 
 			for (int z = 0; z < maxLoc; ++z) {
 				int zz = level * maxLoc + z;

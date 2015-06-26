@@ -276,11 +276,11 @@ public class ControlPanelView extends JPanel {
 	}
 
 	private void addTimeSlider() {
-		int[] values = vm.getAvailableTimes();
+		String[] values = vm.getAvailableSeries();
 		timeSlider = new JSlider(0, values.length - 1, 0);
 		Hashtable<Integer, JLabel> Labels = new Hashtable<>();
 		for (int i = 0; i < values.length; ++i)
-			Labels.put(i, new JLabel(Integer.toString(values[i])));
+			Labels.put(i, new JLabel(values[i]));
 		timeSlider.setLabelTable(Labels);
 		timeSlider.setPaintTicks(true);
 		timeSlider.setPaintLabels(true);

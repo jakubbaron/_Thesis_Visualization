@@ -1,12 +1,16 @@
 package baron.jakub.controller;
 
 import java.awt.Color;
-//import java.util.concurrent.Executor;
+import java.security.InvalidParameterException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 import baron.jakub.model.Filter;
 import baron.jakub.model.Parameters;
+import baron.jakub.model.ProcessorFile;
 import baron.jakub.view.MainView;
 
 public class ViewModifier {
@@ -15,15 +19,30 @@ public class ViewModifier {
 		X, Y, Z
 	}
 
-	public String[] getListOfFiles() {
-		String[] list = new String[1];
+	public ProcessorFile[] getListOfFiles(String time) {
+		ProcessorFile[] list;
+		if (Parameters.getListOfPathsToFiles() != null)
+			return Parameters.getListOfPathsToFiles().get(time);
+		list = new ProcessorFile[getProcNo()];
+		for (int i = 0; i < list.length; ++i) {
+			list[i] = new ProcessorFile(i, getPathToFiles()
+					.concat(time + isUnix()).concat(getFilePrefix())
+					.concat(String.format("%03d", i)).concat(time)
+					.concat(this.getFileAppendix())
+					.concat(this.getFileExtension()));
+		}
 		return list;
 	}
 
 	public static void main(String[] args) {
-		Parameters.loadProperties("config2015-06-18.properties");
-		ViewModifier vm = new ViewModifier();
-		vm.start();
+		try {
+			Parameters.loadProperties("config2015-06-18.properties");
+
+			ViewModifier vm = new ViewModifier();
+			vm.start();
+		} catch (InvalidParameterException e) {
+			JOptionPane.showMessageDialog(new JFrame(), e.getMessage());
+		}
 		Parameters.saveProperties(null);
 	}
 
@@ -79,9 +98,9 @@ public class ViewModifier {
 
 	}
 
-	public int[] getAvailableTimes() {
+	public String[] getAvailableSeries() {
 		// TODO Auto-generated method stub
-		return Parameters.getAvailableTimes();
+		return Parameters.getAvailableSeries();
 	}
 
 	public String getFileAppendix() {
@@ -113,7 +132,7 @@ public class ViewModifier {
 		return Parameters.getProcNo();
 	}
 
-	public Integer getSelectedTime() {
+	public String getSelectedTime() {
 		// TODO Auto-generated method stub
 		return Parameters.getSelectedTime();
 	}
@@ -131,8 +150,8 @@ public class ViewModifier {
 		mv.setAllUnloaded();
 	}
 
-	public void setSelectedTime(Integer t) {
-		int ti = Parameters.getAvailableTimes()[t];
+	public void setSelectedTime(int i) {
+		String ti = Parameters.getAvailableSeries()[i];
 		Parameters.setSelectedTime(ti);
 		mv.changeTime(ti);
 

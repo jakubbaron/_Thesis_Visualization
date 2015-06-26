@@ -7,9 +7,8 @@ import baron.jakub.controller.ViewModifier;
 import baron.jakub.model.Parameters;
 
 public class BinaryDataLoader extends DataLoader {
-	public BinaryDataLoader(ViewModifier vm, int time, String pathToFile,
-			String filePrefix, String fileAppendix, String fileExtension, String pathSeparator) {
-		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension,pathSeparator);
+	public BinaryDataLoader(ViewModifier vm, String series) {
+		super(vm, series);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -31,11 +30,7 @@ public class BinaryDataLoader extends DataLoader {
 		long startTime = System.nanoTime();
 		Parameters.setFileAppendix("bin");
 		for (int i = 0; i < procNo; ++i) {
-			String filename = this.getFilePrefix()
-					.concat(String.format("%03d", i))
-					.concat(String.format("%02d", this.getTime()))
-					.concat(this.getFileAppendix())
-					.concat(this.getFileExtension());
+			String filename = getFileName(procNo);
 
 			System.out.println(filename);
 			int level = i / 16; // z coords
@@ -44,7 +39,7 @@ public class BinaryDataLoader extends DataLoader {
 			System.out.println(level + " " + col + " " + row);
 
 			try (DataInputStream dis = new DataInputStream(new FileInputStream(
-					this.getPathToFiles().concat(filename)))) {
+					(filename)))) {
 
 				for (int z = 0; z < maxLoc; ++z) {
 					int zz = level * maxLoc + z;
@@ -79,5 +74,4 @@ public class BinaryDataLoader extends DataLoader {
 				+ Double.toString((System.nanoTime() - startTime) / 1000000.0)
 				+ " s");
 	}
-
 }

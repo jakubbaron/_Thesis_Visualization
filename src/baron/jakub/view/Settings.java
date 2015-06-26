@@ -124,7 +124,7 @@ public class Settings extends JFrame {
 				"Max local", true);
 		this.add(maxLocalTA);
 
-		timeTA = getNewTextArea(Integer.toString(vm.getSelectedTime()), "Time", true);
+		timeTA = getNewTextArea((vm.getSelectedTime()), "Series", true);
 		this.add(timeTA);
 
 		updateExampleFile();

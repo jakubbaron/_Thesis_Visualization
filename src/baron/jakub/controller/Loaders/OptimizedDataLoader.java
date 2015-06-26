@@ -10,33 +10,27 @@ import java.util.concurrent.Executors;
 
 import baron.jakub.controller.ViewModifier;
 import baron.jakub.model.Parameters;
+import baron.jakub.model.ProcessorFile;
 
 public class OptimizedDataLoader extends DataLoader {
 	private int counter;
 	private int maxThreads;
-	private int[] sequence;
 	// private Hashtable<Integer, Hashtable<Integer, Hashtable<Integer,
 	// Double>>> optParticles;
 	private ExecutorService taskExecutor;
 	private long startTime;
 
-	public OptimizedDataLoader(ViewModifier vm, int time, String pathToFile,
-			String filePrefix, String fileAppendix, String fileExtension, String pathSeparator) {
-		super(vm, time, pathToFile, filePrefix, fileAppendix, fileExtension, pathSeparator);
-		sequence = new int[vm.getProcNo()];
-
+	public OptimizedDataLoader(ViewModifier vm, String series) {
+		super(vm, series);
 		counter = 0;
-		for (int i = 0; i < sequence.length; ++i) {
-			sequence[i] = i % 4 + (i / 16) * 4 + ((i / 4) % 4) * 16;
-			// sequence[i] = i;
-		}
 	}
 
 	@Override
 	protected Void doInBackground() throws Exception {
 		int type = Parameters.getDataType();
 		int maxLoc = Parameters.getMaxlocal();
-		
+		ProcessorFile[] fileList = vm.getListOfFiles(getSeries());
+
 		if (vm.getMaxThreads() <= Runtime.getRuntime().availableProcessors()) {
 			maxThreads = vm.getMaxThreads();
 			vm.addLogMessage("Assigning: " + maxThreads
@@ -49,25 +43,22 @@ public class OptimizedDataLoader extends DataLoader {
 		setProgress(0);
 		counter = 0;
 		vm.addLogMessage("Start reading files", Color.BLACK);
-		
+
 		startTime = System.nanoTime();
-		
 		taskExecutor = Executors.newFixedThreadPool(maxThreads);
-		for (int i = 0; i < sequence.length; i = i + maxThreads) {
-			for (int j : Arrays.copyOfRange(sequence, i, i + maxThreads)) {
-				taskExecutor.submit(new Runnable() {
-					@Override
-					public void run() {
-						readFile(j, type, maxLoc);
-					}
-				});
-			}
+		for(ProcessorFile proc: fileList){
+			taskExecutor.submit(new Runnable() {
+				@Override
+				public void run() {
+					readFile(proc, type, maxLoc);
+				}
+			});
 		}
 		taskExecutor.shutdown();
-//		vm.addLogMessage(
-//				"Time elapsed: "
-//						+ Double.toString((System.nanoTime() - startTime) / 1000000000.0)
-//						+ " s", Color.BLACK);
+		// vm.addLogMessage(
+		// "Time elapsed: "
+		// + Double.toString((System.nanoTime() - startTime) / 1000000000.0)
+		// + " s", Color.BLACK);
 		setLoaded(true);
 		return null;
 	}
@@ -105,12 +96,7 @@ public class OptimizedDataLoader extends DataLoader {
 	}
 
 	@Override
-	protected void readFile(int procNo, int dataType, int maxLoc) {
-		String filename = this.getFilePrefix()
-				.concat(String.format("%03d", procNo))
-				.concat(String.format("%02d", this.getTime()))
-				.concat(this.getFileAppendix())
-				.concat(this.getFileExtension());
+	protected void readFile(ProcessorFile proc, int dataType, int maxLoc) {
 
 		// System.out.println(filename);
 
@@ -123,7 +109,7 @@ public class OptimizedDataLoader extends DataLoader {
 		int perCol = vm.getProcRows(); // how many are they in the column, so we
 										// need how many rows
 		int perRow = vm.getProcColumns(); // how many are they in the row, so we
-											// need how many cols
+		int procNo = proc.number; // need how many cols
 		// TODO TUTAJ PORPAWIC
 		int level = procNo / perLev; // z coords
 		int col = procNo % perCol; // x coords
@@ -131,12 +117,11 @@ public class OptimizedDataLoader extends DataLoader {
 
 		String line;
 		String valSpacer = Parameters.getValueSpacer();
+		String filename = proc.filename;
+
 		int x = 0, y = 0, z = 0;
 		int xx = 0, yy = 0, zz = 0;
-		try (BufferedReader br = new BufferedReader(new FileReader(this
-				.getPathToFiles()
-				.concat(Integer.toString(this.getTime()) + "\\")
-				.concat(filename)))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
 			for (z = 0; z < maxLoc; ++z) {
 				zz = level * maxLoc + z;
 				for (y = 0; y < maxLoc; ++y) {
@@ -160,8 +145,11 @@ public class OptimizedDataLoader extends DataLoader {
 			vm.addLogMessage(filename, Color.RED);
 		}
 		setProgress(++counter);
-		publish("Loaded " + Integer.toString(counter) + " files - timestep: "
-				+ getTime() + ". Time elapsed: "
+		publish("Loaded "
+				+ Integer.toString(counter)
+				+ " files - timestep: "
+				+ getSeries()
+				+ ". Time elapsed: "
 				+ Double.toString((System.nanoTime() - startTime) / 1000000000.0)
 				+ " s");
 	}

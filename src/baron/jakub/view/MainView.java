@@ -42,7 +42,7 @@ public class MainView extends JFrame {
 	private JScrollPane scrollLogs;
 	private IVisualization VisObject;
 	private ViewModifier vm;
-	private Hashtable<Integer, IDataLoader> hdl;
+	private Hashtable<String, IDataLoader> hdl;
 	private IDataLoader dl;
 	private PropertyChangeListener dlPCL;
 
@@ -99,13 +99,10 @@ public class MainView extends JFrame {
 
 		addLogsWindow();
 
-		this.hdl = new Hashtable<Integer, IDataLoader>();
+		this.hdl = new Hashtable<String, IDataLoader>();
 
-		for (int i : this.vm.getAvailableTimes()) {
-			hdl.put(i,
-					new OptimizedDataLoader(vm, i, vm.getPathToFiles(), vm
-							.getFilePrefix(), vm.getFileAppendix(), vm
-							.getFileExtension(), vm.isUnix()));
+		for (String i : this.vm.getAvailableSeries()) {
+			hdl.put(i, new OptimizedDataLoader(vm, i));
 		}
 		this.dl = hdl.get(vm.getSelectedTime());
 
@@ -278,9 +275,9 @@ public class MainView extends JFrame {
 	}
 
 	@SuppressWarnings("unchecked")
-	public void changeTime(int time) {
+	public void changeTime(String ti) {
 		((SwingWorker<String, Void>) dl).removePropertyChangeListener(dlPCL);
-		dl = hdl.get(time);
+		dl = hdl.get(ti);
 		if (VisObject != null)
 			VisObject.changeDL(dl);
 		cpv.changeDL(dl);
