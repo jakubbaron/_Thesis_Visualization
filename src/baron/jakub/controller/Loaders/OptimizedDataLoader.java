@@ -45,7 +45,7 @@ public class OptimizedDataLoader extends DataLoader {
 
 		startTime = System.nanoTime();
 		taskExecutor = Executors.newFixedThreadPool(maxThreads);
-		for(ProcessorFile proc: fileList){
+		for (ProcessorFile proc : fileList) {
 			taskExecutor.submit(new Runnable() {
 				@Override
 				public void run() {
@@ -108,12 +108,17 @@ public class OptimizedDataLoader extends DataLoader {
 		int rows = vm.getProcRows(); // how many are they in the column, so we
 										// need how many rows
 		int cols = vm.getProcColumns(); // how many are they in the row, so we
-		 // need how many cols
+		// need how many cols
 		// TODO TUTAJ PORPAWIC
 		int procNo = proc.number;
 		int level = procNo / perLev; // z coords
-		int col = procNo % rows; // x coords
-		int row = (procNo % perLev) / cols; // y coordse
+		int N = procNo % perLev;
+//		int col = N / rows % cols; // x coords
+//		int row = N / cols / rows; // y coordse
+		int col = N%cols;
+		int row = N/rows;
+		System.out.println("proc: " + procNo + " col: " + col + " row: " + row
+				+ " level: " + level);
 		String line;
 		String valSpacer = vm.getValueSpacer();
 		String filename = proc.filename;
