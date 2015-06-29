@@ -112,11 +112,8 @@ public class OptimizedDataLoader extends DataLoader {
 		// TODO TUTAJ PORPAWIC
 		int procNo = proc.number;
 		int level = procNo / perLev; // z coords
-		int N = procNo % perLev;
-//		int col = N / rows % cols; // x coords
-//		int row = N / cols / rows; // y coordse
-		int col = N%cols;
-		int row = N/rows;
+		int col = (procNo / rows) % cols;
+		int row = procNo % rows;
 		System.out.println("proc: " + procNo + " col: " + col + " row: " + row
 				+ " level: " + level);
 		String line;
@@ -129,9 +126,9 @@ public class OptimizedDataLoader extends DataLoader {
 			for (z = 0; z < maxLoc; ++z) {
 				zz = level * maxLoc + z;
 				for (y = 0; y < maxLoc; ++y) {
-					yy = row * maxLoc + y;
+					yy = col * maxLoc + y;
 					for (x = 0; x < maxLoc; ++x) {
-						xx = col * maxLoc + x;
+						xx = row * maxLoc + x;
 						if ((line = br.readLine()) != null) {
 							String[] values = line.split(valSpacer);
 							double val = Double.parseDouble(values[dataType]);
