@@ -92,7 +92,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 								getMax());
 						gl.glColor3d(val, 0, 1.0 - val);
 						gl.glVertex3d((base + (float) x / divider),
-								(base + (z + 0.0) / divider), (base + (y + 0.0)
+								(base + (z + 0.0) / divider), (-base - (y + 0.0)
 										/ divider));
 					}
 				}
@@ -159,12 +159,12 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 
 		gl2.glColor3d(0, 0, 0);
 		// x axis
-		gl2.glVertex3d(b, b, b);
-		gl2.glVertex3d(-b, b, b);
+		gl2.glVertex3d(b, b, -b);
+		gl2.glVertex3d(-b, b, -b);
 
 		// z axis
-		gl2.glVertex3d(b, b, b);
-		gl2.glVertex3d(b, -b, b);
+		gl2.glVertex3d(b, b, -b);
+		gl2.glVertex3d(b, -b, -b);
 
 		// y axis
 		gl2.glVertex3d(b, b, b);
@@ -198,14 +198,14 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 			float tickAnchor = base + (i + 0.0f) / divider;
 			tr.begin3DRendering();
 			tr.setColor(Color.GREEN);
-			tr.draw3D(Integer.toString(i + 1), tickAnchor, b, b, fontRatio);
+			tr.draw3D(Integer.toString(i + 1), tickAnchor, b, -b, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getxCoords()[1] + 1;
 		float tickAnchor = base + (i + 0.0f) / divider;
 		tr.begin3DRendering();
 		tr.setColor(Color.GREEN);
-		tr.draw3D(Integer.toString(i), tickAnchor, b, b, fontRatio);
+		tr.draw3D(Integer.toString(i), tickAnchor, b, -b, fontRatio);
 		tr.end3DRendering();
 	}
 
@@ -233,14 +233,14 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		int i;
 		for (i = Filter.getyCoords()[0]; i <= Filter.getyCoords()[1]; i += Parameters
 				.getMaxlocal()) {
-			float tickAnchor = base + (i + 0.0f) / divider;
+			float tickAnchor = -base - (i + 0.0f) / divider;
 			tr.begin3DRendering();
 			tr.setColor(Color.GREEN);
 			tr.draw3D(Integer.toString(i + 1), b, b, tickAnchor, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getyCoords()[1] + 1;
-		float tickAnchor = base + (i + 0.0f) / divider;
+		float tickAnchor = -base - (i + 0.0f) / divider;
 		tr.begin3DRendering();
 		tr.setColor(Color.GREEN);
 		tr.draw3D(Integer.toString(i), b, b, tickAnchor, fontRatio);
@@ -251,7 +251,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private void drawYTicks(GL2 gl2, float b, boolean tens) {
 		int counter = 0;
 		for (int i = Filter.getyCoords()[0]; i <= Filter.getyCoords()[1]; i += freq) {
-			float tickAnchor = base + (i + 0.0f) / divider;
+			float tickAnchor = -base - (i + 0.0f) / divider;
 			gl2.glVertex3d(b, b, tickAnchor);
 			if (tens) {
 				if (counter % freq != 0)
@@ -262,7 +262,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 			} else
 				gl2.glVertex3d(b - tickLength, b, tickAnchor);
 		}
-		float tickAnchor = base + (Filter.getyCoords()[1] + 0.0f) / divider;
+		float tickAnchor = -base - (Filter.getyCoords()[1] + 0.0f) / divider;
 		gl2.glVertex3d(b, b, tickAnchor);
 		gl2.glVertex3d(-b, b, tickAnchor);
 
@@ -275,14 +275,14 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 			float tickAnchor = base + (i + 0.0f) / divider;
 			tr.begin3DRendering();
 			tr.setColor(Color.GREEN);
-			tr.draw3D(Integer.toString(i + 1), b, tickAnchor, b, fontRatio);
+			tr.draw3D(Integer.toString(i + 1), b, tickAnchor, -b, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getzCoords()[1] + 1;
 		float tickAnchor = base + (i + 0.0f) / divider;
 		tr.begin3DRendering();
 		tr.setColor(Color.GREEN);
-		tr.draw3D(Integer.toString(i), b, tickAnchor, b, fontRatio);
+		tr.draw3D(Integer.toString(i), b, tickAnchor, -b, fontRatio);
 		tr.end3DRendering();
 	}
 
@@ -290,19 +290,19 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		int counter = 0;
 		for (int i = Filter.getzCoords()[0]; i <= Filter.getzCoords()[1]; i += freq) {
 			float tickAnchor = base + (i + 0.0f) / divider;
-			gl2.glVertex3d(b, tickAnchor, b);
+			gl2.glVertex3d(b, tickAnchor, -b);
 			if (tens) {
 				if (counter % freq != 0)
-					gl2.glVertex3d(b - tickLength, tickAnchor, b);
+					gl2.glVertex3d(b - tickLength, tickAnchor, -b);
 				else
-					gl2.glVertex3d(-b, tickAnchor, b);
+					gl2.glVertex3d(-b, tickAnchor, -b);
 				++counter;
 			} else
-				gl2.glVertex3d(b - tickLength, tickAnchor, b);
+				gl2.glVertex3d(b - tickLength, tickAnchor, -b);
 		}
 		float tickAnchor = base + (Filter.getzCoords()[1] + 0.0f) / divider;
-		gl2.glVertex3d(b, tickAnchor, b);
-		gl2.glVertex3d(-b, tickAnchor, b);
+		gl2.glVertex3d(b, tickAnchor, -b);
+		gl2.glVertex3d(-b, tickAnchor, -b);
 
 	}
 
