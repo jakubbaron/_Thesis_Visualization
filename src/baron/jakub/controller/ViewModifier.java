@@ -24,6 +24,7 @@ public class ViewModifier {
 	}
 
 	public static void main(String[] args) {
+
 		try {
 			Parameters.loadProperties("config2015-06-18.properties");
 
@@ -33,6 +34,7 @@ public class ViewModifier {
 			JOptionPane.showMessageDialog(new JFrame(), e.getMessage());
 		}
 		Parameters.saveProperties(null);
+
 	}
 
 	private MainView mv;
@@ -227,7 +229,8 @@ public class ViewModifier {
 		// TODO Auto-generated method stub
 		return Parameters.getProcessorsLevels();
 	}
-	public String isUnix(){
+
+	public String isUnix() {
 		return Parameters.isUnix();
 	}
 

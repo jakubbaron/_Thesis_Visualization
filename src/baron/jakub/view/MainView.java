@@ -102,7 +102,7 @@ public class MainView extends JFrame {
 		this.hdl = new Hashtable<String, IDataLoader>();
 
 		for (String i : this.vm.getAvailableSeries()) {
-			hdl.put(i, new OptimizedDataLoader(vm, i));
+			hdl.put(i, new OptimizedOneForDataLoader(vm, i));
 		}
 		this.dl = hdl.get(vm.getSelectedTime());
 
