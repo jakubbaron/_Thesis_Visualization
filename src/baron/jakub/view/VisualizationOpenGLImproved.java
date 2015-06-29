@@ -97,16 +97,22 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		double[] valueLimits = Filter.getValues();
 		int correction = 0;
 		try {
-			for (z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]; ++z) {
-				for (y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]; ++y) {
-					for (x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1]; ++x) {
+//			for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1] && z<particles.length
+//					; ++z) {
+//				for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1] && y<particles[z].length
+//						; ++y) {
+//					for (int x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1] && x<particles[z][y].length
+//							; ++x) {
+			for (z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]&& z<particles.length; ++z) {
+				for (y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]&& y<particles[z].length; ++y) {
+					for (x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1]&& x<particles[z][y].length; ++x) {
 						double par = particles[z][y][x];
 						if (par != Double.MIN_VALUE && par >= valueLimits[0]
 								&& par <= valueLimits[1]) {
 							double val = fun.getValue(par, getMin(), getMax());
 							floatbuffer.put((base + (float) x / divider));
 							floatbuffer.put((base + (float) z / divider));
-							floatbuffer.put((base + (float) y / divider));
+							floatbuffer.put((-base - (float) y / divider));
 							floatbuffer.put((float) val);
 							floatbuffer.put(0.0f);
 							floatbuffer.put(1.0f - (float) val);
@@ -302,14 +308,14 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 			float tickAnchor = base + (i + 0.0f) / divider;
 			tr.begin3DRendering();
 			tr.setColor(Color.GREEN);
-			tr.draw3D(Integer.toString(i + 1), tickAnchor, b, b, fontRatio);
+			tr.draw3D(Integer.toString(i + 1), tickAnchor, b, -b, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getxCoords()[1] + 1;
 		float tickAnchor = base + (i + 0.0f) / divider;
 		tr.begin3DRendering();
 		tr.setColor(Color.GREEN);
-		tr.draw3D(Integer.toString(i), tickAnchor, b, b, fontRatio);
+		tr.draw3D(Integer.toString(i), tickAnchor, b, -b, fontRatio);
 		tr.end3DRendering();
 	}
 
@@ -344,14 +350,14 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		int i;
 		for (i = Filter.getyCoords()[0]; i <= Filter.getyCoords()[1]; i += Parameters
 				.getMaxlocal()) {
-			float tickAnchor = base + (i + 0.0f) / divider;
+			float tickAnchor = -base - (i + 0.0f) / divider;
 			tr.begin3DRendering();
 			tr.setColor(Color.GREEN);
 			tr.draw3D(Integer.toString(i + 1), b, b, tickAnchor, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getyCoords()[1] + 1;
-		float tickAnchor = base + (i + 0.0f) / divider;
+		float tickAnchor =-base - (i + 0.0f) / divider;
 		tr.begin3DRendering();
 		tr.setColor(Color.GREEN);
 		tr.draw3D(Integer.toString(i), b, b, tickAnchor, fontRatio);
@@ -363,7 +369,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 			boolean tens) {
 		int counter = 0;
 		for (int i = Filter.getyCoords()[0]; i <= Filter.getyCoords()[1]; i += 10) {
-			float tickAnchor = base + (i + 0.0f) / 384f;
+			float tickAnchor = -base - (i + 0.0f) / 384f;
 			floatbuffer.put(beginning);
 			floatbuffer.put(beginning);
 			floatbuffer.put(tickAnchor);
@@ -374,7 +380,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 			floatbuffer.put(tickAnchor);
 			addBlack(floatbuffer);
 		}
-		float tickAnchor = base + (Filter.getyCoords()[1] + 0.0f) / 384f;
+		float tickAnchor = -base - (Filter.getyCoords()[1] + 0.0f) / 384f;
 		floatbuffer.put(beginning);
 		floatbuffer.put(beginning);
 		floatbuffer.put(tickAnchor);

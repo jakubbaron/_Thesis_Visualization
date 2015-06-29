@@ -79,9 +79,12 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private void addData(GL2 gl) {
 		particles = (dl).getParticles();
 		double[] valueLimits = Filter.getValues();
-		for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]; ++z) {
-			for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]; ++y) {
-				for (int x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1]; ++x) {
+		for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]&& z<particles.length
+				; ++z) {
+			for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1] && y<particles[z].length
+					; ++y) {
+				for (int x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1] && x<particles[z][y].length
+						; ++x) {
 					double par = particles[z][y][x];
 					if (par != Double.MIN_VALUE && par >= valueLimits[0]
 							&& par <= valueLimits[1]) {

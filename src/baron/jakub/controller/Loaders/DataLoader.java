@@ -118,14 +118,15 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 	protected void defaultParticles() {
 		int levels = vm.getProcLevels();// how many levels
 
-		int columns = vm.getProcRows(); // how many are they in the column, so we
+		int columns = vm.getProcRows(); // how many are they in the column, so
+										// we
 		// need how many rows
 		int rows = vm.getProcColumns(); // how many are they in the row, so we
 		// need how many cols
 		int maxLoc = vm.getMaxlocal();
 
 		int size = vm.getCubeSize();
-		
+
 		if (levels * maxLoc > size || columns * maxLoc > size
 				|| rows * maxLoc > size) {
 			vm.addLogMessage("Invalid sizes, check config", Color.RED);
@@ -133,16 +134,25 @@ public abstract class DataLoader extends SwingWorker<Void, String> implements
 					+ levels + "maxLoc: " + maxLoc + " size: " + levels,
 					Color.RED);
 		}
-		
-		
-		particles = new double[maxLoc * levels][maxLoc * columns][maxLoc
-				* rows];
+
+		// if(levels*columns*)
+		if (levels * columns * rows != vm.getProcNo()) {
+			vm.addLogMessage(
+					"Size might cause problems, going for the maximum size (cubeSize), might cause performance issues.",
+					Color.RED);
+			int alternateSize = Math.max(levels, Math.max(columns, rows));
+			levels = alternateSize;
+			columns = alternateSize;
+			rows = alternateSize;
+		}
+		particles = new double[maxLoc * levels][maxLoc * columns][maxLoc * rows];
+
 		for (double[][] a : particles) {
 			for (double[] b : a) {
 				Arrays.fill(b, Double.MIN_VALUE);
 			}
 		}
-		
+
 		setLoaded(false);
 	}
 

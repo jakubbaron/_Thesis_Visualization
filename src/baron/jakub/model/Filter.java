@@ -4,12 +4,9 @@ public class Filter {
 
 	private static double[] values = new double[] { Double.MIN_VALUE,
 			Double.MAX_VALUE };
-	private static int[] xCoords = new int[] { 0,
-			Parameters.getMaxlocal() * Parameters.getProcessorsPerColumn() - 1 };
-	private static int[] yCoords = new int[] { 0,
-			Parameters.getMaxlocal() * Parameters.getProcessorsPerRow() - 1 };
-	private static int[] zCoords = new int[] { 0,
-			Parameters.getMaxlocal() * Parameters.getProcessorsLevels() - 1 };
+	private static int[] xCoords = null;
+	private static int[] yCoords = null;
+	private static int[] zCoords = null;
 
 	/**
 	 * @return the values
@@ -22,6 +19,13 @@ public class Filter {
 	 * @return the xCoords
 	 */
 	public static int[] getxCoords() {
+		if (xCoords == null) {
+			xCoords = Parameters.getProcNo() != 0 ? new int[] {
+					0,
+					Parameters.getMaxlocal()
+							* Parameters.getProcessorsPerColumn() - 1 }
+					: bigCoords();
+		}
 		return xCoords;
 	}
 
@@ -29,13 +33,29 @@ public class Filter {
 	 * @return the yCoords
 	 */
 	public static int[] getyCoords() {
+		if (yCoords == null) {
+			yCoords = Parameters.getProcNo() != 0 ? new int[] {
+					0,
+					Parameters.getMaxlocal() * Parameters.getProcessorsPerRow()
+							- 1 } : bigCoords();
+		}
 		return yCoords;
+	}
+
+	private static int[] bigCoords() {
+		return new int[] { 0, Parameters.getCubeSize() - 1 };
 	}
 
 	/**
 	 * @return the zCoords
 	 */
 	public static int[] getzCoords() {
+		if (zCoords == null) {
+			zCoords = Parameters.getProcNo() != 0 ? new int[] {
+					0,
+					Parameters.getMaxlocal() * Parameters.getProcessorsLevels()
+							- 1 } : bigCoords();
+		}
 		return zCoords;
 	}
 
