@@ -8,12 +8,7 @@ import java.util.Random;
 
 import baron.jakub.model.Parameters;
 
-public class FileReader3ForVs1For extends FileTester {
-
-	public FileReader3ForVs1For(int howManyFiles2, int howManyTimesExperiment2) {
-		super(howManyFiles2, howManyTimesExperiment2);
-	}
-
+public class FileReader1DArray extends FileTester {
 	private void withCalculatingCoords() {
 		System.out
 				.println("With calculating coords, initializing vars outside loop");
@@ -27,7 +22,8 @@ public class FileReader3ForVs1For extends FileTester {
 		int x, y, z, xx = 0, yy = 0, zz = 0;
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
-		double[][][] particles = new double[oneLoc * 4][oneLoc * 4][oneLoc * 4];
+		int cubeSize = 384;
+		double[] particles = new double[threeLoc * 64];
 
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
@@ -52,16 +48,17 @@ public class FileReader3ForVs1For extends FileTester {
 									String[] values = line.split(v);
 									double e = Double.parseDouble(values[1]);
 									minMax(e);
-									particles[zz][yy][xx] = e;
+									particles[xx + cubeSize
+											* (yy + cubeSize * zz)] = e;
 								}
 							}
 						}
 					}
 				} catch (FileNotFoundException e) {
-					//
+
 					e.printStackTrace();
 				} catch (IOException e) {
-					//
+
 					e.printStackTrace();
 				}
 			}
@@ -75,21 +72,15 @@ public class FileReader3ForVs1For extends FileTester {
 				int procNo = rnd.nextInt(64);
 				String filename = "C:\\time" + t + "\\proc"
 						+ String.format("%03d%02d", procNo, t) + "2.res";
-				int level = procNo / perLev; // z coords
-				int col = (procNo / rows) % cols;
-				int row = procNo % rows;
 				try (BufferedReader br = new BufferedReader(new FileReader(
 						filename))) {
 
-					for (x = 0; x < threeLoc; ++x) {
-						zz = level * oneLoc + x / twoLoc;
-						yy = col * oneLoc + (x / oneLoc) % oneLoc;
-						xx = row * oneLoc + x % oneLoc;
+					for (x = procNo * threeLoc; x < (procNo + 1) * threeLoc; ++x) {
 						if ((line = br.readLine()) != null) {
 							String[] values = line.split(v);
 							double e = Double.parseDouble(values[1]);
 							minMax(e);
-							particles[zz][yy][xx] = e;
+							particles[x] = e;
 						}
 					}
 				} catch (FileNotFoundException e) {
@@ -120,7 +111,8 @@ public class FileReader3ForVs1For extends FileTester {
 		// int x, y, z, xx = 0, yy = 0, zz = 0;
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
-		double[][][] particles = new double[oneLoc * 4][oneLoc * 4][oneLoc * 4];
+		int cubeSize = 384;
+		double[] particles = new double[threeLoc];
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			start = System.nanoTime();
@@ -144,7 +136,8 @@ public class FileReader3ForVs1For extends FileTester {
 									String[] values = line.split(v);
 									double e = Double.parseDouble(values[1]);
 									minMax(e);
-									particles[zz][yy][xx] = e;
+									particles[xx + cubeSize
+											* (yy + cubeSize * zz)] = e;
 								}
 							}
 						}
@@ -167,21 +160,16 @@ public class FileReader3ForVs1For extends FileTester {
 				int procNo = rnd.nextInt(64);
 				String filename = "C:\\time" + t + "\\proc"
 						+ String.format("%03d%02d", procNo, t) + "2.res";
-				int level = procNo / perLev; // z coords
-				int col = (procNo / rows) % cols;
-				int row = procNo % rows;
 				try (BufferedReader br = new BufferedReader(new FileReader(
 						filename))) {
 
 					for (int x = 0; x < threeLoc; ++x) {
-						int zz = level * oneLoc + x / twoLoc;
-						int yy = col * oneLoc + (x / oneLoc) % oneLoc;
-						int xx = row * oneLoc + x % oneLoc;
 						if ((line = br.readLine()) != null) {
 							String[] values = line.split(v);
 							double e = Double.parseDouble(values[1]);
+							int addr = procNo * threeLoc + x;
 							minMax(e);
-							particles[zz][yy][xx] = e;
+							particles[addr] = e;
 						}
 					}
 				} catch (FileNotFoundException e) {
@@ -207,11 +195,10 @@ public class FileReader3ForVs1For extends FileTester {
 
 		int times[] = new int[] { 10, 80 };
 		int oneLoc = 96;
-
-		int x, y, z, xx = 0, yy = 0, zz = 0;
+		int x, y, z;
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
-		double[][][] particles = new double[oneLoc * 4][oneLoc * 4][oneLoc * 4];
+		double[] particles = new double[threeLoc];
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			start = System.nanoTime();
@@ -229,7 +216,7 @@ public class FileReader3ForVs1For extends FileTester {
 									String[] values = line.split(v);
 									double e = Double.parseDouble(values[1]);
 									minMax(e);
-									particles[zz][yy][xx] = e;
+									particles[0] = e;
 								}
 							}
 						}
@@ -260,7 +247,7 @@ public class FileReader3ForVs1For extends FileTester {
 							String[] values = line.split(v);
 							double e = Double.parseDouble(values[1]);
 							minMax(e);
-							particles[zz][yy][xx] = e;
+							particles[0] = e;
 						}
 					}
 				} catch (FileNotFoundException e) {
@@ -278,8 +265,12 @@ public class FileReader3ForVs1For extends FileTester {
 		}
 	}
 
+	public FileReader1DArray(int howManyFiles, int howManyTimesExperiment) {
+		super(howManyFiles,howManyTimesExperiment);
+	}
+
 	public void runTests() {
-		System.out.println("FileReader3ForVs1For: 3DArray");
+		System.out.println("FileReader3ForVs1For: 1DArray1D");
 		withCalculatingCoords();
 		withLocalCalculatingCoords();
 		withoutCalculatingCoords();
