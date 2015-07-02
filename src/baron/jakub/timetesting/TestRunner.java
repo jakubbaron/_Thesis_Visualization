@@ -6,8 +6,8 @@ import baron.jakub.model.Parameters;
 
 public class TestRunner {
 
-	private static int howManyFiles = 100;
-	private static int howManyTimesExperiment = 5;
+	private static int howManyFiles = 504; //5040 //504
+	private static int howManyTimesExperiment = 3;//5
 
 	public static void main(String[] args) {
 		Parameters.loadProperties("config2015-06-18.properties");
@@ -22,7 +22,7 @@ public class TestRunner {
 		for (IFileTester ft : testers) {
 			ft.runTests();
 		}
-
+System.out.println("The end");
 	}
 
 }

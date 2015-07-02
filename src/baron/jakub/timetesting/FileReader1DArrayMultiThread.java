@@ -38,7 +38,6 @@ public class FileReader1DArrayMultiThread extends FileTester {
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			for (int threads = 1; threads < maxThreads; ++threads) {
-				System.out.println();
 				taskExecutor = Executors.newFixedThreadPool(threads);
 				start = System.nanoTime();
 				for (int i = 0; i < howManyFiles; ++i) {
@@ -98,8 +97,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println("Threads: " + threads + " 3x for: " + time
-						+ "s");
+				System.out.println(oo + " Threads: " + threads + " 3x for: " + String.format("%1.4f", time) + "s");
 				waitToRunNextTest();
 			}
 			System.out.println();
@@ -153,8 +151,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println("Threads: " + threads + " 1x for: " + time
-						+ "s");
+				System.out.println(oo + " Threads: " + threads + " 1x for: " + String.format("%1.4f", time) + "s");
 				waitToRunNextTest();
 			}
 		}
@@ -176,7 +173,6 @@ public class FileReader1DArrayMultiThread extends FileTester {
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			for (int threads = 1; threads < maxThreads; ++threads) {
-				System.out.println();
 				taskExecutor = Executors.newFixedThreadPool(threads);
 				start = System.nanoTime();
 				for (int i = 0; i < howManyFiles; ++i) {
@@ -235,8 +231,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println("Threads: " + threads + " 3x for: " + time
-						+ "s");
+				System.out.println(oo + " Threads: " + threads + " 3x for: " + String.format("%1.4f", time) + "s");
 				waitToRunNextTest();
 			}
 			System.out.println();
@@ -290,8 +285,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println("Threads: " + threads + " 1x for: " + time
-						+ "s");
+				System.out.println(oo + " Threads: " + threads + " 1x for: " + String.format("%1.4f", time) + "s");
 				waitToRunNextTest();
 			}
 		}
@@ -311,7 +305,6 @@ public class FileReader1DArrayMultiThread extends FileTester {
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			for (int threads = 1; threads < maxThreads; ++threads) {
-				System.out.println();
 				taskExecutor = Executors.newFixedThreadPool(threads);
 				start = System.nanoTime();
 				for (int i = 0; i < howManyFiles; ++i) {
@@ -363,8 +356,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println("Threads: " + threads + " 3x for: " + time
-						+ "s");
+				System.out.println(oo + " Threads: " + threads + " 3x for: " + String.format("%1.4f", time) + "s");
 				waitToRunNextTest();
 			}
 			System.out.println();
@@ -417,15 +409,14 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println("Threads: " + threads + " 1x for: " + time
-						+ "s");
+				System.out.println(oo + " Threads: " + threads + " 1x for: " + String.format("%1.4f", time) + "s");
 				waitToRunNextTest();
 			}
 		}
 	}
 
 	public void runTests() {
-		System.out.println("FileReader1DArrayMultiThread");
+		System.out.println("\nFileReader1DArrayMultiThread");
 		withCalculatingCoords();
 		withLocalCalculatingCoords();
 		withoutCalculatingCoords();

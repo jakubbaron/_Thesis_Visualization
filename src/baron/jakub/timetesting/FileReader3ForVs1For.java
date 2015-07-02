@@ -67,7 +67,7 @@ public class FileReader3ForVs1For extends FileTester {
 			}
 			double time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("3x for: " + time + "s");
+			System.out.println(oo + " 3x for: " + String.format("%1.4f", time) + "s");
 
 			waitToRunNextTest();
 			
@@ -105,7 +105,7 @@ public class FileReader3ForVs1For extends FileTester {
 			}
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("1x for: " + time + "s");
+			System.out.println(oo + " 1x for: " + String.format("%1.4f", time) + "s");
 			waitToRunNextTest();
 		}
 	}
@@ -162,7 +162,7 @@ public class FileReader3ForVs1For extends FileTester {
 			}
 			double time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("3x for: " + time + "s");
+			System.out.println(oo + " 3x for: " + String.format("%1.4f", time) + "s");
 
 			waitToRunNextTest();
 			
@@ -200,7 +200,7 @@ public class FileReader3ForVs1For extends FileTester {
 			}
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("1x for: " + time + "s");
+			System.out.println(oo + " 1x for: " + String.format("%1.4f", time) + "s");
 			waitToRunNextTest();
 		}
 	}
@@ -250,7 +250,7 @@ public class FileReader3ForVs1For extends FileTester {
 			}
 			double time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("3x for: " + time + "s");
+			System.out.println(oo + " 3x for: " + String.format("%1.4f", time) + "s");
 
 			waitToRunNextTest();
 			
@@ -282,13 +282,13 @@ public class FileReader3ForVs1For extends FileTester {
 			}
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("1x for: " + time + "s");
+			System.out.println(oo + " 1x for: " + String.format("%1.4f", time) + "s");
 			waitToRunNextTest();
 		}
 	}
 
 	public void runTests() {
-		System.out.println("FileReader3ForVs1For: 3DArray");
+		System.out.println("\nFileReader3ForVs1For: 3DArray");
 		withCalculatingCoords();
 		withLocalCalculatingCoords();
 		withoutCalculatingCoords();

@@ -23,7 +23,7 @@ public class FileReader1DArray extends FileTester {
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
 		int cubeSize = 384;
-		double[] particles = new double[threeLoc * 64];
+		double[] particles = new double[cubeSize * cubeSize * cubeSize];
 
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
@@ -64,10 +64,10 @@ public class FileReader1DArray extends FileTester {
 			}
 			double time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("3x for: " + time + "s");
-			
+			System.out.println(oo + " 3x for: " + String.format("%1.4f", time) + "s");
+
 			waitToRunNextTest();
-			
+
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
 				int t = rnd.nextBoolean() ? times[0] : times[1];
@@ -96,7 +96,7 @@ public class FileReader1DArray extends FileTester {
 			}
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("1x for: " + time + "s");
+			System.out.println(oo + " 1x for: " + String.format("%1.4f", time) + "s");
 			waitToRunNextTest();
 		}
 	}
@@ -115,9 +115,9 @@ public class FileReader1DArray extends FileTester {
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
 		int cubeSize = 384;
-		double[] particles = new double[threeLoc];
+		double[] particles = new double[cubeSize * cubeSize * cubeSize];
 		long start;
-		
+
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
@@ -156,10 +156,11 @@ public class FileReader1DArray extends FileTester {
 			}
 			double time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("3x for: " + time + "s");
+			System.out.println(oo + " 3x for: " + String.format("%1.4f", time)
+					+ "s");
 
 			waitToRunNextTest();
-			
+
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
 				int t = rnd.nextBoolean() ? times[0] : times[1];
@@ -189,7 +190,8 @@ public class FileReader1DArray extends FileTester {
 			}
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("1x for: " + time + "s");
+			System.out.println(oo + " 1x for: " + String.format("%1.4f", time)
+					+ "s");
 			waitToRunNextTest();
 		}
 	}
@@ -205,7 +207,8 @@ public class FileReader1DArray extends FileTester {
 		int x, y, z;
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
-		double[] particles = new double[threeLoc];
+		int cubeSize = 384;
+		double[] particles = new double[cubeSize * cubeSize * cubeSize];
 		long start;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
 			start = System.nanoTime();
@@ -238,10 +241,10 @@ public class FileReader1DArray extends FileTester {
 			}
 			double time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("3x for: " + time + "s");
+			System.out.println(oo + " 3x for: " + String.format("%1.4f", time) + "s");
 
 			waitToRunNextTest();
-			
+
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
 				int t = rnd.nextBoolean() ? times[0] : times[1];
@@ -270,17 +273,17 @@ public class FileReader1DArray extends FileTester {
 			}
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
-			System.out.println("1x for: " + time + "s");
+			System.out.println(oo + " 1x for: " + String.format("%1.4f", time) + "s");
 			waitToRunNextTest();
 		}
 	}
 
 	public FileReader1DArray(int howManyFiles, int howManyTimesExperiment) {
-		super(howManyFiles,howManyTimesExperiment);
+		super(howManyFiles, howManyTimesExperiment);
 	}
 
 	public void runTests() {
-		System.out.println("FileReader3ForVs1For: 1DArray1D");
+		System.out.println("\nFileReader3ForVs1For: 1DArray1D");
 		withCalculatingCoords();
 		withLocalCalculatingCoords();
 		withoutCalculatingCoords();
