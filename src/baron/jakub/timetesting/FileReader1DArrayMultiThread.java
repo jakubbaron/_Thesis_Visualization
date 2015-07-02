@@ -100,14 +100,9 @@ public class FileReader1DArrayMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 3x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
-				}
+				waitToRunNextTest();
 			}
 			System.out.println();
-			start = System.nanoTime();
 			for (int threads = 1; threads < maxThreads; ++threads) {
 
 				start = System.nanoTime();
@@ -160,11 +155,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 1x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
-				}
+				waitToRunNextTest();
 			}
 		}
 	}
@@ -246,11 +237,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 3x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
-				}
+				waitToRunNextTest();
 			}
 			System.out.println();
 			start = System.nanoTime();
@@ -305,11 +292,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 1x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
-				}
+				waitToRunNextTest();
 			}
 		}
 	}
@@ -382,11 +365,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 3x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
-				}
+				waitToRunNextTest();
 			}
 			System.out.println();
 			start = System.nanoTime();
@@ -440,11 +419,7 @@ public class FileReader1DArrayMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 1x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
-				}
+				waitToRunNextTest();
 			}
 		}
 	}
@@ -457,10 +432,10 @@ public class FileReader1DArrayMultiThread extends FileTester {
 	}
 
 	public static void main(String[] args) {
-		Parameters.loadProperties("config2015-06-18.properties");
-		FileReader1DArrayMultiThread a = new FileReader1DArrayMultiThread(100,
-				1);
-		a.runTests();
+//		Parameters.loadProperties("config2015-06-18.properties");
+//		FileReader1DArrayMultiThread a = new FileReader1DArrayMultiThread(100,
+//				1);
+//		a.runTests();
 	}
 
 }

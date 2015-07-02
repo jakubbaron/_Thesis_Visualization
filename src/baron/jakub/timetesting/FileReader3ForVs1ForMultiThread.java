@@ -97,57 +97,336 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 3x for: " + time
 						+ "s");
-				try {
-					Thread.sleep(120000); // 1000 milliseconds is one second.
-				} catch (InterruptedException ex) {
-					Thread.currentThread().interrupt();
+				waitToRunNextTest();
+			}
+
+			System.out.println();
+			for (int threads = 1; threads < maxThreads; ++threads) {
+
+				start = System.nanoTime();
+				taskExecutor = Executors.newFixedThreadPool(threads);
+				for (int i = 0; i < howManyFiles; ++i) {
+
+					taskExecutor.submit(new Runnable() {
+						@Override
+						public void run() {
+							String line;
+							int x, xx = 0, yy = 0, zz = 0;
+							int t = rnd.nextBoolean() ? times[0] : times[1];
+							int procNo = rnd.nextInt(64);
+							int level = procNo / perLev; // z coords
+							int col = (procNo / rows) % cols;
+							int row = procNo % rows;
+							String filename = "C:\\time" + t + "\\proc"
+									+ String.format("%03d%02d", procNo, t)
+									+ "2.res";
+							try (BufferedReader br = new BufferedReader(
+									new FileReader(filename))) {
+
+								for (x = 0; x < threeLoc; ++x) {
+									zz = level * oneLoc + x / twoLoc;
+									yy = col * oneLoc + (x / oneLoc) % oneLoc;
+									xx = row * oneLoc + x % oneLoc;
+									if ((line = br.readLine()) != null) {
+										String[] values = line.split(v);
+										double e = Double
+												.parseDouble(values[1]);
+										minMax(e);
+										particles[zz][yy][xx] = e;
+									}
+								}
+							} catch (FileNotFoundException e) {
+								//
+								e.printStackTrace();
+							} catch (IOException e) {
+								//
+								e.printStackTrace();
+							}
+						}
+					});
+
 				}
+				taskExecutor.shutdown();
+				try {
+					taskExecutor.awaitTermination(2 * howManyFiles,
+							TimeUnit.SECONDS);
+				} catch (InterruptedException e) {
+					//
+					e.printStackTrace();
+				}
+				time = (System.nanoTime() - start) / 1000000000.0
+						/ (howManyFiles + 0.0);
+				System.out.println("Threads: " + threads + " 1x for: " + time
+						+ "s");
+				waitToRunNextTest();
 			}
 		}
-
 	}
 
 	private void withLocalCalculatingCoords() {
 		System.out
 				.println("With calculating coords, vars initialized in loops");
-		String line;
 		String v = Parameters.getValueSpacer();
 		Random rnd = new Random(12345);
 
 		int times[] = new int[] { 10, 80 };
 		int rows = 4, cols = 4, oneLoc = 96, perLev = rows * cols;
 
-		int x, y, z, xx = 0, yy = 0, zz = 0;
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
 		double[][][] particles = new double[oneLoc * 4][oneLoc * 4][oneLoc * 4];
 		long start;
+		double time;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
-			start = System.nanoTime();
-			for (int o = 0; o < howManyFiles; ++o) {
+			for (int threads = 1; threads < maxThreads; ++threads) {
+				System.out.println();
+				taskExecutor = Executors.newFixedThreadPool(threads);
+				start = System.nanoTime();
+				for (int o = 0; o < howManyFiles; ++o) {
+					taskExecutor.submit(new Runnable() {
+						@Override
+						public void run() {
+							String line;
+							int t = rnd.nextBoolean() ? times[0] : times[1];
+							int procNo = rnd.nextInt(64);
+							String filename = "C:\\time" + t + "\\proc"
+									+ String.format("%03d%02d", procNo, t)
+									+ "2.res";
+							int level = procNo / perLev; // z coords
+							int col = (procNo / rows) % cols;
+							int row = procNo % rows;
+							try (BufferedReader br = new BufferedReader(
+									new FileReader(filename))) {
+								for (int z = 0; z < oneLoc; ++z) {
+									int zz = level * oneLoc + z;
+									for (int y = 0; y < oneLoc; ++y) {
+										int yy = col * oneLoc + y;
+										for (int x = 0; x < oneLoc; ++x) {
+											int xx = row * oneLoc + x;
+											if ((line = br.readLine()) != null) {
+												String[] values = line.split(v);
+												double e = Double
+														.parseDouble(values[1]);
+												minMax(e);
+												particles[zz][yy][xx] = e;
+											}
+										}
+									}
+								}
+							} catch (FileNotFoundException e) {
+								//
+								e.printStackTrace();
+							} catch (IOException e) {
+								//
+								e.printStackTrace();
+							}
+						}
 
+					});
+
+				}
+				taskExecutor.shutdown();
+				try {
+					taskExecutor.awaitTermination(2 * howManyFiles,
+							TimeUnit.SECONDS);
+				} catch (InterruptedException e) {
+
+					e.printStackTrace();
+				}
+				time = (System.nanoTime() - start) / 1000000000.0
+						/ (howManyFiles + 0.0);
+				System.out.println("Threads: " + threads + " 3x for: " + time
+						+ "s");
+				waitToRunNextTest();
+			}
+
+			System.out.println();
+			for (int threads = 1; threads < maxThreads; ++threads) {
+
+				start = System.nanoTime();
+				taskExecutor = Executors.newFixedThreadPool(threads);
+				for (int i = 0; i < howManyFiles; ++i) {
+
+					taskExecutor.submit(new Runnable() {
+						@Override
+						public void run() {
+							String line;
+							int t = rnd.nextBoolean() ? times[0] : times[1];
+							int procNo = rnd.nextInt(64);
+							int level = procNo / perLev; // z coords
+							int col = (procNo / rows) % cols;
+							int row = procNo % rows;
+							String filename = "C:\\time" + t + "\\proc"
+									+ String.format("%03d%02d", procNo, t)
+									+ "2.res";
+							try (BufferedReader br = new BufferedReader(
+									new FileReader(filename))) {
+
+								for (int x = 0; x < threeLoc; ++x) {
+									int zz = level * oneLoc + x / twoLoc;
+									int yy = col * oneLoc + (x / oneLoc)
+											% oneLoc;
+									int xx = row * oneLoc + x % oneLoc;
+									if ((line = br.readLine()) != null) {
+										String[] values = line.split(v);
+										double e = Double
+												.parseDouble(values[1]);
+										minMax(e);
+										particles[zz][yy][xx] = e;
+									}
+								}
+							} catch (FileNotFoundException e) {
+								//
+								e.printStackTrace();
+							} catch (IOException e) {
+								//
+								e.printStackTrace();
+							}
+						}
+					});
+
+				}
+				taskExecutor.shutdown();
+				try {
+					taskExecutor.awaitTermination(2 * howManyFiles,
+							TimeUnit.SECONDS);
+				} catch (InterruptedException e) {
+					//
+					e.printStackTrace();
+				}
+				time = (System.nanoTime() - start) / 1000000000.0
+						/ (howManyFiles + 0.0);
+				System.out.println("Threads: " + threads + " 1x for: " + time
+						+ "s");
+				waitToRunNextTest();
 			}
 		}
 	}
 
 	private void withoutCalculatingCoords() {
 		System.out.println("Without calculating coords");
-		String line;
 		String v = Parameters.getValueSpacer();
 		Random rnd = new Random(12345);
 
 		int times[] = new int[] { 10, 80 };
-		int rows = 4, cols = 4, oneLoc = 96, perLev = rows * cols;
+		int oneLoc = 96;
 
-		int x, y, z, xx = 0, yy = 0, zz = 0;
 		int twoLoc = oneLoc * oneLoc;
 		int threeLoc = twoLoc * oneLoc;
 		double[][][] particles = new double[oneLoc * 4][oneLoc * 4][oneLoc * 4];
 		long start;
+		double time;
 		for (int oo = 0; oo < howManyTimesExperiment; ++oo) {
-			start = System.nanoTime();
-			for (int o = 0; o < howManyFiles; ++o) {
+			for (int threads = 1; threads < maxThreads; ++threads) {
+				System.out.println();
+				taskExecutor = Executors.newFixedThreadPool(threads);
+				start = System.nanoTime();
+				for (int o = 0; o < howManyFiles; ++o) {
+					taskExecutor.submit(new Runnable() {
+						@Override
+						public void run() {
+							String line;
+							int x, y, z;
+							int t = rnd.nextBoolean() ? times[0] : times[1];
+							int procNo = rnd.nextInt(64);
+							String filename = "C:\\time" + t + "\\proc"
+									+ String.format("%03d%02d", procNo, t)
+									+ "2.res";
 
+							try (BufferedReader br = new BufferedReader(
+									new FileReader(filename))) {
+								for (z = 0; z < oneLoc; ++z) {
+									for (y = 0; y < oneLoc; ++y) {
+										for (x = 0; x < oneLoc; ++x) {
+
+											if ((line = br.readLine()) != null) {
+												String[] values = line.split(v);
+												double e = Double
+														.parseDouble(values[1]);
+												minMax(e);
+												particles[0][0][0] = e;
+											}
+										}
+									}
+								}
+							} catch (FileNotFoundException e) {
+								//
+								e.printStackTrace();
+							} catch (IOException e) {
+								//
+								e.printStackTrace();
+							}
+						}
+
+					});
+
+				}
+				taskExecutor.shutdown();
+				try {
+					taskExecutor.awaitTermination(2 * howManyFiles,
+							TimeUnit.SECONDS);
+				} catch (InterruptedException e) {
+
+					e.printStackTrace();
+				}
+				time = (System.nanoTime() - start) / 1000000000.0
+						/ (howManyFiles + 0.0);
+				System.out.println("Threads: " + threads + " 3x for: " + time
+						+ "s");
+				waitToRunNextTest();
+			}
+
+			System.out.println();
+			for (int threads = 1; threads < maxThreads; ++threads) {
+
+				start = System.nanoTime();
+				taskExecutor = Executors.newFixedThreadPool(threads);
+				for (int i = 0; i < howManyFiles; ++i) {
+					taskExecutor.submit(new Runnable() {
+						@Override
+						public void run() {
+							String line;
+							int x;
+							int t = rnd.nextBoolean() ? times[0] : times[1];
+							int procNo = rnd.nextInt(64);
+							String filename = "C:\\time" + t + "\\proc"
+									+ String.format("%03d%02d", procNo, t)
+									+ "2.res";
+							try (BufferedReader br = new BufferedReader(
+									new FileReader(filename))) {
+								for (x = 0; x < threeLoc; ++x) {
+									if ((line = br.readLine()) != null) {
+										String[] values = line.split(v);
+										double e = Double
+												.parseDouble(values[1]);
+										minMax(e);
+										particles[0][0][0] = e;
+									}
+								}
+							} catch (FileNotFoundException e) {
+								//
+								e.printStackTrace();
+							} catch (IOException e) {
+								//
+								e.printStackTrace();
+							}
+						}
+					});
+
+				}
+				taskExecutor.shutdown();
+				try {
+					taskExecutor.awaitTermination(2 * howManyFiles,
+							TimeUnit.SECONDS);
+				} catch (InterruptedException e) {
+					//
+					e.printStackTrace();
+				}
+				time = (System.nanoTime() - start) / 1000000000.0
+						/ (howManyFiles + 0.0);
+				System.out.println("Threads: " + threads + " 1x for: " + time
+						+ "s");
+				waitToRunNextTest();
 			}
 		}
 	}

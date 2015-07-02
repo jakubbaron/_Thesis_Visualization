@@ -17,4 +17,12 @@ public abstract class FileTester implements IFileTester {
 		this.howManyFiles = files;
 		this.howManyTimesExperiment = experiment;
 	}
+
+	protected void waitToRunNextTest() {
+		try {
+			Thread.sleep(120000); // 1000 milliseconds is one second.
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+	}
 }

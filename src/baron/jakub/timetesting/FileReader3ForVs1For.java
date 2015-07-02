@@ -69,6 +69,8 @@ public class FileReader3ForVs1For extends FileTester {
 					/ (howManyFiles + 0.0);
 			System.out.println("3x for: " + time + "s");
 
+			waitToRunNextTest();
+			
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
 				int t = rnd.nextBoolean() ? times[0] : times[1];
@@ -104,6 +106,7 @@ public class FileReader3ForVs1For extends FileTester {
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
 			System.out.println("1x for: " + time + "s");
+			waitToRunNextTest();
 		}
 	}
 
@@ -161,6 +164,8 @@ public class FileReader3ForVs1For extends FileTester {
 					/ (howManyFiles + 0.0);
 			System.out.println("3x for: " + time + "s");
 
+			waitToRunNextTest();
+			
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
 				int t = rnd.nextBoolean() ? times[0] : times[1];
@@ -196,6 +201,7 @@ public class FileReader3ForVs1For extends FileTester {
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
 			System.out.println("1x for: " + time + "s");
+			waitToRunNextTest();
 		}
 	}
 
@@ -246,6 +252,8 @@ public class FileReader3ForVs1For extends FileTester {
 					/ (howManyFiles + 0.0);
 			System.out.println("3x for: " + time + "s");
 
+			waitToRunNextTest();
+			
 			start = System.nanoTime();
 			for (int o = 0; o < howManyFiles; ++o) {
 				int t = rnd.nextBoolean() ? times[0] : times[1];
@@ -275,6 +283,7 @@ public class FileReader3ForVs1For extends FileTester {
 			time = (System.nanoTime() - start) / 1000000000.0
 					/ (howManyFiles + 0.0);
 			System.out.println("1x for: " + time + "s");
+			waitToRunNextTest();
 		}
 	}
 
