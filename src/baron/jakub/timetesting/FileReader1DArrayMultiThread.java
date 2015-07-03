@@ -97,7 +97,10 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println(oo + " Threads: " + threads + " 3x for: " + String.format("%1.4f", time) + "s");
+
+				System.out.println(oo + " Threads: " + threads + " 3x for: "
+						+ String.format("%1.4f", time) + "s "
+						+ getResourcesUsage());
 				waitToRunNextTest();
 			}
 			System.out.println();
@@ -151,7 +154,9 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println(oo + " Threads: " + threads + " 1x for: " + String.format("%1.4f", time) + "s");
+				System.out.println(oo + " Threads: " + threads + " 1x for: "
+						+ String.format("%1.4f", time) + "s "
+						+ getResourcesUsage());
 				waitToRunNextTest();
 			}
 		}
@@ -231,7 +236,9 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println(oo + " Threads: " + threads + " 3x for: " + String.format("%1.4f", time) + "s");
+				System.out.println(oo + " Threads: " + threads + " 3x for: "
+						+ String.format("%1.4f", time) + "s "
+						+ getResourcesUsage());
 				waitToRunNextTest();
 			}
 			System.out.println();
@@ -285,7 +292,9 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println(oo + " Threads: " + threads + " 1x for: " + String.format("%1.4f", time) + "s");
+				System.out.println(oo + " Threads: " + threads + " 1x for: "
+						+ String.format("%1.4f", time) + "s "
+						+ getResourcesUsage());
 				waitToRunNextTest();
 			}
 		}
@@ -356,7 +365,9 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println(oo + " Threads: " + threads + " 3x for: " + String.format("%1.4f", time) + "s");
+				System.out.println(oo + " Threads: " + threads + " 3x for: "
+						+ String.format("%1.4f", time) + "s "
+						+ getResourcesUsage());
 				waitToRunNextTest();
 			}
 			System.out.println();
@@ -409,7 +420,9 @@ public class FileReader1DArrayMultiThread extends FileTester {
 				}
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
-				System.out.println(oo + " Threads: " + threads + " 1x for: " + String.format("%1.4f", time) + "s");
+				System.out.println(oo + " Threads: " + threads + " 1x for: "
+						+ String.format("%1.4f", time) + "s "
+						+ getResourcesUsage());
 				waitToRunNextTest();
 			}
 		}
@@ -423,10 +436,11 @@ public class FileReader1DArrayMultiThread extends FileTester {
 	}
 
 	public static void main(String[] args) {
-//		Parameters.loadProperties("config2015-06-18.properties");
-//		FileReader1DArrayMultiThread a = new FileReader1DArrayMultiThread(100,
-//				1);
-//		a.runTests();
+		// Parameters.loadProperties("config2015-06-18.properties");
+		// FileReader1DArrayMultiThread a = new
+		// FileReader1DArrayMultiThread(100,
+		// 1);
+		// a.runTests();
 	}
 
 }

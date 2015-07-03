@@ -95,7 +95,7 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
 				System.out.println(oo + " Threads: " + threads + " 3x for: "
-						+ String.format("%1.4f", time) + "s");
+						+ String.format("%1.4f", time) + "s " + getResourcesUsage());
 				waitToRunNextTest();
 			}
 
@@ -156,7 +156,7 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
 				System.out.println(oo + " Threads: " + threads + " 1x for: "
-						+ String.format("%1.4f", time) + "s");
+						+ String.format("%1.4f", time) + "s " + getResourcesUsage());
 				waitToRunNextTest();
 			}
 		}
@@ -234,7 +234,7 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
 				System.out.println(oo + " Threads: " + threads + " 3x for: "
-						+ String.format("%1.4f", time) + "s");
+						+ String.format("%1.4f", time) + "s " + getResourcesUsage());
 				waitToRunNextTest();
 			}
 
@@ -295,7 +295,7 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
 				System.out.println("Threads: " + threads + " 1x for: "
-						+ String.format("%1.4f", time) + "s");
+						+ String.format("%1.4f", time) + "s " + getResourcesUsage());
 				waitToRunNextTest();
 			}
 		}
@@ -369,7 +369,7 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
 				System.out.println(oo + " Threads: " + threads + " 3x for: "
-						+ String.format("%1.4f", time) + "s");
+						+ String.format("%1.4f", time) + "s " + getResourcesUsage());
 				waitToRunNextTest();
 			}
 
@@ -422,7 +422,7 @@ public class FileReader3ForVs1ForMultiThread extends FileTester {
 				time = (System.nanoTime() - start) / 1000000000.0
 						/ (howManyFiles + 0.0);
 				System.out.println(oo + " Threads: " + threads + " 1x for: "
-						+ String.format("%1.4f", time) + "s");
+						+ String.format("%1.4f", time) + "s " + getResourcesUsage());
 				waitToRunNextTest();
 			}
 		}

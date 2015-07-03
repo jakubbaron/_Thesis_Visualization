@@ -7,8 +7,19 @@ import java.awt.Container;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Hashtable;
 
@@ -30,6 +41,7 @@ import org.jzy3d.global.Settings;
 
 import baron.jakub.controller.ViewModifier;
 import baron.jakub.controller.Loaders.*;
+import baron.jakub.model.Filter;
 import baron.jakub.model.Parameters;
 
 public class MainView extends JFrame {
@@ -45,9 +57,10 @@ public class MainView extends JFrame {
 	private Hashtable<String, IDataLoader> hdl;
 	private IDataLoader dl;
 	private PropertyChangeListener dlPCL;
+	private PrintWriter writer;
+	private long lastTime;
 
 	private void addLogsWindow() {
-		// TODO Auto-generated method stub
 		logs = new JTextPane();
 		logs.setEditable(false);
 		DefaultCaret caret = (DefaultCaret) logs.getCaret();
@@ -102,7 +115,7 @@ public class MainView extends JFrame {
 		this.hdl = new Hashtable<String, IDataLoader>();
 
 		for (String i : this.vm.getAvailableSeries()) {
-			hdl.put(i, new OptimizedOneForDataLoader(vm, i));
+			hdl.put(i, new OptimizedDataLoader(vm, i));
 		}
 		this.dl = hdl.get(vm.getSelectedTime());
 
@@ -126,7 +139,90 @@ public class MainView extends JFrame {
 		setLocation(10, 10);
 
 		setSize(new Dimension(vm.getWidth(), vm.getHeight()));
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.addWindowListener(new WindowListener() {
+
+			@Override
+			public void windowActivated(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowClosed(WindowEvent arg0) {
+				System.exit(0);
+			}
+
+			@Override
+			public void windowClosing(WindowEvent arg0) {
+				if (writer != null) {
+					writer.flush();
+					writer.close();
+				}
+				MainView.this.dispose();
+
+			}
+
+			@Override
+			public void windowDeactivated(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowDeiconified(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowIconified(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowOpened(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+		});
+		// this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		openFileToSaveLogs();
+		lastTime = System.currentTimeMillis();
+	}
+
+	private void openFileToSaveLogs() {
+		DateFormat df = new SimpleDateFormat("yyy-MM-dd");
+		Calendar c = Calendar.getInstance();
+		String filename = "logs" + df.format(c.getTime()) + ".logs";
+		File file = new File(filename);
+		try {
+			writer = new PrintWriter(new BufferedWriter(new FileWriter(file,
+					true)));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void addLogToFile(String log) {
+		if (writer != null) {
+			writer.println(log);
+			writer.println(getResourcesUsage());
+		}
+	}
+
+	private String getResourcesUsage() {
+		Runtime runtime = Runtime.getRuntime();
+
+		NumberFormat format = NumberFormat.getInstance();
+
+		StringBuilder sb = new StringBuilder();
+		long allocatedMemory = runtime.totalMemory();
+		sb.append("allocated memory: " + format.format(allocatedMemory / 1024)
+				+ "\t");
+		return sb.toString();
 	}
 
 	private GridBagConstraints getGraphGBC() {
@@ -255,6 +351,7 @@ public class MainView extends JFrame {
 		String text = Parameters.getDateFormat().format(date) + ": " + string;
 		text = logs.getText().equals("") ? text : "\n" + text;
 		addText(text, color);
+		addLogToFile(text);
 	}
 
 	private void addText(String text, Color color) {
@@ -272,6 +369,24 @@ public class MainView extends JFrame {
 
 	public void updateFPS(double fps) {
 		cpv.updateFPS(fps);
+		this.logFPS(fps);
+
+	}
+
+	private void logFPS(double fps) {
+		if (Math.abs(lastTime - System.currentTimeMillis()) >= 1000) {
+			double[] vals = Filter.getValues();
+			if (vals[0] == Double.MIN_VALUE) {
+				vals = null;
+			}
+			if (vals == null)
+				addLogToFile(String.format("FPS - %.3f", fps));
+			else
+				addLogToFile(String.format("FPS - %.3f [%.3f , %.3f]", fps,
+						vals[0], vals[1]));
+			lastTime = System.currentTimeMillis();
+		}
+
 	}
 
 	@SuppressWarnings("unchecked")
