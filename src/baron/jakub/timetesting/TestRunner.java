@@ -10,8 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import com.oracle.xmlns.internal.webservices.jaxws_databinding.ExistingAnnotationsType;
-
 import baron.jakub.model.Parameters;
 
 public class TestRunner {
@@ -38,7 +36,6 @@ public class TestRunner {
 			out = new PrintStream(new FileOutputStream(file,true));
 			System.setOut(out);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.exit(0);
 		}

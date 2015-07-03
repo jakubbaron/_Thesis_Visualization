@@ -213,15 +213,15 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		int counter = 0;
 		for (int i = Filter.getxCoords()[0]; i <= Filter.getxCoords()[1]; i += freq) {
 			float tickAnchor = base + (i + 0.0f) / divider;
-			gl2.glVertex3d(tickAnchor, b, b);
+			gl2.glVertex3d(tickAnchor, b, -b);
 			if (tens) {
 				if (counter % freq != 0)
-					gl2.glVertex3d(tickAnchor, b, b - tickLength);
+					gl2.glVertex3d(tickAnchor, b, -b + tickLength);
 				else
 					gl2.glVertex3d(tickAnchor, b, -b);
 				++counter;
 			} else
-				gl2.glVertex3d(tickAnchor, b, b - tickLength);
+				gl2.glVertex3d(tickAnchor, b, -b + tickLength);
 		}
 		float tickAnchor = base + (Filter.getxCoords()[1] + 0.0f) / divider;
 		gl2.glVertex3d(tickAnchor, b, b);
