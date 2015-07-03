@@ -196,9 +196,13 @@ public class MainView extends JFrame {
 	private void openFileToSaveLogs() {
 		DateFormat df = new SimpleDateFormat("yyy-MM-dd");
 		Calendar c = Calendar.getInstance();
-		String filename = "logs" + df.format(c.getTime()) + ".logs";
+		String filePath = new File("").getAbsolutePath();
+		String filename = filePath + "\\logs\\logs" + df.format(c.getTime())
+				+ ".logs";
 		File file = new File(filename);
 		try {
+			if (!file.exists())
+				file.createNewFile();
 			writer = new PrintWriter(new BufferedWriter(new FileWriter(file,
 					true)));
 		} catch (IOException e) {
