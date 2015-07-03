@@ -49,6 +49,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private double[][][] particles;
 	private float positions[];
 	private double scale;
+	private Color labelColor;
 
 	private float tickLength = -0.015f;
 	private ViewModifier vm;
@@ -59,7 +60,8 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		this.vm = vm;
 		freq = vm.getTensTicksFrequency();
 		divider = vm.getCubeSize() / 2f;
-
+		labelColor = Color.green;
+		
 		mouseCapturer = new MouseCapturer();
 		mouseCapturer.setBasicZoom(5);
 		mouseCapturer.setZoomIncreasing(0.2f);
@@ -197,14 +199,14 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 				.getMaxlocal()) {
 			float tickAnchor = base + (i + 0.0f) / divider;
 			tr.begin3DRendering();
-			tr.setColor(Color.GREEN);
+			tr.setColor(labelColor);
 			tr.draw3D(Integer.toString(i + 1), tickAnchor, b, -b, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getxCoords()[1] + 1;
 		float tickAnchor = base + (i + 0.0f) / divider;
 		tr.begin3DRendering();
-		tr.setColor(Color.GREEN);
+		tr.setColor(labelColor);
 		tr.draw3D(Integer.toString(i), tickAnchor, b, -b, fontRatio);
 		tr.end3DRendering();
 	}
@@ -235,14 +237,14 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 				.getMaxlocal()) {
 			float tickAnchor = -base - (i + 0.0f) / divider;
 			tr.begin3DRendering();
-			tr.setColor(Color.GREEN);
+			tr.setColor(labelColor);
 			tr.draw3D(Integer.toString(i + 1), b, b, tickAnchor, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getyCoords()[1] + 1;
 		float tickAnchor = -base - (i + 0.0f) / divider;
 		tr.begin3DRendering();
-		tr.setColor(Color.GREEN);
+		tr.setColor(labelColor);
 		tr.draw3D(Integer.toString(i), b, b, tickAnchor, fontRatio);
 		tr.end3DRendering();
 
@@ -274,14 +276,14 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 				.getMaxlocal()) {
 			float tickAnchor = base + (i + 0.0f) / divider;
 			tr.begin3DRendering();
-			tr.setColor(Color.GREEN);
+			tr.setColor(labelColor);
 			tr.draw3D(Integer.toString(i + 1), b, tickAnchor, -b, fontRatio);
 			tr.end3DRendering();
 		}
 		i = Filter.getzCoords()[1] + 1;
 		float tickAnchor = base + (i + 0.0f) / divider;
 		tr.begin3DRendering();
-		tr.setColor(Color.GREEN);
+		tr.setColor(labelColor);
 		tr.draw3D(Integer.toString(i), b, tickAnchor, -b, fontRatio);
 		tr.end3DRendering();
 	}
