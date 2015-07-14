@@ -39,7 +39,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 	protected int[] axisVertexBufferIndices = new int[] { -1 };
 	private float base = -0.5f;
 
-	private float distance = 30f;
+	private float distance = 3f;
 	private float divider = 384f;
 	private IDataLoader dl;
 	private Color labelColor;
@@ -76,7 +76,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		freq = vm.getTensTicksFrequency();
 		divider = vm.getCubeSize();
 		mouseCapturer = new MouseCapturer();
-		mouseCapturer.setBasicZoom(5);
+		mouseCapturer.setBasicZoom(distance);
 		mouseCapturer.setZoomIncreasing(0.2f);
 		addGLEventListener(this);
 		addMouseListener(mouseCapturer);
@@ -99,6 +99,7 @@ public class VisualizationOpenGLImproved extends GLCanvas implements
 		int z = 0, y = 0, x = 0;
 		double[] valueLimits = Filter.getValues();
 		int correction = 0;
+
 		try {
 //			for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1] && z<particles.length
 //					; ++z) {

@@ -22,7 +22,7 @@ public abstract class FileTester implements IFileTester {
 
 	protected void waitToRunNextTest() {
 		try {
-			Thread.sleep(90000); // 1000 milliseconds is one second.
+			Thread.sleep(30000); // 1000 milliseconds is one second.
 		} catch (InterruptedException ex) {
 			Thread.currentThread().interrupt();
 		}

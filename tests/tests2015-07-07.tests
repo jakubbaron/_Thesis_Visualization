@@ -1,0 +1,72 @@
+sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]]Files: 504 experiments: 3
+
+FileReader3ForVs1ForMultiThread
+With calculating coords, initializing vars outside loop
+0 Threads: 1 3x for: 1,5999s allocated memory: 794 624	
+sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]]Files: 54 experiments: 3
+
+FileReader3ForVs1ForMultiThread
+With calculating coords, initializing vars outside loop
+0 Threads: 1 3x for: 1,3458s allocated memory: 859 648	
+0 Threads: 2 3x for: 0,7485s allocated memory: 854 528	
+0 Threads: 3 3x for: 0,5713s allocated memory: 898 560	
+0 Threads: 4 3x for: 0,4944s allocated memory: 864 256	
+0 Threads: 5 3x for: 0,4277s allocated memory: 920 064	
+0 Threads: 6 3x for: 0,5244s allocated memory: 905 216	
+0 Threads: 7 3x for: 0,4459s allocated memory: 914 432	
+
+0 Threads: 1 1x for: 1,4739s allocated memory: 787 456	
+0 Threads: 2 1x for: 0,8412s allocated memory: 821 760	
+0 Threads: 3 1x for: 0,6455s allocated memory: 860 672	
+0 Threads: 4 1x for: 0,5791s allocated memory: 870 400	
+0 Threads: 5 1x for: 0,4953s allocated memory: 924 160	
+0 Threads: 6 1x for: 0,4972s allocated memory: 979 456	
+0 Threads: 7 1x for: 0,4482s allocated memory: 959 488	
+
+1 Threads: 1 3x for: 1,5234s allocated memory: 786 432	
+1 Threads: 2 3x for: 0,7556s allocated memory: 848 384	
+1 Threads: 3 3x for: 0,5796s allocated memory: 875 008	
+1 Threads: 4 3x for: 0,4993s allocated memory: 850 432	
+1 Threads: 5 3x for: 0,4470s allocated memory: 931 328	
+1 Threads: 6 3x for: 0,4317s allocated memory: 939 520	
+1 Threads: 7 3x for: 0,4284s allocated memory: 958 464	
+
+1 Threads: 1 1x for: 1,4116s allocated memory: 786 944	
+1 Threads: 2 1x for: 0,7702s allocated memory: 827 904	
+1 Threads: 3 1x for: 0,5648s allocated memory: 884 736	
+1 Threads: 4 1x for: 0,5311s allocated memory: 868 352	
+1 Threads: 5 1x for: 0,4653s allocated memory: 944 640	
+1 Threads: 6 1x for: 0,4209s allocated memory: 925 184	
+1 Threads: 7 1x for: 0,4214s allocated memory: 960 000
+	
+2 Threads: 1 3x for: 1,4004s allocated memory: 777 216	
+2 Threads: 2 3x for: 0,7623s allocated memory: 827 392	
+2 Threads: 3 3x for: 0,5739s allocated memory: 868 864	
+2 Threads: 4 3x for: 0,5113s allocated memory: 885 248	
+2 Threads: 5 3x for: 0,4631s allocated memory: 956 416	
+2 Threads: 6 3x for: 0,4448s allocated memory: 987 136	
+2 Threads: 7 3x for: 0,4186s allocated memory: 966 144	
+
+2 Threads: 1 1x for: 1,4070s allocated memory: 784 384	
+2 Threads: 2 1x for: 0,7686s allocated memory: 843 776	
+2 Threads: 3 1x for: 0,5459s allocated memory: 864 768	
+2 Threads: 4 1x for: 0,4597s allocated memory: 918 016	
+2 Threads: 5 1x for: 0,4047s allocated memory: 921 088	
+2 Threads: 6 1x for: 0,3896s allocated memory: 982 528	
+2 Threads: 7 1x for: 0,3841s allocated memory: 934 400	
+
+With calculating coords, vars initialized in loops
+0 Threads: 1 3x for: 1,3810s allocated memory: 1 224 704	
+0 Threads: 2 3x for: 0,7734s allocated memory: 1 367 552	
+0 Threads: 3 3x for: 0,5941s allocated memory: 1 517 056	
+0 Threads: 4 3x for: 0,5220s allocated memory: 1 663 488	
+0 Threads: 5 3x for: 0,4522s allocated memory: 1 797 120	
+0 Threads: 6 3x for: 0,3921s allocated memory: 1 923 584	
+0 Threads: 7 3x for: 0,4022s allocated memory: 2 050 560	
+
+Threads: 1 1x for: 1,3993s allocated memory: 2 093 056	
+Threads: 2 1x for: 0,6868s allocated memory: 2 116 608	
+Threads: 3 1x for: 0,5258s allocated memory: 2 116 608	
+Threads: 4 1x for: 0,4860s allocated memory: 2 116 608	
+Threads: 5 1x for: 0,4266s allocated memory: 2 116 608	
+Threads: 6 1x for: 0,4012s allocated memory: 2 116 608	

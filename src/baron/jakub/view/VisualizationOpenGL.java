@@ -31,7 +31,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private FPSAnimator animator;
 	private float base = -1f;
 	/** Angle to rotate the cube */
-	private float distance = 30f;
+	private float distance = 3f;
 	private float divider;
 	private IDataLoader dl;
 	private float fontRatio = 0.01f;
@@ -61,9 +61,9 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		freq = vm.getTensTicksFrequency();
 		divider = vm.getCubeSize() / 2f;
 		labelColor = Color.green;
-		
+
 		mouseCapturer = new MouseCapturer();
-		mouseCapturer.setBasicZoom(5);
+		mouseCapturer.setBasicZoom(distance);
 		mouseCapturer.setZoomIncreasing(0.2f);
 		mouseCapturer.setActive(false);
 		addGLEventListener(this);
@@ -81,12 +81,13 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private void addData(GL2 gl) {
 		particles = (dl).getParticles();
 		double[] valueLimits = Filter.getValues();
-		for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]&& z<particles.length
-				; ++z) {
-			for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1] && y<particles[z].length
-					; ++y) {
-				for (int x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1] && x<particles[z][y].length
-						; ++x) {
+		int skipper = (int) (Math.max(Math.abs(distance)-4.4f, 0.4f) / 0.4f);
+		for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]
+				&& z < particles.length; z += skipper) {
+			for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]
+					&& y < particles[z].length; y += skipper) {
+				for (int x = Filter.getxCoords()[0]; x <= Filter.getxCoords()[1]
+						&& x < particles[z][y].length; x += skipper) {
 					double par = particles[z][y][x];
 					if (par != Double.MIN_VALUE && par >= valueLimits[0]
 							&& par <= valueLimits[1]) {
@@ -94,8 +95,8 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 								getMax());
 						gl.glColor3d(val, 0, 1.0 - val);
 						gl.glVertex3d((base + (float) x / divider),
-								(base + (z + 0.0) / divider), (-base - (y + 0.0)
-										/ divider));
+								(base + (z + 0.0) / divider),
+								(-base - (y + 0.0) / divider));
 					}
 				}
 			}
@@ -113,12 +114,13 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		if (!animator.isAnimating()) {
 			return;
 		}
-
+		
 		long startTime = System.nanoTime();
 		setMinMaxScale();
 		vm.updateMinMax();
 
 		final GL2 gl = drawable.getGL().getGL2();
+		
 		// Clear screen
 		gl.glClear(GL2.GL_COLOR_BUFFER_BIT | GL2.GL_DEPTH_BUFFER_BIT);
 		gl.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
@@ -130,10 +132,9 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		distance = mouseCapturer.getZoom();
 		translate(gl);
 		rotate(gl);
-		
-
+		float pxsize = distance <= 0.5 && distance >= -0.5 ? 5f:distance;
+		gl.glPointSize(Math.max(Math.abs(pxsize),2f));
 		gl.glBegin(GL2.GL_POINTS);// static field
-
 		addData(gl);
 
 		gl.glEnd();
@@ -349,7 +350,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		gl.glEnable(GL.GL_DEPTH_TEST);
 		gl.glDepthFunc(GL.GL_LEQUAL);
 
-//		gl.glShadeModel(GL2.GL_SMOOTH);
+		// gl.glShadeModel(GL2.GL_SMOOTH);
 
 		gl.glClearColor(0f, 0f, 0f, 0f);
 
@@ -367,7 +368,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	}
 
 	private void rotate(GL2 gl2) {
-//		gl2.glLoadIdentity();
+		// gl2.glLoadIdentity();
 		gl2.glRotatef(-angles[0], 0f, 1f, 0f);
 		gl2.glRotatef(angles[1], 1f, 0f, 0f);
 		gl2.glRotatef(angles[2], 0f, 0f, 1f);
