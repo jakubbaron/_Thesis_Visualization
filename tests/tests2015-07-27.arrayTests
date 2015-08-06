@@ -1,0 +1,31 @@
+
+
+Mon Jul 27 12:18:54 BST 2015
+Sizes: [10, 100, 200, 384, 500]Experiments: 10
+
+ArraysWriteReadLinear size: 10
+Writing
+1D: (10;10) 1.337941E-4
+3D: (10;10) 4.84225E-5
+Reading
+1D: (10;10) 1.69351E-5
+3D: (10;10) 2.7125400000000003E-5
+
+ArraysWriteReadLinear size: 100
+Writing
+1D: (100;100) 0.0211341119
+3D: (100;100) 0.0212791593
+Reading
+1D: (100;100) 0.0015013894999999998
+3D: (100;100) 8.4052E-4
+
+ArraysWriteReadLinear size: 200
+Writing
+1D: (200;200) 0.1663722342
+3D: (200;200) 0.1711986446
+Reading
+1D: (200;200) 2.0527E-6
+3D: (200;200) 2.392165E-4
+
+ArraysWriteReadLinear size: 384
+Writing

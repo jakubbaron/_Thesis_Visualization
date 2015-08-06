@@ -1,0 +1,142 @@
+sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]]Files: 54 experiments: 3
+
+FileReader3ForVs1ForMultiThread
+With calculating coords, initializing vars outside loop
+0 Threads: 1 3x for: 1,2358s allocated memory: 894 464	
+0 Threads: 2 3x for: 0,6462s allocated memory: 922 112	
+0 Threads: 3 3x for: 0,4805s allocated memory: 945 152	
+0 Threads: 4 3x for: 0,3942s allocated memory: 903 680	
+0 Threads: 5 3x for: 0,3743s allocated memory: 936 448	
+0 Threads: 6 3x for: 0,3643s allocated memory: 952 832	
+0 Threads: 7 3x for: 0,3574s allocated memory: 964 096	
+
+0 Threads: 1 1x for: 1,2194s allocated memory: 819 200	
+0 Threads: 2 1x for: 0,6373s allocated memory: 877 056	
+0 Threads: 3 1x for: 0,5362s allocated memory: 914 432	
+0 Threads: 4 1x for: 0,4867s allocated memory: 925 696	
+0 Threads: 5 1x for: 0,3713s allocated memory: 950 272	
+0 Threads: 6 1x for: 0,3645s allocated memory: 943 104	
+0 Threads: 7 1x for: 0,3597s allocated memory: 943 616	
+1 Threads: 1 3x for: 1,2016s allocated memory: 809 472	
+1 Threads: 2 3x for: 0,6299s allocated memory: 878 592	
+1 Threads: 3 3x for: 0,4623s allocated memory: 916 992	
+1 Threads: 4 3x for: 0,3818s allocated memory: 910 336	
+1 Threads: 5 3x for: 0,3654s allocated memory: 921 088	
+1 Threads: 6 3x for: 0,3566s allocated memory: 982 016	
+1 Threads: 7 3x for: 0,3528s allocated memory: 960 512	
+
+1 Threads: 1 1x for: 1,2073s allocated memory: 807 424	
+1 Threads: 2 1x for: 0,6392s allocated memory: 870 400	
+1 Threads: 3 1x for: 0,4614s allocated memory: 924 160	
+1 Threads: 4 1x for: 0,3863s allocated memory: 909 824	
+1 Threads: 5 1x for: 0,3668s allocated memory: 950 272	
+1 Threads: 6 1x for: 0,3582s allocated memory: 967 168	
+1 Threads: 7 1x for: 0,3551s allocated memory: 998 912	
+2 Threads: 1 3x for: 1,2055s allocated memory: 814 080	
+2 Threads: 2 3x for: 0,6381s allocated memory: 897 024	
+2 Threads: 3 3x for: 0,4636s allocated memory: 935 936	
+2 Threads: 4 3x for: 0,3826s allocated memory: 903 680	
+2 Threads: 5 3x for: 0,3632s allocated memory: 962 560	
+2 Threads: 6 3x for: 0,3578s allocated memory: 999 936	
+2 Threads: 7 3x for: 0,3533s allocated memory: 973 824	
+
+2 Threads: 1 1x for: 1,2082s allocated memory: 821 760	
+2 Threads: 2 1x for: 0,6327s allocated memory: 892 928	
+2 Threads: 3 1x for: 0,4638s allocated memory: 935 936	
+2 Threads: 4 1x for: 0,3860s allocated memory: 919 552	
+2 Threads: 5 1x for: 0,3654s allocated memory: 954 368	
+2 Threads: 6 1x for: 0,3578s allocated memory: 990 208	
+2 Threads: 7 1x for: 0,3546s allocated memory: 999 936	
+With calculating coords, vars initialized in loops
+0 Threads: 1 3x for: 1,1904s allocated memory: 1 292 288	
+0 Threads: 2 3x for: 0,6248s allocated memory: 1 418 240	
+0 Threads: 3 3x for: 0,4519s allocated memory: 1 547 264	
+0 Threads: 4 3x for: 0,3771s allocated memory: 1 671 168	
+0 Threads: 5 3x for: 0,3595s allocated memory: 1 782 272	
+0 Threads: 6 3x for: 0,3529s allocated memory: 1 886 720	
+0 Threads: 7 3x for: 0,3505s allocated memory: 1 989 120	
+
+0 Threads: 1 1x for: 1,1963s allocated memory: 2 025 472	
+0 Threads: 2 1x for: 0,6320s allocated memory: 2 074 112	
+0 Threads: 3 1x for: 0,4625s allocated memory: 2 132 480	
+0 Threads: 4 1x for: 0,3793s allocated memory: 2 202 112	
+0 Threads: 5 1x for: 0,3635s allocated memory: 2 252 288	
+0 Threads: 6 1x for: 0,3545s allocated memory: 2 252 288	
+0 Threads: 7 1x for: 0,3503s allocated memory: 2 252 288	
+1 Threads: 1 3x for: 1,1854s allocated memory: 2 252 288	
+1 Threads: 2 3x for: 0,6245s allocated memory: 2 252 288	
+1 Threads: 3 3x for: 0,4530s allocated memory: 2 252 288	
+1 Threads: 4 3x for: 0,3839s allocated memory: 2 252 288	
+1 Threads: 5 3x for: 0,3599s allocated memory: 2 252 288	
+1 Threads: 6 3x for: 0,3579s allocated memory: 2 252 288	
+1 Threads: 7 3x for: 0,3496s allocated memory: 2 252 288	
+
+1 Threads: 1 1x for: 1,1904s allocated memory: 2 252 288	
+1 Threads: 2 1x for: 0,6240s allocated memory: 2 252 288	
+1 Threads: 3 1x for: 0,4531s allocated memory: 2 252 288	
+1 Threads: 4 1x for: 0,3801s allocated memory: 2 252 288	
+1 Threads: 5 1x for: 0,3585s allocated memory: 2 252 288	
+1 Threads: 6 1x for: 0,3555s allocated memory: 2 252 288	
+1 Threads: 7 1x for: 0,3492s allocated memory: 2 252 288	
+2 Threads: 1 3x for: 1,1859s allocated memory: 2 252 288	
+2 Threads: 2 3x for: 0,6219s allocated memory: 2 252 288	
+2 Threads: 3 3x for: 0,4593s allocated memory: 2 252 288	
+2 Threads: 4 3x for: 0,3789s allocated memory: 2 252 288	
+2 Threads: 5 3x for: 0,3586s allocated memory: 2 252 288	
+2 Threads: 6 3x for: 0,3496s allocated memory: 2 252 288	
+2 Threads: 7 3x for: 0,3485s allocated memory: 2 252 288	
+
+2 Threads: 1 1x for: 1,1911s allocated memory: 2 252 288	
+2 Threads: 2 1x for: 0,6264s allocated memory: 2 252 288	
+2 Threads: 3 1x for: 0,4502s allocated memory: 2 252 288	
+2 Threads: 4 1x for: 0,3770s allocated memory: 2 252 288	
+2 Threads: 5 1x for: 0,3635s allocated memory: 2 252 288	
+2 Threads: 6 1x for: 0,3507s allocated memory: 2 252 288	
+2 Threads: 7 1x for: 0,3506s allocated memory: 2 252 288	
+Without calculating coords
+0 Threads: 1 3x for: 1,1927s allocated memory: 2 075 648	
+0 Threads: 2 3x for: 0,6368s allocated memory: 2 143 232	
+0 Threads: 3 3x for: 0,4565s allocated memory: 2 227 200	
+0 Threads: 4 3x for: 0,3877s allocated memory: 2 314 752	
+0 Threads: 5 3x for: 0,3637s allocated memory: 2 382 848	
+0 Threads: 6 3x for: 0,3544s allocated memory: 2 382 848	
+0 Threads: 7 3x for: 0,3516s allocated memory: 2 382 848	
+
+0 Threads: 1 1x for: 1,1852s allocated memory: 2 382 848	
+0 Threads: 2 1x for: 0,6310s allocated memory: 2 382 848	
+0 Threads: 3 1x for: 0,4533s allocated memory: 2 382 848	
+0 Threads: 4 1x for: 0,3922s allocated memory: 2 382 848	
+0 Threads: 5 1x for: 0,3640s allocated memory: 2 382 848	
+0 Threads: 6 1x for: 0,3531s allocated memory: 2 382 848	
+0 Threads: 7 1x for: 0,3491s allocated memory: 2 382 848	
+1 Threads: 1 3x for: 1,1834s allocated memory: 2 382 848	
+1 Threads: 2 3x for: 0,6250s allocated memory: 2 382 848	
+1 Threads: 3 3x for: 0,4589s allocated memory: 2 382 848	
+1 Threads: 4 3x for: 0,3810s allocated memory: 2 382 848	
+1 Threads: 5 3x for: 0,3649s allocated memory: 2 382 848	
+1 Threads: 6 3x for: 0,3500s allocated memory: 2 382 848	
+1 Threads: 7 3x for: 0,3514s allocated memory: 2 382 848	
+
+1 Threads: 1 1x for: 1,1841s allocated memory: 2 382 848	
+1 Threads: 2 1x for: 0,6273s allocated memory: 2 382 848	
+1 Threads: 3 1x for: 0,4569s allocated memory: 2 382 848	
+1 Threads: 4 1x for: 0,3803s allocated memory: 2 382 848	
+1 Threads: 5 1x for: 0,3635s allocated memory: 2 382 848	
+1 Threads: 6 1x for: 0,3535s allocated memory: 2 382 848	
+1 Threads: 7 1x for: 0,3549s allocated memory: 2 382 848	
+2 Threads: 1 3x for: 1,1836s allocated memory: 2 382 848	
+2 Threads: 2 3x for: 0,6249s allocated memory: 2 382 848	
+2 Threads: 3 3x for: 0,4530s allocated memory: 2 382 848	
+2 Threads: 4 3x for: 0,3817s allocated memory: 2 382 848	
+2 Threads: 5 3x for: 0,3608s allocated memory: 2 382 848	
+2 Threads: 6 3x for: 0,3532s allocated memory: 2 382 848	
+2 Threads: 7 3x for: 0,3525s allocated memory: 2 382 848	
+
+2 Threads: 1 1x for: 1,1833s allocated memory: 2 382 848	
+2 Threads: 2 1x for: 0,6298s allocated memory: 2 382 848	
+2 Threads: 3 1x for: 0,4505s allocated memory: 2 382 848	
+2 Threads: 4 1x for: 0,4516s allocated memory: 2 382 848	
+2 Threads: 5 1x for: 0,3585s allocated memory: 2 382 848	
+2 Threads: 6 1x for: 0,3499s allocated memory: 2 382 848	
+2 Threads: 7 1x for: 0,3466s allocated memory: 2 382 848	
+The end

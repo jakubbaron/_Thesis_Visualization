@@ -1,0 +1,260 @@
+
+
+Mon Aug 03 15:50:58 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadRandom size: 10
+Writing
+1D: (1000) 2.0135090000000002E-4
+3D: (10;10;10) 1.1246030000000001E-4
+Reading
+1D: (1000) 8.68745E-5
+3D: (10;10;10) 9.21529E-5
+The end
+
+
+Mon Aug 03 15:51:09 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadRandom size: 10
+Writing
+1D: (1000) 2.21695E-4
+3D: (10;10;10) 1.100777E-4
+Reading
+1D: (1000) 8.54083E-5
+3D: (10;10;10) 9.109E-5
+The end
+
+
+Mon Aug 03 15:51:13 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadRandom size: 10
+Writing
+1D: (1000) 2.221715E-4
+3D: (10;10;10) 1.1077420000000001E-4
+Reading
+1D: (1000) 8.55548E-5
+3D: (10;10;10) 9.2996E-5
+The end
+
+
+Mon Aug 03 15:51:16 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadRandom size: 10
+Writing
+1D: (1000) 2.039168E-4
+3D: (10;10;10) 1.1198379999999999E-4
+Reading
+1D: (1000) 8.496839999999999E-5
+3D: (10;10;10) 9.11999E-5
+The end
+
+
+Mon Aug 03 15:51:35 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadRandom size: 100
+Writing
+1D: (1000000) 0.0608880334
+3D: (100;100;100) 0.0636522923
+Reading
+1D: (1000000) 0.0341481332
+3D: (100;100;100) 0.0391225968
+The end
+
+
+Mon Aug 03 15:51:48 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadRandom size: 100
+Writing
+1D: (1000000) 0.06172624410000001
+3D: (100;100;100) 0.061612830699999996
+Reading
+1D: (1000000) 0.0327325552
+3D: (100;100;100) 0.0388267835
+The end
+
+
+Mon Aug 03 15:51:55 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadRandom size: 100
+Writing
+1D: (1000000) 0.0610624422
+3D: (100;100;100) 0.0628566757
+Reading
+1D: (1000000) 0.0327089121
+3D: (100;100;100) 0.0388517097
+The end
+
+
+Mon Aug 03 15:52:02 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadRandom size: 100
+Writing
+1D: (1000000) 0.06121515079999999
+3D: (100;100;100) 0.0630134164
+Reading
+1D: (1000000) 0.0328495975
+3D: (100;100;100) 0.039092429
+The end
+
+
+Mon Aug 03 15:52:12 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadRandom size: 200
+Writing
+1D: (8000000) 0.4998882728
+3D: (200;200;200) 0.6472008264
+Reading
+1D: (8000000) 0.2497788732
+3D: (200;200;200) 0.4224705498
+The end
+
+
+Mon Aug 03 15:52:36 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadRandom size: 200
+Writing
+1D: (8000000) 0.49704003520000006
+3D: (200;200;200) 0.6338718942
+Reading
+1D: (8000000) 0.2499657817
+3D: (200;200;200) 0.41791982839999997
+The end
+
+
+Mon Aug 03 15:53:06 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadRandom size: 200
+Writing
+1D: (8000000) 0.5021718627
+3D: (200;200;200) 0.6242179737
+Reading
+1D: (8000000) 0.249820771
+3D: (200;200;200) 0.4157420275
+The end
+
+
+Mon Aug 03 15:53:29 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadRandom size: 200
+Writing
+1D: (8000000) 0.5000758778
+3D: (200;200;200) 0.6484794212
+Reading
+1D: (8000000) 0.24993898620000002
+3D: (200;200;200) 0.4243953516
+The end
+
+
+Mon Aug 03 15:53:55 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadRandom size: 384
+Writing
+1D: (56623104) 3.5836449025
+3D: (384;384;384) 7.3272081795
+Reading
+1D: (56623104) 1.8126862808
+3D: (384;384;384) 5.4782491524
+The end
+
+
+Mon Aug 03 15:57:08 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadRandom size: 384
+Writing
+1D: (56623104) 3.582900201
+3D: (384;384;384) 7.3225076088
+Reading
+1D: (56623104) 1.8148695067999998
+3D: (384;384;384) 5.6109521996
+The end
+
+
+Mon Aug 03 16:00:30 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadRandom size: 384
+Writing
+1D: (56623104) 3.6023855666
+3D: (384;384;384) 7.3862380516
+Reading
+1D: (56623104) 1.8079842805
+3D: (384;384;384) 5.4914803233
+The end
+
+
+Mon Aug 03 16:03:53 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadRandom size: 384
+Writing
+1D: (56623104) 3.5826541665000002
+3D: (384;384;384) 7.166885710200001
+Reading
+1D: (56623104) 1.8080620277000001
+3D: (384;384;384) 5.7143525485
+The end
+
+
+Mon Aug 03 16:07:10 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadRandom size: 500
+Writing
+1D: (125000000) 9.3060430934
+3D: (500;500;500) 24.241651524799998
+Reading
+1D: (125000000) 4.0429249878
+3D: (500;500;500) 19.8404256411
+The end
+
+
+Mon Aug 03 16:17:34 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadRandom size: 500
+Writing
+1D: (125000000) 10.030797453
+3D: (500;500;500) 23.716374855
+Reading
+1D: (125000000) 4.0421887537000005
+3D: (500;500;500) 20.3118506727
+The end
+
+
+Mon Aug 03 16:27:53 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadRandom size: 500
+Writing
+1D: (125000000) 9.285422237599999
+3D: (500;500;500) 22.5629558666
+Reading
+1D: (125000000) 3.9216633498999998
+3D: (500;500;500) 17.7251636228
+The end
+
+
+Mon Aug 03 16:37:10 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadRandom size: 500
+Writing
+1D: (125000000) 9.4113294255
+3D: (500;500;500) 21.7869855022
+Reading
+1D: (125000000) 3.9265803738000002
+3D: (500;500;500) 17.2909129997
+The end

@@ -54,6 +54,22 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private float tickLength = -0.015f;
 	private ViewModifier vm;
 
+	private float zoomToPixelSize(float zoom) {
+		float result = 1f;
+		if (vm.isSkipping()) {
+			result = zoom <= 0.5 && zoom >= -0.5 ? 5f : zoom;
+		}
+		return result > 5f ? 5f : result;
+	}
+
+	private int howManyPointsToSkip(float zoom) {
+		int result = 1;
+		if (vm.isSkipping()) {
+			result = (int) (Math.max(Math.abs(zoom) - 4.4f, 0.4f) / 0.4f);
+		}
+		return result > 5 ? 5 : result;
+	}
+
 	public VisualizationOpenGL(IDataLoader dl, GLCapabilities capabilities,
 			ViewModifier vm) {
 		super(capabilities);
@@ -81,7 +97,8 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 	private void addData(GL2 gl) {
 		particles = (dl).getParticles();
 		double[] valueLimits = Filter.getValues();
-		int skipper = (int) (Math.max(Math.abs(distance)-4.4f, 0.4f) / 0.4f);
+		int skipper = howManyPointsToSkip(distance);
+		vm.addLogMessage("Skipping: " + skipper, Color.BLACK);
 		for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]
 				&& z < particles.length; z += skipper) {
 			for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]
@@ -114,13 +131,13 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		if (!animator.isAnimating()) {
 			return;
 		}
-		
+
 		long startTime = System.nanoTime();
 		setMinMaxScale();
 		vm.updateMinMax();
 
 		final GL2 gl = drawable.getGL().getGL2();
-		
+
 		// Clear screen
 		gl.glClear(GL2.GL_COLOR_BUFFER_BIT | GL2.GL_DEPTH_BUFFER_BIT);
 		gl.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
@@ -132,8 +149,8 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		distance = mouseCapturer.getZoom();
 		translate(gl);
 		rotate(gl);
-		float pxsize = distance <= 0.5 && distance >= -0.5 ? 5f:distance;
-		gl.glPointSize(Math.max(Math.abs(pxsize),2f));
+		float pxsize = zoomToPixelSize(distance);
+		gl.glPointSize(Math.max(Math.abs(pxsize), 1f));
 		gl.glBegin(GL2.GL_POINTS);// static field
 		addData(gl);
 

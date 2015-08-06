@@ -1,0 +1,279 @@
+
+
+Mon Aug 03 14:51:32 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadLinear size: 10
+Writing
+1D: (1000) 1.260231E-4
+3D: (10;10;10) 3.84154E-5
+Reading
+1000
+1D: (1000) 1.2389700000000001E-5
+3D: (10;10;10) 1.99775E-5
+The end
+
+
+Mon Aug 03 14:51:33 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadLinear size: 10
+Writing
+1D: (1000) 1.356269E-4
+3D: (10;10;10) 3.81588E-5
+Reading
+1000
+1D: (1000) 1.2243000000000001E-5
+3D: (10;10;10) 1.99774E-5
+The end
+
+
+Mon Aug 03 14:51:33 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadLinear size: 10
+Writing
+1D: (1000) 1.3888920000000002E-4
+3D: (10;10;10) 3.87087E-5
+Reading
+1000
+1D: (1000) 1.21698E-5
+3D: (10;10;10) 1.97942E-5
+The end
+
+
+Mon Aug 03 14:51:34 BST 2015
+Sizes: [10]Experiments: 10
+
+ArraysWriteReadLinear size: 10
+Writing
+1D: (1000) 1.1220379999999998E-4
+3D: (10;10;10) 3.8232099999999996E-5
+Reading
+1000
+1D: (1000) 1.2353099999999999E-5
+3D: (10;10;10) 2.00142E-5
+The end
+
+
+Mon Aug 03 14:51:44 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadLinear size: 100
+Writing
+1D: (1000000) 0.020946397
+3D: (100;100;100) 0.0212523638
+Reading
+1000000
+1D: (1000000) 0.0016390324
+3D: (100;100;100) 8.410699E-4
+The end
+
+
+Mon Aug 03 14:51:52 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadLinear size: 100
+Writing
+1D: (1000000) 0.020983785999999997
+3D: (100;100;100) 0.0207130088
+Reading
+1000000
+1D: (1000000) 0.0015552003
+3D: (100;100;100) 8.148608E-4
+The end
+
+
+Mon Aug 03 14:52:07 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadLinear size: 100
+Writing
+1D: (1000000) 0.0212238456
+3D: (100;100;100) 0.020674923300000002
+Reading
+1000000
+1D: (1000000) 0.0014964409
+3D: (100;100;100) 8.33922E-4
+The end
+
+
+Mon Aug 03 14:52:10 BST 2015
+Sizes: [100]Experiments: 10
+
+ArraysWriteReadLinear size: 100
+Writing
+1D: (1000000) 0.0212116391
+3D: (100;100;100) 0.0214498659
+Reading
+1000000
+1D: (1000000) 0.0015862479
+3D: (100;100;100) 9.783829000000002E-4
+The end
+
+
+Mon Aug 03 14:52:21 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadLinear size: 200
+Writing
+1D: (8000000) 0.1644138922
+3D: (200;200;200) 0.1653319394
+Reading
+8000000
+1D: (8000000) 0.0015093805
+3D: (200;200;200) 0.0014784060999999999
+The end
+
+
+Mon Aug 03 14:52:36 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadLinear size: 200
+Writing
+1D: (8000000) 0.1642005181
+3D: (200;200;200) 0.16553215400000001
+Reading
+8000000
+1D: (8000000) 0.0014863239
+3D: (200;200;200) 0.001458612
+The end
+
+
+Mon Aug 03 14:52:50 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadLinear size: 200
+Writing
+1D: (8000000) 0.166213734
+3D: (200;200;200) 0.1659896198
+Reading
+8000000
+1D: (8000000) 0.0017113545000000002
+3D: (200;200;200) 0.0014384878999999999
+The end
+
+
+Mon Aug 03 14:52:59 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadLinear size: 200
+Writing
+1D: (8000000) 0.166242069
+3D: (200;200;200) 0.1654375818
+Reading
+8000000
+1D: (8000000) 0.0014795424999999999
+3D: (200;200;200) 0.0013263942000000001
+The end
+
+Mon Aug 03 14:53:30 BST 2015
+Sizes: [200]Experiments: 10
+
+ArraysWriteReadLinear size: 200
+Writing
+1D: (8000000) 0.1676708065
+3D: (200;200;200) 0.1676744354
+Reading
+8000000
+1D: (8000000) 0.0016060788
+3D: (200;200;200) 0.0015783669
+The end
+
+
+Mon Aug 03 14:54:16 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadLinear size: 384
+Writing
+1D: (56623104) 1.1705098068
+3D: (384;384;384) 1.1747644582999999
+Reading
+56623104
+1D: (56623104) 0.0015225032
+3D: (384;384;384) 0.005840936
+The end
+
+
+Mon Aug 03 14:54:55 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadLinear size: 384
+Writing
+1D: (56623104) 1.1671506225
+3D: (384;384;384) 1.1741835721
+Reading
+56623104
+1D: (56623104) 0.0015592691
+3D: (384;384;384) 0.0054381609999999995
+The end
+
+
+Mon Aug 03 14:55:27 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadLinear size: 384
+Writing
+1D: (56623104) 1.1694688156
+3D: (384;384;384) 1.1755004723
+Reading
+56623104
+1D: (56623104) 0.0015854414
+3D: (384;384;384) 0.0054899191
+The end
+
+
+Mon Aug 03 14:56:05 BST 2015
+Sizes: [384]Experiments: 10
+
+ArraysWriteReadLinear size: 384
+Writing
+1D: (56623104) 1.1687116144
+3D: (384;384;384) 1.1763419454
+Reading
+56623104
+1D: (56623104) 0.0016360265999999998
+3D: (384;384;384) 0.0057435413
+The end
+
+
+Mon Aug 03 14:56:52 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadLinear size: 500
+Writing
+1D: (125000000) 2.5845111549
+3D: (500;500;500) 2.5944723253
+Reading
+125000000
+1D: (125000000) 0.0015286248
+3D: (500;500;500) 0.0100090797
+The end
+
+
+Mon Aug 03 14:58:12 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadLinear size: 500
+Writing
+1D: (125000000) 2.5903425605
+3D: (500;500;500) 2.5957110751999997
+Reading
+125000000
+1D: (125000000) 0.0015344897999999998
+3D: (500;500;500) 0.0098936136
+The end
+
+
+Mon Aug 03 14:59:19 BST 2015
+Sizes: [500]Experiments: 10
+
+ArraysWriteReadLinear size: 500
+Writing
+1D: (125000000) 2.5868188278
+3D: (500;500;500) 2.6097823629
+Reading
+125000000
+1D: (125000000) 0.0015461097
+3D: (500;500;500) 0.0111604418
+The end

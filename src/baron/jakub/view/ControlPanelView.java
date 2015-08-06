@@ -84,6 +84,8 @@ public class ControlPanelView extends JPanel {
 				Parameters.setTicks(ticksBox.isSelected());
 			} else if (source == tenTicksBox) {
 				Parameters.setTensTicks(tenTicksBox.isSelected());
+			} else if (source == pixelSkippingChkBox) {
+				Parameters.setSkipping(pixelSkippingChkBox.isSelected());
 			}
 		}
 
@@ -113,6 +115,7 @@ public class ControlPanelView extends JPanel {
 	private JButton filterBtn;
 	private JLabel fpsCounterText;
 	private JCheckBox invBox;
+	private JCheckBox pixelSkippingChkBox;
 	private JButton loadBtn;
 	private JTextArea max;
 	private JLabel maxValue;
@@ -164,7 +167,7 @@ public class ControlPanelView extends JPanel {
 
 		settingBtn = new JButton("Settings");
 		settingBtn.addActionListener(bl);
-//		settingBtn.setToolTipText("Unavailable if the procNo <= 0");
+		// settingBtn.setToolTipText("Unavailable if the procNo <= 0");
 		this.add(settingBtn);
 
 		loadBtn = new JButton("Load data");
@@ -202,11 +205,17 @@ public class ControlPanelView extends JPanel {
 		fpsCounterText = new JLabel();
 		updateFPS(0);
 
+		pixelSkippingChkBox = new JCheckBox();
+		pixelSkippingChkBox.setText("Skip points?");
+		pixelSkippingChkBox.setSelected(Parameters.isSkipping());
+		pixelSkippingChkBox.addActionListener(cbl);
+
 		invNormPan.add(normBox);
 		invNormPan.add(invBox);
 		invNormPan.add(fpsCounterText);
 		invNormPan.add(ticksBox);
 		invNormPan.add(tenTicksBox);
+		invNormPan.add(pixelSkippingChkBox);
 		this.add(invNormPan);
 	}
 

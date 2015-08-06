@@ -234,4 +234,9 @@ public class ViewModifier {
 		return Parameters.isUnix();
 	}
 
+	public boolean isSkipping() {
+		// TODO Auto-generated method stub
+		return Parameters.isSkipping();
+	}
+
 }

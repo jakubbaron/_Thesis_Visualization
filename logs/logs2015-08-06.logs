@@ -1,0 +1,2247 @@
+2015/08/06 11:43:31: Time elapsed: 0.562797509 s
+allocated memory: 1 005 056	
+
+2015/08/06 11:43:31: Assigning: 4 threads to do the job
+allocated memory: 1 656 832	
+
+2015/08/06 11:43:31: Start reading files
+allocated memory: 1 656 832	
+
+2015/08/06 11:43:31: Skipping: 1
+allocated memory: 1 656 832	
+FPS - 1,060
+allocated memory: 1 656 832	
+
+2015/08/06 11:43:32: Skipping: 1
+allocated memory: 1 656 832	
+
+2015/08/06 11:43:32: Skipping: 1
+allocated memory: 2 081 280	
+
+2015/08/06 11:43:33: Skipping: 1
+allocated memory: 2 097 664	
+FPS - 2,486
+allocated memory: 3 148 800	
+
+2015/08/06 11:43:33: Skipping: 1
+allocated memory: 3 148 800	
+
+2015/08/06 11:43:34: Skipping: 1
+allocated memory: 3 211 264	
+FPS - 1,803
+allocated memory: 3 211 264	
+
+2015/08/06 11:43:34: Loaded 1 files - timestep: 10. Time elapsed: 2.982740179 s
+allocated memory: 3 211 264	
+
+2015/08/06 11:43:34: Skipping: 1
+allocated memory: 3 211 264	
+
+2015/08/06 11:43:35: Skipping: 1
+allocated memory: 3 410 432	
+FPS - 1,711
+allocated memory: 3 410 432	
+
+2015/08/06 11:43:35: Skipping: 1
+allocated memory: 3 410 432	
+
+2015/08/06 11:43:36: Skipping: 1
+allocated memory: 3 447 296	
+FPS - 1,682
+allocated memory: 3 454 464	
+
+2015/08/06 11:43:37: Loaded 5 files - timestep: 10. Time elapsed: 5.3572434 s
+allocated memory: 3 454 464	
+
+2015/08/06 11:43:37: Skipping: 1
+allocated memory: 3 454 464	
+
+2015/08/06 11:43:37: Loaded 7 files - timestep: 10. Time elapsed: 5.427263597 s
+allocated memory: 3 484 672	
+
+2015/08/06 11:43:37: Skipping: 1
+allocated memory: 3 484 672	
+FPS - 1,297
+allocated memory: 3 484 672	
+
+2015/08/06 11:43:38: Skipping: 1
+allocated memory: 3 483 648	
+
+2015/08/06 11:43:39: Skipping: 1
+allocated memory: 3 483 648	
+
+2015/08/06 11:43:39: Skipping: 1
+allocated memory: 3 483 648	
+FPS - 3,114 [0,000 , 0,990]
+allocated memory: 3 483 648	
+
+2015/08/06 11:43:39: Loaded 9 files - timestep: 10. Time elapsed: 7.879768848 s
+allocated memory: 3 483 648	
+
+2015/08/06 11:43:39: Skipping: 1
+allocated memory: 3 483 648	
+
+2015/08/06 11:43:40: Loaded 10 files - timestep: 10. Time elapsed: 8.341155469 s
+allocated memory: 3 513 856	
+
+2015/08/06 11:43:40: Skipping: 1
+allocated memory: 3 513 856	
+
+2015/08/06 11:43:40: Skipping: 1
+allocated memory: 3 513 856	
+FPS - 2,568 [0,000 , 0,990]
+allocated memory: 3 515 904	
+
+2015/08/06 11:43:40: Skipping: 1
+allocated memory: 3 515 904	
+
+2015/08/06 11:43:41: Skipping: 1
+allocated memory: 3 515 904	
+
+2015/08/06 11:43:41: Skipping: 1
+allocated memory: 3 515 904	
+FPS - 2,675 [0,000 , 0,990]
+allocated memory: 3 545 600	
+
+2015/08/06 11:43:42: Loaded 13 files - timestep: 10. Time elapsed: 10.24245199 s
+allocated memory: 3 545 600	
+
+2015/08/06 11:43:42: Skipping: 1
+allocated memory: 3 545 600	
+
+2015/08/06 11:43:42: Skipping: 1
+allocated memory: 3 545 600	
+
+2015/08/06 11:43:42: Loaded 14 files - timestep: 10. Time elapsed: 10.779929034 s
+allocated memory: 3 545 600	
+
+2015/08/06 11:43:42: Skipping: 1
+allocated memory: 3 545 600	
+FPS - 2,422 [0,000 , 0,990]
+allocated memory: 3 548 672	
+
+2015/08/06 11:43:43: Skipping: 1
+allocated memory: 3 548 672	
+
+2015/08/06 11:43:43: Skipping: 1
+allocated memory: 3 548 672	
+
+2015/08/06 11:43:44: Skipping: 1
+allocated memory: 3 577 856	
+FPS - 2,677 [0,000 , 0,990]
+allocated memory: 3 577 856	
+
+2015/08/06 11:43:44: Skipping: 1
+allocated memory: 3 577 856	
+
+2015/08/06 11:43:44: Loaded 17 files - timestep: 10. Time elapsed: 12.705676174 s
+allocated memory: 3 577 856	
+
+2015/08/06 11:43:44: Skipping: 1
+allocated memory: 3 577 856	
+
+2015/08/06 11:43:45: Loaded 18 files - timestep: 10. Time elapsed: 13.268599413 s
+allocated memory: 3 582 464	
+
+2015/08/06 11:43:45: Skipping: 1
+allocated memory: 3 582 464	
+FPS - 2,279 [0,000 , 0,990]
+allocated memory: 3 582 464	
+
+2015/08/06 11:43:45: Skipping: 1
+allocated memory: 3 582 464	
+
+2015/08/06 11:43:46: Skipping: 1
+allocated memory: 3 611 136	
+
+2015/08/06 11:43:46: Skipping: 1
+allocated memory: 3 611 136	
+FPS - 1,917 [0,000 , 0,990]
+allocated memory: 3 615 232	
+
+2015/08/06 11:43:47: Loaded 21 files - timestep: 10. Time elapsed: 14.939343566 s
+allocated memory: 3 615 232	
+
+2015/08/06 11:43:47: Skipping: 1
+allocated memory: 3 615 232	
+
+2015/08/06 11:43:47: Loaded 22 files - timestep: 10. Time elapsed: 15.628216652 s
+allocated memory: 3 615 232	
+
+2015/08/06 11:43:47: Skipping: 1
+allocated memory: 3 615 232	
+FPS - 1,568 [0,000 , 0,990]
+allocated memory: 3 642 880	
+
+2015/08/06 11:43:48: Skipping: 1
+allocated memory: 3 642 880	
+
+2015/08/06 11:43:48: Skipping: 1
+allocated memory: 3 642 880	
+FPS - 1,674 [0,000 , 0,990]
+allocated memory: 3 645 952	
+
+2015/08/06 11:43:49: Loaded 25 files - timestep: 10. Time elapsed: 17.35418446 s
+allocated memory: 3 645 952	
+
+2015/08/06 11:43:49: Skipping: 1
+allocated memory: 3 645 952	
+
+2015/08/06 11:43:50: Loaded 26 files - timestep: 10. Time elapsed: 18.077862372 s
+allocated memory: 3 671 552	
+
+2015/08/06 11:43:50: Skipping: 1
+allocated memory: 3 671 552	
+FPS - 1,724 [0,000 , 0,990]
+allocated memory: 3 671 552	
+
+2015/08/06 11:43:50: Skipping: 1
+allocated memory: 3 671 552	
+
+2015/08/06 11:43:51: Skipping: 1
+allocated memory: 3 679 744	
+FPS - 1,586 [0,000 , 0,990]
+allocated memory: 3 679 744	
+
+2015/08/06 11:43:52: Loaded 29 files - timestep: 10. Time elapsed: 19.754880924 s
+allocated memory: 3 679 744	
+
+2015/08/06 11:43:52: Skipping: 1
+allocated memory: 3 679 744	
+
+2015/08/06 11:43:52: Loaded 31 files - timestep: 10. Time elapsed: 20.649134737 s
+allocated memory: 3 698 176	
+
+2015/08/06 11:43:52: Skipping: 1
+allocated memory: 3 698 176	
+FPS - 1,436 [0,000 , 0,990]
+allocated memory: 3 698 688	
+
+2015/08/06 11:43:53: Skipping: 1
+allocated memory: 3 698 688	
+
+2015/08/06 11:43:54: Loaded 33 files - timestep: 10. Time elapsed: 22.214255133 s
+allocated memory: 3 698 688	
+
+2015/08/06 11:43:54: Skipping: 1
+allocated memory: 3 698 688	
+FPS - 1,490 [0,000 , 0,990]
+allocated memory: 3 712 512	
+
+2015/08/06 11:43:54: Loaded 34 files - timestep: 10. Time elapsed: 22.945789515 s
+allocated memory: 3 712 512	
+
+2015/08/06 11:43:54: Skipping: 1
+allocated memory: 3 712 512	
+
+2015/08/06 11:43:55: Loaded 36 files - timestep: 10. Time elapsed: 23.34393619 s
+allocated memory: 3 712 512	
+
+2015/08/06 11:43:55: Skipping: 1
+allocated memory: 3 712 512	
+FPS - 1,364 [0,000 , 0,990]
+allocated memory: 3 713 536	
+
+2015/08/06 11:43:56: Skipping: 1
+allocated memory: 3 713 536	
+
+2015/08/06 11:43:57: Loaded 37 files - timestep: 10. Time elapsed: 24.678155253 s
+allocated memory: 3 725 312	
+
+2015/08/06 11:43:57: Skipping: 1
+allocated memory: 3 725 312	
+FPS - 1,107 [0,000 , 0,990]
+allocated memory: 3 728 384	
+
+2015/08/06 11:43:58: Loaded 39 files - timestep: 10. Time elapsed: 25.522857185 s
+allocated memory: 3 728 384	
+
+2015/08/06 11:43:58: Skipping: 1
+allocated memory: 3 728 384	
+FPS - 0,941 [0,000 , 0,990]
+allocated memory: 3 728 384	
+
+2015/08/06 11:43:59: Loaded 41 files - timestep: 10. Time elapsed: 26.997798444 s
+allocated memory: 3 728 384	
+
+2015/08/06 11:43:59: Skipping: 1
+allocated memory: 3 728 384	
+
+2015/08/06 11:44:00: Loaded 42 files - timestep: 10. Time elapsed: 27.793996855 s
+allocated memory: 3 737 600	
+
+2015/08/06 11:44:00: Skipping: 1
+allocated memory: 3 737 600	
+FPS - 1,061 [0,000 , 0,990]
+allocated memory: 3 743 232	
+
+2015/08/06 11:44:00: Loaded 44 files - timestep: 10. Time elapsed: 28.494372212 s
+allocated memory: 3 743 232	
+2015/08/06 11:45:11: Time elapsed: 0.529113256 s
+allocated memory: 1 005 056	
+
+2015/08/06 11:45:11: Assigning: 4 threads to do the job
+allocated memory: 1 667 072	
+
+2015/08/06 11:45:11: Start reading files
+allocated memory: 1 667 072	
+
+2015/08/06 11:45:11: Skipping: 1
+allocated memory: 1 667 072	
+FPS - 0,949
+allocated memory: 1 667 072	
+
+2015/08/06 11:45:12: Skipping: 1
+allocated memory: 1 667 072	
+2015/08/06 11:45:19: Time elapsed: 0.4783356 s
+allocated memory: 1 005 056	
+
+2015/08/06 11:45:20: Assigning: 4 threads to do the job
+allocated memory: 1 387 520	
+
+2015/08/06 11:45:20: Start reading files
+allocated memory: 1 387 520	
+
+2015/08/06 11:45:20: Skipping: 1
+allocated memory: 1 387 520	
+FPS - 1,190 [0,000 , 0,990]
+allocated memory: 1 624 576	
+
+2015/08/06 11:45:20: Skipping: 1
+allocated memory: 1 624 576	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 2 413 568	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 2 413 568	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 2 413 568	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 2 447 872	
+FPS - 7,585 [0,000 , 0,990]
+allocated memory: 2 447 872	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 2 447 872	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 2 447 872	
+
+2015/08/06 11:45:21: Skipping: 1
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 1
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 1
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 131 904	
+FPS - 26,327 [0,000 , 0,990]
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 131 904	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:22: Loaded 1 files - timestep: 80. Time elapsed: 2.773897297 s
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:22: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 179 520	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+FPS - 19,545 [0,000 , 0,990]
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:23: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 448 320	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+FPS - 20,600 [0,000 , 0,990]
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:24: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 478 016	
+
+2015/08/06 11:45:25: Loaded 5 files - timestep: 80. Time elapsed: 5.403011286 s
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Loaded 8 files - timestep: 80. Time elapsed: 5.557641116 s
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+FPS - 20,733 [0,000 , 0,990]
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:25: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 475 968	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+FPS - 19,659 [0,000 , 0,990]
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:26: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 506 176	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+FPS - 19,123 [0,000 , 0,990]
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:27: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Loaded 9 files - timestep: 80. Time elapsed: 7.945241508 s
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Loaded 12 files - timestep: 80. Time elapsed: 8.071509162 s
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 507 712	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+FPS - 17,959 [0,000 , 0,990]
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:28: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 537 408	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+FPS - 17,910 [0,000 , 0,990]
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:29: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 539 968	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Loaded 13 files - timestep: 80. Time elapsed: 10.4295326 s
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Loaded 16 files - timestep: 80. Time elapsed: 10.550727804 s
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+FPS - 22,448 [0,000 , 0,990]
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:30: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 569 664	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+FPS - 17,141 [0,000 , 0,990]
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:31: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 573 248	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+FPS - 19,973 [0,000 , 0,990]
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:32: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Loaded 17 files - timestep: 80. Time elapsed: 12.957415682 s
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Loaded 19 files - timestep: 80. Time elapsed: 13.053766215 s
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 602 432	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 605 504	
+FPS - 16,609 [0,000 , 0,990]
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:33: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 605 504	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:34: Skipping: 2
+allocated memory: 3 633 664	
+FPS - 11,492 [0,000 , 0,990]
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Loaded 21 files - timestep: 80. Time elapsed: 15.317655339 s
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Loaded 23 files - timestep: 80. Time elapsed: 15.428638195 s
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 633 664	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:35: Loaded 24 files - timestep: 80. Time elapsed: 15.582130957 s
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:35: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+FPS - 12,701 [0,000 , 0,990]
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 637 760	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:36: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+FPS - 11,127 [0,000 , 0,990]
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 663 360	
+
+2015/08/06 11:45:37: Loaded 25 files - timestep: 80. Time elapsed: 17.7728625 s
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:37: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Loaded 27 files - timestep: 80. Time elapsed: 17.923751956 s
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+FPS - 9,202 [0,000 , 0,990]
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Loaded 28 files - timestep: 80. Time elapsed: 18.069686261 s
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:38: Skipping: 2
+allocated memory: 3 665 920	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+FPS - 8,114 [0,000 , 0,990]
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:39: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 689 472	
+FPS - 10,702 [0,000 , 0,990]
+allocated memory: 3 689 472	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Loaded 29 files - timestep: 80. Time elapsed: 20.425631673 s
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Loaded 30 files - timestep: 80. Time elapsed: 20.556156917 s
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Loaded 32 files - timestep: 80. Time elapsed: 20.787059716 s
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:40: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 694 080	
+FPS - 10,906 [0,000 , 0,990]
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 694 080	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:41: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 714 560	
+FPS - 9,559 [0,000 , 0,990]
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 714 560	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:42: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Loaded 33 files - timestep: 80. Time elapsed: 22.900033723 s
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Loaded 34 files - timestep: 80. Time elapsed: 22.980457613 s
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Loaded 35 files - timestep: 80. Time elapsed: 23.147108395 s
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+FPS - 8,729 [0,000 , 0,990]
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 718 144	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:43: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+FPS - 7,662 [0,000 , 0,990]
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 736 576	
+
+2015/08/06 11:45:44: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Loaded 37 files - timestep: 80. Time elapsed: 25.199042546 s
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Loaded 38 files - timestep: 80. Time elapsed: 25.332661185 s
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+FPS - 8,034 [0,000 , 0,990]
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Loaded 39 files - timestep: 80. Time elapsed: 25.507162206 s
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Loaded 40 files - timestep: 80. Time elapsed: 25.698012881 s
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:45: Skipping: 2
+allocated memory: 3 739 136	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+FPS - 8,064 [0,000 , 0,990]
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:46: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 755 520	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 759 616	
+FPS - 7,791 [0,000 , 0,990]
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:47: Loaded 41 files - timestep: 80. Time elapsed: 27.691463928 s
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:47: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:48: Loaded 42 files - timestep: 80. Time elapsed: 27.792436411 s
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:48: Loaded 43 files - timestep: 80. Time elapsed: 28.089141407 s
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 759 616	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:48: Skipping: 2
+allocated memory: 3 773 440	
+FPS - 5,634 [0,000 , 0,990]
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 773 440	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:49: Skipping: 2
+allocated memory: 3 775 488	
+FPS - 8,660 [0,000 , 0,990]
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Loaded 45 files - timestep: 80. Time elapsed: 30.213415345 s
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 775 488	
+
+2015/08/06 11:45:50: Loaded 47 files - timestep: 80. Time elapsed: 30.675441246 s
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:50: Skipping: 2
+allocated memory: 3 787 776	
+FPS - 7,726 [0,000 , 0,990]
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 2
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 2
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 2
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 2
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 2
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 2
+allocated memory: 3 787 776	
+
+2015/08/06 11:45:51: Skipping: 1
+allocated memory: 3 787 776	
+FPS - 0,994 [0,000 , 0,990]
+allocated memory: 3 790 336	
+
+2015/08/06 11:45:52: Loaded 49 files - timestep: 80. Time elapsed: 32.73567797 s
+allocated memory: 3 790 336	
+
+2015/08/06 11:45:52: Skipping: 1
+allocated memory: 3 790 336	
+FPS - 0,969 [0,000 , 0,990]
+allocated memory: 3 801 088	
+
+2015/08/06 11:45:53: Loaded 51 files - timestep: 80. Time elapsed: 33.154402196 s
+allocated memory: 3 801 088	
+
+2015/08/06 11:45:53: Skipping: 1
+allocated memory: 3 801 088	
+FPS - 0,979 [0,000 , 0,990]
+allocated memory: 3 804 160	
+
+2015/08/06 11:45:54: Skipping: 1
+allocated memory: 3 804 160	
+FPS - 0,968 [0,000 , 0,990]
+allocated memory: 3 812 864	
+
+2015/08/06 11:45:56: Loaded 53 files - timestep: 80. Time elapsed: 35.152396749 s
+allocated memory: 3 812 864	
+
+2015/08/06 11:45:56: Skipping: 1
+allocated memory: 3 812 864	
+FPS - 0,910 [0,000 , 0,990]
+allocated memory: 3 814 400	
+
+2015/08/06 11:45:57: Skipping: 1
+allocated memory: 3 814 400	
+FPS - 0,896 [0,000 , 0,990]
+allocated memory: 3 822 080	
+
+2015/08/06 11:45:58: Loaded 57 files - timestep: 80. Time elapsed: 37.655417566 s
+allocated memory: 3 822 080	
+
+2015/08/06 11:45:58: Skipping: 1
+allocated memory: 3 822 080	
+FPS - 0,815 [0,000 , 0,990]
+allocated memory: 3 822 080	
+
+2015/08/06 11:45:59: Loaded 60 files - timestep: 80. Time elapsed: 38.403384077 s
+allocated memory: 3 822 080	
+
+2015/08/06 11:45:59: Skipping: 1
+allocated memory: 3 822 080	
+FPS - 0,913 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:00: Loaded 61 files - timestep: 80. Time elapsed: 40.239528311 s
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:00: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:01: Loaded 63 files - timestep: 80. Time elapsed: 40.504897968 s
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:01: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,567 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:01: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:02: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,500 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:03: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:03: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,488 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:04: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:05: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,607 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:05: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:06: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,580 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:07: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:07: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,553 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:08: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:09: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,620 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:09: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:10: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,586 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:10: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:11: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,558 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:12: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:12: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,509 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:13: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:14: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,618 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:14: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:15: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,545 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:16: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:16: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,624 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:17: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:18: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,540 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:18: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:19: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,643 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:19: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:20: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,570 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:21: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:21: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,590 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:22: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:23: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,458 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:23: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:24: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,633 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:25: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:25: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,497 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:26: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:26: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,405 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:27: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,171 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:28: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 9,895 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:29: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,769 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:30: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,617 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:31: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,995 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:32: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,873 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:33: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 12,131 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:34: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 12,034 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:35: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 2
+allocated memory: 3 822 592	
+FPS - 11,639 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:36: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:37: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,576 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:38: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:38: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,540 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:39: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:40: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,632 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:40: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:41: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,602 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:42: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:42: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,567 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:43: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:44: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,514 [0,000 , 0,990]
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:44: Skipping: 1
+allocated memory: 3 822 592	
+
+2015/08/06 11:46:45: Skipping: 1
+allocated memory: 3 822 592	
+FPS - 1,578 [0,000 , 0,990]
+allocated memory: 3 822 592	

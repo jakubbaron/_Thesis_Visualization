@@ -1,0 +1,52 @@
+
+
+Fri Jul 31 14:22:43 BST 2015
+Sizes: [10, 100, 200, 384, 500]Experiments: 10
+
+ArraysWriteReadRandom size: 10
+Writing
+
+
+Fri Jul 31 14:23:14 BST 2015
+Sizes: [10, 100, 200, 384, 500]Experiments: 10
+
+ArraysWriteReadRandom size: 10
+Writing
+1D: (10;10) 2.5490560000000003E-4
+3D: (10;10) 1.133036E-4
+Reading
+1D: (10;10) 8.15961E-5
+3D: (10;10) 8.837749999999999E-5
+
+ArraysWriteReadRandom size: 100
+Writing
+1D: (100;100) 0.060845015300000006
+3D: (100;100) 0.063775403
+Reading
+1D: (100;100) 0.032683191
+3D: (100;100) 0.0407922601
+
+ArraysWriteReadRandom size: 200
+Writing
+1D: (200;200) 0.505155918
+3D: (200;200) 0.6428476699
+Reading
+1D: (200;200) 0.2481841918
+3D: (200;200) 0.4080841063
+
+ArraysWriteReadRandom size: 384
+Writing
+1D: (384;384) 3.5804086699999997
+3D: (384;384) 7.4880775009
+Reading
+1D: (384;384) 1.8084726230000001
+3D: (384;384) 5.670915984900001
+
+ArraysWriteReadRandom size: 500
+Writing
+1D: (500;500) 8.231006217300001
+3D: (500;500) 19.7207714687
+Reading
+1D: (500;500) 3.9148940879999996
+3D: (500;500) 18.2978316897
+The end

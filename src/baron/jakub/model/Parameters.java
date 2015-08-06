@@ -55,6 +55,7 @@ public final class Parameters {
 	private static int processorsPerColumn;// = 4;
 	private static boolean unix;// = false;
 	private static Hashtable<String, ProcessorFile[]> listOfPathsToFiles;
+	private static boolean skipping = true;
 
 	/**
 	 * @return the avalilableTimes
@@ -638,4 +639,12 @@ public final class Parameters {
 		return Parameters.listOfPathsToFiles.get(time);
 	}
 
+	public static boolean isSkipping() {
+		// TODO Auto-generated method stub
+		return Parameters.skipping;
+	}
+
+	public static void setSkipping(boolean b) {
+		Parameters.skipping = b;
+	}
 }

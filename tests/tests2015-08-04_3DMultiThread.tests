@@ -1,0 +1,57 @@
+Tue Aug 04 09:48:44 BST 2015
+Files: 64 experiments: 3
+FileReader3DMultiThread
+0 Threads: 1 3x for: 1,2816s allocated memory: 883 712	
+0 Threads: 2 3x for: 0,6562s allocated memory: 940 032	
+0 Threads: 3 3x for: 0,4935s allocated memory: 960 000	
+0 Threads: 4 3x for: 0,4417s allocated memory: 988 672	
+0 Threads: 5 3x for: 0,4208s allocated memory: 982 528	
+0 Threads: 6 3x for: 0,4032s allocated memory: 953 344	
+0 Threads: 7 3x for: 0,4011s allocated memory: 989 696	
+
+1 Threads: 1 3x for: 1,2809s allocated memory: 840 192	
+1 Threads: 2 3x for: 0,6531s allocated memory: 902 656	
+1 Threads: 3 3x for: 0,5186s allocated memory: 928 256	
+1 Threads: 4 3x for: 0,4177s allocated memory: 974 848	
+1 Threads: 5 3x for: 0,4066s allocated memory: 966 656	
+1 Threads: 6 3x for: 0,4086s allocated memory: 964 096	
+1 Threads: 7 3x for: 0,4004s allocated memory: 994 304	
+
+2 Threads: 1 3x for: 1,2683s allocated memory: 823 808	
+2 Threads: 2 3x for: 0,6549s allocated memory: 909 824	
+2 Threads: 3 3x for: 0,4972s allocated memory: 927 232	
+2 Threads: 4 3x for: 0,4243s allocated memory: 962 560	
+2 Threads: 5 3x for: 0,4133s allocated memory: 946 688	
+2 Threads: 6 3x for: 0,4000s allocated memory: 967 168	
+2 Threads: 7 3x for: 0,3901s allocated memory: 976 384	
+
+FileReader3DMultiThread
+Tue Aug 04 10:12:51 BST 2015
+Files: 64 experiments: 3
+FileReader3DMultiThread
+0 Threads: 1 3x for: 1,2625s allocated memory: 889 856	
+0 Threads: 2 3x for: 0,6523s allocated memory: 940 544	
+0 Threads: 3 3x for: 0,5063s allocated memory: 952 832	
+0 Threads: 4 3x for: 0,4184s allocated memory: 1 001 472	
+0 Threads: 5 3x for: 0,4110s allocated memory: 950 784	
+0 Threads: 6 3x for: 0,4112s allocated memory: 994 304	
+0 Threads: 7 3x for: 0,3964s allocated memory: 974 848	
+
+1 Threads: 1 3x for: 1,2668s allocated memory: 821 760	
+1 Threads: 2 3x for: 0,6540s allocated memory: 887 296	
+1 Threads: 3 3x for: 0,4931s allocated memory: 906 240	
+1 Threads: 4 3x for: 0,4108s allocated memory: 991 744	
+1 Threads: 5 3x for: 0,4074s allocated memory: 934 912	
+1 Threads: 6 3x for: 0,3971s allocated memory: 950 272	
+1 Threads: 7 3x for: 0,3921s allocated memory: 955 392	
+
+2 Threads: 1 3x for: 1,3006s allocated memory: 829 440	
+2 Threads: 2 3x for: 0,6589s allocated memory: 897 024	
+2 Threads: 3 3x for: 0,4902s allocated memory: 921 600	
+2 Threads: 4 3x for: 0,4203s allocated memory: 986 624	
+2 Threads: 5 3x for: 0,4196s allocated memory: 990 720	
+2 Threads: 6 3x for: 0,4708s allocated memory: 992 256	
+2 Threads: 7 3x for: 0,4492s allocated memory: 1 097 216	
+
+The end
+
