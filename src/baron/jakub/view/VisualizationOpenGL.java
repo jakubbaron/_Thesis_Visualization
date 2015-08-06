@@ -98,7 +98,7 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 		particles = (dl).getParticles();
 		double[] valueLimits = Filter.getValues();
 		int skipper = howManyPointsToSkip(distance);
-		vm.addLogMessage("Skipping: " + skipper, Color.BLACK);
+//		vm.addLogMessage("Skipping: " + skipper, Color.BLACK);
 		for (int z = Filter.getzCoords()[0]; z <= Filter.getzCoords()[1]
 				&& z < particles.length; z += skipper) {
 			for (int y = Filter.getyCoords()[0]; y <= Filter.getyCoords()[1]
@@ -238,10 +238,10 @@ public class VisualizationOpenGL extends GLCanvas implements GLEventListener,
 				if (counter % freq != 0)
 					gl2.glVertex3d(tickAnchor, b, -b + tickLength);
 				else
-					gl2.glVertex3d(tickAnchor, b, -b);
+					gl2.glVertex3d(tickAnchor, b, b);
 				++counter;
 			} else
-				gl2.glVertex3d(tickAnchor, b, -b + tickLength);
+				gl2.glVertex3d(tickAnchor, b, b + tickLength);
 		}
 		float tickAnchor = base + (Filter.getxCoords()[1] + 0.0f) / divider;
 		gl2.glVertex3d(tickAnchor, b, b);
