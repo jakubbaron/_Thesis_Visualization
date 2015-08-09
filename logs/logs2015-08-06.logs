@@ -14347,3 +14347,1596 @@ FPS - 59,020
 allocated memory: 4 631 040	
 FPS - 61,236
 allocated memory: 4 631 040	
+2015/08/06 18:58:47: Assigning: 4 threads to do the job
+allocated memory: 1 381 376	
+
+2015/08/06 18:58:47: Start reading files
+allocated memory: 1 381 376	
+
+2015/08/06 18:58:47: Time elapsed: 0.972898422 s
+allocated memory: 1 381 376	
+FPS - 0,896 [0,000 , 0,990]
+allocated memory: 2 490 880	
+FPS - 1,176 [0,000 , 0,990]
+allocated memory: 4 202 496	
+
+2015/08/06 18:58:50: Loaded 1 files - timestep: 80. Time elapsed: 3.268275374 s
+allocated memory: 4 202 496	
+
+2015/08/06 18:58:50: Loaded 2 files - timestep: 80. Time elapsed: 3.339764009 s
+allocated memory: 4 202 496	
+
+2015/08/06 18:58:50: Loaded 4 files - timestep: 80. Time elapsed: 3.407351351 s
+allocated memory: 4 202 496	
+FPS - 1,254 [0,000 , 0,990]
+allocated memory: 4 255 232	
+
+2015/08/06 18:58:53: Loaded 5 files - timestep: 80. Time elapsed: 6.306589641 s
+allocated memory: 4 933 120	
+
+2015/08/06 18:58:53: Loaded 8 files - timestep: 80. Time elapsed: 6.392560675 s
+allocated memory: 4 933 120	
+FPS - 1,035 [0,000 , 0,990]
+allocated memory: 4 933 120	
+FPS - 1,254 [0,000 , 0,990]
+allocated memory: 4 931 584	
+
+2015/08/06 18:58:56: Loaded 9 files - timestep: 80. Time elapsed: 9.2644254 s
+allocated memory: 4 962 816	
+
+2015/08/06 18:58:56: Loaded 11 files - timestep: 80. Time elapsed: 9.309665441 s
+allocated memory: 4 962 816	
+
+2015/08/06 18:58:56: Loaded 12 files - timestep: 80. Time elapsed: 9.360197136 s
+allocated memory: 4 962 816	
+FPS - 1,230 [0,000 , 0,990]
+allocated memory: 4 965 376	
+FPS - 1,282 [0,000 , 0,990]
+allocated memory: 4 996 096	
+
+2015/08/06 18:58:59: Loaded 13 files - timestep: 80. Time elapsed: 12.129866903 s
+allocated memory: 4 996 096	
+
+2015/08/06 18:58:59: Loaded 15 files - timestep: 80. Time elapsed: 12.217048316 s
+allocated memory: 4 997 632	
+FPS - 1,272 [0,000 , 0,990]
+allocated memory: 4 997 632	
+FPS - 1,376 [0,000 , 0,990]
+allocated memory: 5 030 912	
+
+2015/08/06 18:59:01: Loaded 17 files - timestep: 80. Time elapsed: 14.898121383 s
+allocated memory: 5 030 912	
+
+2015/08/06 18:59:01: Loaded 19 files - timestep: 80. Time elapsed: 14.947119759 s
+allocated memory: 5 030 912	
+FPS - 1,204 [0,000 , 0,990]
+allocated memory: 5 059 072	
+
+2015/08/06 18:59:04: Loaded 21 files - timestep: 80. Time elapsed: 17.794254547 s
+allocated memory: 5 062 656	
+FPS - 1,193 [0,000 , 0,990]
+allocated memory: 5 062 656	
+
+2015/08/06 18:59:04: Loaded 24 files - timestep: 80. Time elapsed: 17.879188951 s
+allocated memory: 5 062 656	
+FPS - 1,259 [0,000 , 0,990]
+allocated memory: 5 088 256	
+
+2015/08/06 18:59:07: Loaded 25 files - timestep: 80. Time elapsed: 20.763173599 s
+allocated memory: 5 092 352	
+FPS - 1,236 [0,000 , 0,990]
+allocated memory: 4 780 544	
+FPS - 1,239 [0,000 , 0,990]
+allocated memory: 4 608 000	
+
+2015/08/06 18:59:10: Loaded 29 files - timestep: 80. Time elapsed: 23.652242795 s
+allocated memory: 4 576 768	
+
+2015/08/06 18:59:10: Loaded 30 files - timestep: 80. Time elapsed: 23.689079093 s
+allocated memory: 4 576 768	
+
+2015/08/06 18:59:10: Loaded 32 files - timestep: 80. Time elapsed: 23.765484024 s
+allocated memory: 4 576 768	
+FPS - 1,153 [0,000 , 0,990]
+allocated memory: 4 576 768	
+FPS - 1,181 [0,000 , 0,990]
+allocated memory: 4 254 720	
+
+2015/08/06 18:59:13: Loaded 33 files - timestep: 80. Time elapsed: 26.678577896 s
+allocated memory: 4 254 720	
+
+2015/08/06 18:59:13: Loaded 36 files - timestep: 80. Time elapsed: 26.805972354 s
+allocated memory: 3 999 744	
+FPS - 1,240 [0,000 , 0,990]
+allocated memory: 3 999 744	
+FPS - 1,124 [0,000 , 0,990]
+allocated memory: 3 739 136	
+
+2015/08/06 18:59:16: Loaded 37 files - timestep: 80. Time elapsed: 29.710372535 s
+allocated memory: 3 702 272	
+
+2015/08/06 18:59:16: Loaded 39 files - timestep: 80. Time elapsed: 29.788511292 s
+allocated memory: 3 702 272	
+
+2015/08/06 18:59:16: Loaded 40 files - timestep: 80. Time elapsed: 29.85796992 s
+allocated memory: 3 702 272	
+FPS - 1,214 [0,000 , 0,990]
+allocated memory: 3 503 616	
+FPS - 1,261 [0,000 , 0,990]
+allocated memory: 3 291 136	
+
+2015/08/06 18:59:19: Loaded 41 files - timestep: 80. Time elapsed: 32.644998479 s
+allocated memory: 3 291 136	
+
+2015/08/06 18:59:19: Loaded 42 files - timestep: 80. Time elapsed: 32.688975723 s
+allocated memory: 3 291 136	
+
+2015/08/06 18:59:19: Loaded 43 files - timestep: 80. Time elapsed: 32.783291851 s
+allocated memory: 3 291 136	
+
+2015/08/06 18:59:19: Loaded 44 files - timestep: 80. Time elapsed: 32.836719733 s
+allocated memory: 3 291 136	
+FPS - 1,247 [0,000 , 0,990]
+allocated memory: 3 099 136	
+
+2015/08/06 18:59:22: Loaded 45 files - timestep: 80. Time elapsed: 35.607910354 s
+allocated memory: 3 282 432	
+
+2015/08/06 18:59:22: Loaded 46 files - timestep: 80. Time elapsed: 35.700301679 s
+allocated memory: 3 282 432	
+
+2015/08/06 18:59:22: Loaded 47 files - timestep: 80. Time elapsed: 35.743314871 s
+allocated memory: 3 282 432	
+
+2015/08/06 18:59:22: Loaded 48 files - timestep: 80. Time elapsed: 35.791195974 s
+allocated memory: 3 282 432	
+FPS - 1,175 [0,000 , 0,990]
+allocated memory: 3 416 576	
+FPS - 1,244 [0,000 , 0,990]
+allocated memory: 3 603 456	
+
+2015/08/06 18:59:25: Loaded 49 files - timestep: 80. Time elapsed: 38.636817237 s
+allocated memory: 3 670 016	
+
+2015/08/06 18:59:25: Loaded 50 files - timestep: 80. Time elapsed: 38.719384767 s
+allocated memory: 3 670 016	
+
+2015/08/06 18:59:25: Loaded 51 files - timestep: 80. Time elapsed: 38.766791542 s
+allocated memory: 3 670 016	
+
+2015/08/06 18:59:25: Loaded 52 files - timestep: 80. Time elapsed: 38.846306363 s
+allocated memory: 3 670 016	
+FPS - 1,139 [0,000 , 0,990]
+allocated memory: 3 803 648	
+FPS - 1,108 [0,000 , 0,990]
+allocated memory: 3 650 048	
+
+2015/08/06 18:59:28: Loaded 53 files - timestep: 80. Time elapsed: 41.752037888 s
+allocated memory: 3 559 936	
+
+2015/08/06 18:59:28: Loaded 54 files - timestep: 80. Time elapsed: 41.837616337 s
+allocated memory: 3 559 936	
+
+2015/08/06 18:59:28: Loaded 55 files - timestep: 80. Time elapsed: 41.891849183 s
+allocated memory: 3 559 936	
+
+2015/08/06 18:59:29: Loaded 56 files - timestep: 80. Time elapsed: 41.971718834 s
+allocated memory: 3 559 936	
+FPS - 1,131 [0,000 , 0,990]
+allocated memory: 3 423 232	
+FPS - 1,179 [0,000 , 0,990]
+allocated memory: 3 316 736	
+
+2015/08/06 18:59:31: Loaded 57 files - timestep: 80. Time elapsed: 44.858214782 s
+allocated memory: 3 316 736	
+
+2015/08/06 18:59:31: Loaded 58 files - timestep: 80. Time elapsed: 44.943107765 s
+allocated memory: 3 316 736	
+
+2015/08/06 18:59:32: Loaded 60 files - timestep: 80. Time elapsed: 45.150493573 s
+allocated memory: 3 316 736	
+FPS - 1,085 [0,000 , 0,990]
+allocated memory: 3 501 056	
+FPS - 1,136 [0,000 , 0,990]
+allocated memory: 3 684 352	
+
+2015/08/06 18:59:35: Loaded 61 files - timestep: 80. Time elapsed: 48.169301741 s
+allocated memory: 3 684 352	
+
+2015/08/06 18:59:35: Loaded 63 files - timestep: 80. Time elapsed: 48.230514613 s
+allocated memory: 3 684 352	
+
+2015/08/06 18:59:35: Loaded 64 files - timestep: 80. Time elapsed: 48.317932825 s
+allocated memory: 3 684 352	
+FPS - 2,154 [0,000 , 0,990]
+allocated memory: 3 553 792	
+FPS - 1,856 [0,000 , 0,990]
+allocated memory: 3 553 792	
+FPS - 2,823 [0,000 , 0,990]
+allocated memory: 3 452 928	
+
+2015/08/06 18:59:52: Graph updated in: 13.719644s
+allocated memory: 4 564 480	
+FPS - 0,073 [0,000 , 0,990]
+allocated memory: 4 564 480	
+FPS - 0,509 [0,000 , 0,990]
+allocated memory: 4 564 480	
+FPS - 0,104 [0,000 , 0,990]
+allocated memory: 6 137 856	
+FPS - 0,498 [0,000 , 0,990]
+allocated memory: 6 137 856	
+FPS - 0,465 [0,000 , 0,990]
+allocated memory: 6 358 528	
+FPS - 0,500 [0,000 , 0,990]
+allocated memory: 6 358 528	
+FPS - 0,517 [0,000 , 0,990]
+allocated memory: 6 358 528	
+FPS - 0,465 [0,000 , 0,990]
+allocated memory: 6 598 144	
+FPS - 0,522 [0,000 , 0,990]
+allocated memory: 6 598 144	
+FPS - 0,522 [0,000 , 0,990]
+allocated memory: 6 598 144	
+FPS - 0,495 [0,000 , 0,990]
+allocated memory: 6 617 088	
+FPS - 0,549 [0,000 , 0,990]
+allocated memory: 6 617 088	
+FPS - 0,532 [0,000 , 0,990]
+allocated memory: 6 617 088	
+FPS - 0,531 [0,000 , 0,990]
+allocated memory: 6 650 368	
+FPS - 0,547 [0,000 , 0,990]
+allocated memory: 6 650 368	
+FPS - 0,538 [0,000 , 0,990]
+allocated memory: 6 650 368	
+FPS - 0,470 [0,000 , 0,990]
+allocated memory: 6 650 368	
+FPS - 0,553 [0,000 , 0,990]
+allocated memory: 6 642 176	
+FPS - 0,544 [0,000 , 0,990]
+allocated memory: 6 642 176	
+FPS - 0,515 [0,000 , 0,990]
+allocated memory: 6 642 176	
+FPS - 0,541 [0,000 , 0,990]
+allocated memory: 6 670 336	
+FPS - 0,516 [0,000 , 0,990]
+allocated memory: 6 670 336	
+FPS - 0,531 [0,000 , 0,990]
+allocated memory: 6 670 336	
+FPS - 0,526 [0,000 , 0,990]
+allocated memory: 6 646 272	
+FPS - 0,492 [0,000 , 0,990]
+allocated memory: 6 646 272	
+FPS - 0,483 [0,000 , 0,990]
+allocated memory: 6 646 272	
+FPS - 0,542 [0,000 , 0,990]
+allocated memory: 6 669 824	
+FPS - 0,562 [0,000 , 0,990]
+allocated memory: 6 669 824	
+2015/08/06 19:01:05: Assigning: 4 threads to do the job
+allocated memory: 1 396 224	
+
+2015/08/06 19:01:05: Start reading files
+allocated memory: 1 396 224	
+
+2015/08/06 19:01:05: Time elapsed: 0.964512641 s
+allocated memory: 1 396 224	
+FPS - 0,959 [0,000 , 0,990]
+allocated memory: 2 530 816	
+FPS - 0,947 [0,000 , 0,990]
+allocated memory: 3 430 912	
+
+2015/08/06 19:01:08: Loaded 1 files - timestep: 80. Time elapsed: 3.40602074 s
+allocated memory: 4 390 400	
+
+2015/08/06 19:01:08: Loaded 3 files - timestep: 80. Time elapsed: 3.466699535 s
+allocated memory: 4 390 400	
+
+2015/08/06 19:01:08: Loaded 4 files - timestep: 80. Time elapsed: 3.562128538 s
+allocated memory: 4 390 400	
+FPS - 1,025 [0,000 , 0,990]
+allocated memory: 4 390 400	
+FPS - 1,271 [0,000 , 0,990]
+allocated memory: 4 911 104	
+
+2015/08/06 19:01:11: Loaded 5 files - timestep: 80. Time elapsed: 6.502013512 s
+allocated memory: 4 943 872	
+
+2015/08/06 19:01:11: Loaded 7 files - timestep: 80. Time elapsed: 6.538044845 s
+allocated memory: 4 943 872	
+
+2015/08/06 19:01:11: Loaded 8 files - timestep: 80. Time elapsed: 6.631225372 s
+allocated memory: 4 943 872	
+FPS - 1,228 [0,000 , 0,990]
+allocated memory: 4 943 872	
+FPS - 1,210 [0,000 , 0,990]
+allocated memory: 4 976 128	
+
+2015/08/06 19:01:14: Loaded 9 files - timestep: 80. Time elapsed: 9.385230951 s
+allocated memory: 4 976 128	
+
+2015/08/06 19:01:14: Loaded 10 files - timestep: 80. Time elapsed: 9.512531937 s
+allocated memory: 4 976 128	
+
+2015/08/06 19:01:14: Loaded 12 files - timestep: 80. Time elapsed: 9.567889021 s
+allocated memory: 4 976 128	
+FPS - 1,207 [0,000 , 0,990]
+allocated memory: 4 978 176	
+FPS - 1,284 [0,000 , 0,990]
+allocated memory: 5 010 432	
+
+2015/08/06 19:01:17: Loaded 13 files - timestep: 80. Time elapsed: 12.458262801 s
+allocated memory: 5 010 432	
+
+2015/08/06 19:01:17: Loaded 14 files - timestep: 80. Time elapsed: 12.501165293 s
+allocated memory: 5 010 432	
+
+2015/08/06 19:01:17: Loaded 15 files - timestep: 80. Time elapsed: 12.584534121 s
+allocated memory: 5 012 480	
+FPS - 1,165 [0,000 , 0,990]
+allocated memory: 5 043 200	
+
+2015/08/06 19:01:20: Loaded 17 files - timestep: 80. Time elapsed: 15.552680833 s
+allocated memory: 5 047 296	
+FPS - 1,258 [0,000 , 0,990]
+allocated memory: 5 047 296	
+
+2015/08/06 19:01:20: Loaded 20 files - timestep: 80. Time elapsed: 15.690093363 s
+allocated memory: 5 047 296	
+FPS - 1,233 [0,000 , 0,990]
+allocated memory: 5 075 456	
+
+2015/08/06 19:01:23: Loaded 21 files - timestep: 80. Time elapsed: 18.669483188 s
+allocated memory: 5 078 528	
+
+2015/08/06 19:01:24: Loaded 23 files - timestep: 80. Time elapsed: 18.715334651 s
+allocated memory: 5 078 528	
+
+2015/08/06 19:01:24: Loaded 24 files - timestep: 80. Time elapsed: 18.783358565 s
+allocated memory: 5 078 528	
+FPS - 1,141 [0,000 , 0,990]
+allocated memory: 5 078 528	
+FPS - 1,207 [0,000 , 0,990]
+allocated memory: 5 109 248	
+
+2015/08/06 19:01:26: Loaded 25 files - timestep: 80. Time elapsed: 21.658044332 s
+allocated memory: 5 109 248	
+
+2015/08/06 19:01:27: Loaded 27 files - timestep: 80. Time elapsed: 21.739939958 s
+allocated memory: 5 109 248	
+
+2015/08/06 19:01:27: Loaded 28 files - timestep: 80. Time elapsed: 21.832834202 s
+allocated memory: 5 132 288	
+FPS - 1,218 [0,000 , 0,990]
+allocated memory: 5 132 288	
+FPS - 1,300 [0,000 , 0,990]
+allocated memory: 5 135 360	
+
+2015/08/06 19:01:29: Loaded 29 files - timestep: 80. Time elapsed: 24.553658081 s
+allocated memory: 5 156 352	
+
+2015/08/06 19:01:29: Loaded 31 files - timestep: 80. Time elapsed: 24.627252233 s
+allocated memory: 5 156 352	
+
+2015/08/06 19:01:30: Loaded 32 files - timestep: 80. Time elapsed: 24.787290649 s
+allocated memory: 5 156 352	
+FPS - 1,227 [0,000 , 0,990]
+allocated memory: 5 156 352	
+FPS - 1,177 [0,000 , 0,990]
+allocated memory: 5 178 880	
+
+2015/08/06 19:01:32: Loaded 33 files - timestep: 80. Time elapsed: 27.60408384 s
+allocated memory: 5 178 880	
+
+2015/08/06 19:01:32: Loaded 35 files - timestep: 80. Time elapsed: 27.67907605 s
+allocated memory: 5 178 880	
+
+2015/08/06 19:01:33: Loaded 36 files - timestep: 80. Time elapsed: 27.877849176 s
+allocated memory: 5 178 880	
+FPS - 1,215 [0,000 , 0,990]
+allocated memory: 5 181 440	
+FPS - 1,211 [0,000 , 0,990]
+allocated memory: 5 197 824	
+
+2015/08/06 19:01:35: Loaded 37 files - timestep: 80. Time elapsed: 30.552129894 s
+allocated memory: 5 197 824	
+
+2015/08/06 19:01:35: Loaded 38 files - timestep: 80. Time elapsed: 30.668902191 s
+allocated memory: 5 197 824	
+
+2015/08/06 19:01:35: Loaded 39 files - timestep: 80. Time elapsed: 30.707565055 s
+allocated memory: 5 197 824	
+
+2015/08/06 19:01:36: Loaded 40 files - timestep: 80. Time elapsed: 30.941502601 s
+allocated memory: 5 197 824	
+FPS - 1,211 [0,000 , 0,990]
+allocated memory: 5 201 408	
+
+2015/08/06 19:01:38: Loaded 41 files - timestep: 80. Time elapsed: 33.486502179 s
+allocated memory: 5 215 232	
+
+2015/08/06 19:01:38: Loaded 42 files - timestep: 80. Time elapsed: 33.525676761 s
+allocated memory: 5 215 232	
+FPS - 1,292 [0,000 , 0,990]
+allocated memory: 5 215 232	
+
+2015/08/06 19:01:39: Loaded 44 files - timestep: 80. Time elapsed: 33.847429868 s
+allocated memory: 5 215 232	
+FPS - 1,254 [0,000 , 0,990]
+allocated memory: 5 217 280	
+
+2015/08/06 19:01:41: Loaded 45 files - timestep: 80. Time elapsed: 36.476499504 s
+allocated memory: 5 229 568	
+
+2015/08/06 19:01:41: Loaded 46 files - timestep: 80. Time elapsed: 36.531863919 s
+allocated memory: 5 229 568	
+
+2015/08/06 19:01:42: Loaded 48 files - timestep: 80. Time elapsed: 36.870306847 s
+allocated memory: 5 232 128	
+FPS - 1,215 [0,000 , 0,990]
+allocated memory: 5 232 128	
+FPS - 1,235 [0,000 , 0,990]
+allocated memory: 5 242 880	
+
+2015/08/06 19:01:44: Loaded 49 files - timestep: 80. Time elapsed: 39.332469475 s
+allocated memory: 5 242 880	
+
+2015/08/06 19:01:44: Loaded 50 files - timestep: 80. Time elapsed: 39.390327594 s
+allocated memory: 5 242 880	
+
+2015/08/06 19:01:44: Loaded 51 files - timestep: 80. Time elapsed: 39.552961984 s
+allocated memory: 5 245 952	
+
+2015/08/06 19:01:45: Loaded 52 files - timestep: 80. Time elapsed: 39.876053767 s
+allocated memory: 5 245 952	
+FPS - 1,278 [0,000 , 0,990]
+allocated memory: 5 245 952	
+FPS - 1,177 [0,000 , 0,990]
+allocated memory: 5 254 656	
+
+2015/08/06 19:01:47: Loaded 53 files - timestep: 80. Time elapsed: 42.401586836 s
+allocated memory: 5 256 192	
+
+2015/08/06 19:01:47: Loaded 54 files - timestep: 80. Time elapsed: 42.467242776 s
+allocated memory: 5 256 192	
+
+2015/08/06 19:01:47: Loaded 55 files - timestep: 80. Time elapsed: 42.567782718 s
+allocated memory: 5 256 192	
+
+2015/08/06 19:01:48: Loaded 56 files - timestep: 80. Time elapsed: 42.886777466 s
+allocated memory: 5 256 192	
+FPS - 1,252 [0,000 , 0,990]
+allocated memory: 5 256 192	
+FPS - 1,158 [0,000 , 0,990]
+allocated memory: 5 263 872	
+
+2015/08/06 19:01:50: Loaded 57 files - timestep: 80. Time elapsed: 45.436069456 s
+allocated memory: 5 265 408	
+
+2015/08/06 19:01:50: Loaded 58 files - timestep: 80. Time elapsed: 45.549851727 s
+allocated memory: 5 265 408	
+
+2015/08/06 19:01:50: Loaded 59 files - timestep: 80. Time elapsed: 45.655869534 s
+allocated memory: 5 265 408	
+
+2015/08/06 19:01:51: Loaded 60 files - timestep: 80. Time elapsed: 45.914011371 s
+allocated memory: 5 265 408	
+FPS - 1,200 [0,000 , 0,990]
+allocated memory: 5 272 064	
+FPS - 1,918 [0,000 , 0,990]
+allocated memory: 5 273 600	
+
+2015/08/06 19:01:53: Loaded 61 files - timestep: 80. Time elapsed: 48.477008288 s
+allocated memory: 5 273 600	
+
+2015/08/06 19:01:53: Loaded 62 files - timestep: 80. Time elapsed: 48.555305399 s
+allocated memory: 5 273 600	
+
+2015/08/06 19:01:53: Loaded 63 files - timestep: 80. Time elapsed: 48.642138582 s
+allocated memory: 5 273 600	
+
+2015/08/06 19:01:54: Loaded 64 files - timestep: 80. Time elapsed: 48.804218367 s
+allocated memory: 5 273 600	
+
+2015/08/06 19:02:10: Graph updated in: 16.980867s
+allocated memory: 7 935 488	
+FPS - 0,059 [0,000 , 0,990]
+allocated memory: 7 935 488	
+FPS - 0,468 [0,000 , 0,990]
+allocated memory: 7 935 488	
+FPS - 0,486 [0,000 , 0,990]
+allocated memory: 7 935 488	
+FPS - 0,513 [0,000 , 0,990]
+allocated memory: 7 935 488	
+FPS - 0,445 [0,000 , 0,990]
+allocated memory: 7 935 488	
+FPS - 0,401 [0,000 , 0,990]
+allocated memory: 6 455 808	
+FPS - 0,446 [0,000 , 0,990]
+allocated memory: 6 455 808	
+2015/08/06 19:02:40: Assigning: 4 threads to do the job
+allocated memory: 1 395 712	
+
+2015/08/06 19:02:40: Start reading files
+allocated memory: 1 395 712	
+
+2015/08/06 19:02:40: Time elapsed: 1.031012401 s
+allocated memory: 1 395 712	
+FPS - 1,075 [0,000 , 0,990]
+allocated memory: 2 508 800	
+FPS - 1,042 [0,000 , 0,990]
+allocated memory: 4 200 960	
+
+2015/08/06 19:02:44: Loaded 1 files - timestep: 80. Time elapsed: 3.451717881 s
+allocated memory: 4 200 960	
+
+2015/08/06 19:02:44: Loaded 3 files - timestep: 80. Time elapsed: 3.514279326 s
+allocated memory: 4 200 960	
+
+2015/08/06 19:02:44: Loaded 4 files - timestep: 80. Time elapsed: 3.560895798 s
+allocated memory: 4 200 960	
+FPS - 1,076 [0,000 , 0,990]
+allocated memory: 4 252 160	
+
+2015/08/06 19:02:47: Loaded 5 files - timestep: 80. Time elapsed: 6.800086508 s
+allocated memory: 4 947 968	
+
+2015/08/06 19:02:47: Loaded 6 files - timestep: 80. Time elapsed: 6.884816372 s
+allocated memory: 4 947 968	
+FPS - 1,013 [0,000 , 0,990]
+allocated memory: 4 947 968	
+
+2015/08/06 19:02:47: Loaded 8 files - timestep: 80. Time elapsed: 6.96923686 s
+allocated memory: 4 947 968	
+FPS - 1,180 [0,000 , 0,990]
+allocated memory: 4 947 456	
+
+2015/08/06 19:02:50: Loaded 9 files - timestep: 80. Time elapsed: 9.83070559 s
+allocated memory: 4 976 640	
+
+2015/08/06 19:02:50: Loaded 10 files - timestep: 80. Time elapsed: 9.891484456 s
+allocated memory: 4 976 640	
+
+2015/08/06 19:02:50: Loaded 12 files - timestep: 80. Time elapsed: 9.961679136 s
+allocated memory: 4 976 640	
+FPS - 1,216 [0,000 , 0,990]
+allocated memory: 4 976 640	
+FPS - 1,206 [0,000 , 0,990]
+allocated memory: 5 007 360	
+
+2015/08/06 19:02:53: Loaded 13 files - timestep: 80. Time elapsed: 12.793289762 s
+allocated memory: 5 010 432	
+
+2015/08/06 19:02:53: Loaded 14 files - timestep: 80. Time elapsed: 12.85476619 s
+allocated memory: 5 010 432	
+
+2015/08/06 19:02:53: Loaded 16 files - timestep: 80. Time elapsed: 12.925014754 s
+allocated memory: 5 010 432	
+FPS - 1,160 [0,000 , 0,990]
+allocated memory: 5 010 432	
+FPS - 1,113 [0,000 , 0,990]
+allocated memory: 5 039 104	
+
+2015/08/06 19:02:56: Loaded 17 files - timestep: 80. Time elapsed: 15.936543784 s
+allocated memory: 5 041 664	
+
+2015/08/06 19:02:56: Loaded 19 files - timestep: 80. Time elapsed: 16.010371068 s
+allocated memory: 5 041 664	
+
+2015/08/06 19:02:56: Loaded 20 files - timestep: 80. Time elapsed: 16.117392516 s
+allocated memory: 5 041 664	
+FPS - 1,248 [0,000 , 0,990]
+allocated memory: 5 069 824	
+
+2015/08/06 19:02:57: Assigning: 4 threads to do the job
+allocated memory: 5 069 824	
+
+2015/08/06 19:02:57: Start reading files
+allocated memory: 5 069 824	
+FPS - 0,791 [0,000 , 0,990]
+allocated memory: 4 776 448	
+
+2015/08/06 19:03:00: Loaded 1 files - timestep: 80. Time elapsed: 2.585967002 s
+allocated memory: 4 776 960	
+FPS - 0,715 [0,000 , 0,990]
+allocated memory: 4 776 960	
+
+2015/08/06 19:03:00: Loaded 3 files - timestep: 80. Time elapsed: 2.703673292 s
+allocated memory: 4 776 960	
+
+2015/08/06 19:03:00: Loaded 4 files - timestep: 80. Time elapsed: 2.768809818 s
+allocated memory: 4 776 960	
+FPS - 0,799 [0,000 , 0,990]
+allocated memory: 4 916 736	
+
+2015/08/06 19:03:02: Loaded 5 files - timestep: 80. Time elapsed: 4.711198393 s
+allocated memory: 4 510 720	
+
+2015/08/06 19:03:02: Loaded 6 files - timestep: 80. Time elapsed: 4.798692115 s
+allocated memory: 4 510 720	
+
+2015/08/06 19:03:02: Loaded 7 files - timestep: 80. Time elapsed: 4.881155175 s
+allocated memory: 4 510 720	
+
+2015/08/06 19:03:02: Loaded 8 files - timestep: 80. Time elapsed: 5.021500548 s
+allocated memory: 4 510 720	
+FPS - 0,747 [0,000 , 0,990]
+allocated memory: 4 510 720	
+FPS - 0,862 [0,000 , 0,990]
+allocated memory: 4 912 640	
+
+2015/08/06 19:03:05: Loaded 9 files - timestep: 80. Time elapsed: 7.164591817 s
+allocated memory: 4 898 816	
+
+2015/08/06 19:03:05: Loaded 11 files - timestep: 80. Time elapsed: 7.242007719 s
+allocated memory: 4 898 816	
+
+2015/08/06 19:03:05: Loaded 12 files - timestep: 80. Time elapsed: 7.278113464 s
+allocated memory: 4 898 816	
+FPS - 0,805 [0,000 , 0,990]
+allocated memory: 4 913 152	
+
+2015/08/06 19:03:06: Loaded 13 files - timestep: 80. Time elapsed: 8.682901465 s
+allocated memory: 4 899 840	
+
+2015/08/06 19:03:06: Loaded 14 files - timestep: 80. Time elapsed: 8.765001997 s
+allocated memory: 4 899 840	
+FPS - 0,816 [0,000 , 0,990]
+allocated memory: 4 899 840	
+
+2015/08/06 19:03:07: Loaded 15 files - timestep: 80. Time elapsed: 9.157357032 s
+allocated memory: 4 899 840	
+
+2015/08/06 19:03:07: Loaded 16 files - timestep: 80. Time elapsed: 9.438971507 s
+allocated memory: 4 899 840	
+FPS - 0,895 [0,000 , 0,990]
+allocated memory: 4 942 336	
+FPS - 0,943 [0,000 , 0,990]
+allocated memory: 4 929 536	
+
+2015/08/06 19:03:09: Loaded 17 files - timestep: 80. Time elapsed: 11.274594127 s
+allocated memory: 4 929 536	
+
+2015/08/06 19:03:09: Loaded 18 files - timestep: 80. Time elapsed: 11.365077509 s
+allocated memory: 4 929 536	
+
+2015/08/06 19:03:09: Loaded 19 files - timestep: 80. Time elapsed: 11.616576187 s
+allocated memory: 4 929 536	
+
+2015/08/06 19:03:09: Loaded 20 files - timestep: 80. Time elapsed: 11.85978219 s
+allocated memory: 4 975 104	
+FPS - 0,901 [0,000 , 0,990]
+allocated memory: 4 975 104	
+
+2015/08/06 19:03:10: Loaded 21 files - timestep: 80. Time elapsed: 13.038033848 s
+allocated memory: 4 962 304	
+FPS - 0,813 [0,000 , 0,990]
+allocated memory: 4 962 304	
+
+2015/08/06 19:03:11: Loaded 23 files - timestep: 80. Time elapsed: 13.381528333 s
+allocated memory: 4 962 304	
+
+2015/08/06 19:03:11: Loaded 24 files - timestep: 80. Time elapsed: 13.747314768 s
+allocated memory: 4 962 304	
+FPS - 0,815 [0,000 , 0,990]
+allocated memory: 5 007 872	
+
+2015/08/06 19:03:13: Loaded 25 files - timestep: 80. Time elapsed: 15.356740113 s
+allocated memory: 4 994 048	
+
+2015/08/06 19:03:13: Loaded 26 files - timestep: 80. Time elapsed: 15.519666284 s
+allocated memory: 4 994 048	
+FPS - 0,868 [0,000 , 0,990]
+allocated memory: 4 994 048	
+
+2015/08/06 19:03:13: Loaded 27 files - timestep: 80. Time elapsed: 15.896581466 s
+allocated memory: 4 994 048	
+
+2015/08/06 19:03:14: Loaded 28 files - timestep: 80. Time elapsed: 16.269729882 s
+allocated memory: 5 039 104	
+FPS - 0,854 [0,000 , 0,990]
+allocated memory: 5 039 104	
+
+2015/08/06 19:03:14: Loaded 29 files - timestep: 80. Time elapsed: 16.9355746 s
+allocated memory: 5 039 104	
+
+2015/08/06 19:03:15: Loaded 31 files - timestep: 80. Time elapsed: 17.691958051 s
+allocated memory: 5 024 768	
+FPS - 0,865 [0,000 , 0,990]
+allocated memory: 5 024 768	
+
+2015/08/06 19:03:16: Loaded 32 files - timestep: 80. Time elapsed: 18.14213125 s
+allocated memory: 5 024 768	
+
+2015/08/06 19:03:17: Loaded 33 files - timestep: 80. Time elapsed: 19.230512047 s
+allocated memory: 5 067 776	
+FPS - 0,833 [0,000 , 0,990]
+allocated memory: 5 067 776	
+
+2015/08/06 19:03:18: Loaded 35 files - timestep: 80. Time elapsed: 20.211530129 s
+allocated memory: 5 054 976	
+FPS - 0,871 [0,000 , 0,990]
+allocated memory: 5 095 424	
+
+2015/08/06 19:03:18: Loaded 36 files - timestep: 80. Time elapsed: 20.603320662 s
+allocated memory: 5 095 424	
+
+2015/08/06 19:03:18: Loaded 38 files - timestep: 80. Time elapsed: 20.645564813 s
+allocated memory: 5 095 424	
+FPS - 0,831 [0,000 , 0,990]
+allocated memory: 5 083 648	
+
+2015/08/06 19:03:19: Loaded 39 files - timestep: 80. Time elapsed: 22.000052418 s
+allocated memory: 5 083 648	
+
+2015/08/06 19:03:20: Loaded 40 files - timestep: 80. Time elapsed: 22.467579644 s
+allocated memory: 5 083 648	
+FPS - 0,892 [0,000 , 0,990]
+allocated memory: 5 120 000	
+
+2015/08/06 19:03:20: Loaded 41 files - timestep: 80. Time elapsed: 22.838128787 s
+allocated memory: 5 120 000	
+
+2015/08/06 19:03:20: Loaded 42 files - timestep: 80. Time elapsed: 22.933701481 s
+allocated memory: 5 120 000	
+FPS - 0,842 [0,000 , 0,990]
+allocated memory: 4 790 784	
+
+2015/08/06 19:03:22: Loaded 43 files - timestep: 80. Time elapsed: 24.368351985 s
+allocated memory: 4 790 784	
+
+2015/08/06 19:03:22: Loaded 44 files - timestep: 80. Time elapsed: 24.440895944 s
+allocated memory: 4 790 784	
+
+2015/08/06 19:03:22: Loaded 46 files - timestep: 80. Time elapsed: 24.783890442 s
+allocated memory: 4 790 784	
+FPS - 0,894 [0,000 , 0,990]
+allocated memory: 4 619 264	
+
+2015/08/06 19:03:24: Loaded 47 files - timestep: 80. Time elapsed: 26.137197725 s
+allocated memory: 4 575 744	
+FPS - 0,863 [0,000 , 0,990]
+allocated memory: 4 575 744	
+
+2015/08/06 19:03:24: Loaded 48 files - timestep: 80. Time elapsed: 26.676070262 s
+allocated memory: 4 575 744	
+
+2015/08/06 19:03:24: Loaded 50 files - timestep: 80. Time elapsed: 26.738549597 s
+allocated memory: 4 575 744	
+FPS - 0,867 [0,000 , 0,990]
+allocated memory: 4 662 272	
+
+2015/08/06 19:03:25: Loaded 51 files - timestep: 80. Time elapsed: 28.070793271 s
+allocated memory: 4 599 808	
+
+2015/08/06 19:03:26: Loaded 52 files - timestep: 80. Time elapsed: 28.384625761 s
+allocated memory: 4 599 808	
+FPS - 0,927 [0,000 , 0,990]
+allocated memory: 4 599 808	
+
+2015/08/06 19:03:26: Loaded 53 files - timestep: 80. Time elapsed: 28.670629052 s
+allocated memory: 4 599 808	
+
+2015/08/06 19:03:26: Loaded 54 files - timestep: 80. Time elapsed: 29.04133215 s
+allocated memory: 4 340 736	
+FPS - 0,842 [0,000 , 0,990]
+allocated memory: 4 340 736	
+
+2015/08/06 19:03:28: Loaded 55 files - timestep: 80. Time elapsed: 30.36003365 s
+allocated memory: 4 279 296	
+
+2015/08/06 19:03:28: Loaded 56 files - timestep: 80. Time elapsed: 30.460088634 s
+allocated memory: 4 279 296	
+
+2015/08/06 19:03:28: Loaded 57 files - timestep: 80. Time elapsed: 30.495806559 s
+allocated memory: 4 279 296	
+FPS - 0,847 [0,000 , 0,990]
+allocated memory: 4 049 920	
+
+2015/08/06 19:03:28: Loaded 58 files - timestep: 80. Time elapsed: 30.899466289 s
+allocated memory: 4 049 920	
+
+2015/08/06 19:03:29: Loaded 59 files - timestep: 80. Time elapsed: 31.881395272 s
+allocated memory: 3 990 016	
+FPS - 0,917 [0,000 , 0,990]
+allocated memory: 3 990 016	
+
+2015/08/06 19:03:29: Loaded 60 files - timestep: 80. Time elapsed: 32.029065969 s
+allocated memory: 3 990 016	
+
+2015/08/06 19:03:30: Loaded 61 files - timestep: 80. Time elapsed: 32.875379664 s
+allocated memory: 3 787 264	
+FPS - 0,839 [0,000 , 0,990]
+allocated memory: 4 014 080	
+
+2015/08/06 19:03:31: Loaded 62 files - timestep: 80. Time elapsed: 33.233471282 s
+allocated memory: 4 014 080	
+FPS - 0,872 [0,000 , 0,990]
+allocated memory: 4 121 088	
+
+2015/08/06 19:03:32: Loaded 63 files - timestep: 80. Time elapsed: 34.292094777 s
+allocated memory: 4 121 088	
+
+2015/08/06 19:03:32: Loaded 65 files - timestep: 80. Time elapsed: 34.5924716 s
+allocated memory: 4 121 088	
+
+2015/08/06 19:03:32: Loaded 66 files - timestep: 80. Time elapsed: 35.085615838 s
+allocated memory: 4 357 120	
+FPS - 0,832 [0,000 , 0,990]
+allocated memory: 4 357 120	
+
+2015/08/06 19:03:33: Loaded 67 files - timestep: 80. Time elapsed: 35.532112079 s
+allocated memory: 4 357 120	
+
+2015/08/06 19:03:33: Loaded 68 files - timestep: 80. Time elapsed: 35.76954147 s
+allocated memory: 4 155 904	
+FPS - 0,933 [0,000 , 0,990]
+allocated memory: 4 062 208	
+
+2015/08/06 19:03:34: Loaded 69 files - timestep: 80. Time elapsed: 36.931153159 s
+allocated memory: 4 062 208	
+
+2015/08/06 19:03:35: Loaded 70 files - timestep: 80. Time elapsed: 37.468038943 s
+allocated memory: 4 179 968	
+FPS - 0,860 [0,000 , 0,990]
+allocated memory: 4 179 968	
+
+2015/08/06 19:03:35: Loaded 71 files - timestep: 80. Time elapsed: 37.939583661 s
+allocated memory: 4 179 968	
+
+2015/08/06 19:03:35: Loaded 72 files - timestep: 80. Time elapsed: 38.064328628 s
+allocated memory: 4 179 968	
+
+2015/08/06 19:03:36: Loaded 73 files - timestep: 80. Time elapsed: 38.771497065 s
+allocated memory: 4 077 568	
+FPS - 0,871 [0,000 , 0,990]
+allocated memory: 4 077 568	
+
+2015/08/06 19:03:37: Loaded 74 files - timestep: 80. Time elapsed: 39.234467224 s
+allocated memory: 3 904 512	
+
+2015/08/06 19:03:37: Loaded 75 files - timestep: 80. Time elapsed: 39.366680107 s
+allocated memory: 3 904 512	
+
+2015/08/06 19:03:37: Loaded 76 files - timestep: 80. Time elapsed: 39.569660236 s
+allocated memory: 3 904 512	
+FPS - 0,836 [0,000 , 0,990]
+allocated memory: 4 100 096	
+FPS - 0,887 [0,000 , 0,990]
+allocated memory: 4 240 896	
+
+2015/08/06 19:03:39: Loaded 77 files - timestep: 80. Time elapsed: 41.208571627 s
+allocated memory: 4 240 896	
+
+2015/08/06 19:03:39: Loaded 78 files - timestep: 80. Time elapsed: 41.591138057 s
+allocated memory: 4 240 896	
+
+2015/08/06 19:03:39: Loaded 79 files - timestep: 80. Time elapsed: 41.739636812 s
+allocated memory: 4 380 672	
+FPS - 0,897 [0,000 , 0,990]
+allocated memory: 4 380 672	
+
+2015/08/06 19:03:40: Loaded 81 files - timestep: 80. Time elapsed: 42.8192704 s
+allocated memory: 4 203 520	
+
+2015/08/06 19:03:40: Loaded 82 files - timestep: 80. Time elapsed: 43.02190413 s
+allocated memory: 4 203 520	
+
+2015/08/06 19:03:41: Loaded 83 files - timestep: 80. Time elapsed: 43.216169306 s
+allocated memory: 4 203 520	
+
+2015/08/06 19:03:41: Loaded 84 files - timestep: 80. Time elapsed: 43.280922043 s
+allocated memory: 4 203 520	
+FPS - 0,969 [0,000 , 0,990]
+allocated memory: 4 203 520	
+FPS - 0,981 [0,000 , 0,990]
+allocated memory: 4 084 736	
+
+2015/08/06 19:03:42: Loaded 85 files - timestep: 80. Time elapsed: 44.955604878 s
+allocated memory: 3 926 016	
+
+2015/08/06 19:03:43: Loaded 86 files - timestep: 80. Time elapsed: 45.331823597 s
+allocated memory: 3 926 016	
+FPS - 0,991 [0,000 , 0,990]
+allocated memory: 3 926 016	
+
+2015/08/06 19:03:44: Loaded 87 files - timestep: 80. Time elapsed: 46.310732496 s
+allocated memory: 3 816 960	
+
+2015/08/06 19:03:44: Loaded 88 files - timestep: 80. Time elapsed: 46.487502153 s
+allocated memory: 3 816 960	
+
+2015/08/06 19:03:44: Loaded 89 files - timestep: 80. Time elapsed: 46.616706682 s
+allocated memory: 3 816 960	
+FPS - 1,165 [0,000 , 0,990]
+allocated memory: 3 675 136	
+FPS - 1,257 [0,000 , 0,990]
+allocated memory: 3 448 320	
+
+2015/08/06 19:03:47: Loaded 91 files - timestep: 80. Time elapsed: 49.243666768 s
+allocated memory: 3 357 184	
+
+2015/08/06 19:03:47: Loaded 92 files - timestep: 80. Time elapsed: 49.404997672 s
+allocated memory: 3 357 184	
+
+2015/08/06 19:03:47: Loaded 93 files - timestep: 80. Time elapsed: 49.578927227 s
+allocated memory: 3 357 184	
+FPS - 1,229 [0,000 , 0,990]
+allocated memory: 3 243 520	
+FPS - 1,247 [0,000 , 0,990]
+allocated memory: 3 058 688	
+
+2015/08/06 19:03:50: Loaded 95 files - timestep: 80. Time elapsed: 52.215816676 s
+allocated memory: 2 982 912	
+
+2015/08/06 19:03:50: Loaded 96 files - timestep: 80. Time elapsed: 52.405551543 s
+allocated memory: 2 982 912	
+
+2015/08/06 19:03:50: Loaded 97 files - timestep: 80. Time elapsed: 52.672967336 s
+allocated memory: 2 982 912	
+FPS - 1,225 [0,000 , 0,990]
+allocated memory: 2 822 656	
+
+2015/08/06 19:03:53: Loaded 99 files - timestep: 80. Time elapsed: 55.215116181 s
+allocated memory: 2 604 032	
+FPS - 1,231 [0,000 , 0,990]
+allocated memory: 2 604 032	
+
+2015/08/06 19:03:53: Loaded 100 files - timestep: 80. Time elapsed: 55.326101969 s
+allocated memory: 2 604 032	
+FPS - 1,160 [0,000 , 0,990]
+allocated memory: 2 716 672	
+FPS - 1,250 [0,000 , 0,990]
+allocated memory: 2 515 456	
+FPS - 1,440 [0,000 , 0,990]
+allocated memory: 2 399 744	
+
+2015/08/06 19:04:11: Graph updated in: 12.670063s
+allocated memory: 4 237 312	
+FPS - 0,079 [0,000 , 0,990]
+allocated memory: 4 237 312	
+FPS - 0,092 [0,000 , 0,990]
+allocated memory: 6 048 768	
+
+2015/08/06 19:04:22: Assigning: 4 threads to do the job
+allocated memory: 6 048 768	
+
+2015/08/06 19:04:22: Start reading files
+allocated memory: 6 048 768	
+
+2015/08/06 19:04:27: Graph updated in: 4.1021589999999994s
+allocated memory: 6 470 144	
+FPS - 0,244 [0,000 , 0,990]
+allocated memory: 6 470 144	
+
+2015/08/06 19:04:27: Loaded 1 files - timestep: 40. Time elapsed: 3.717777403 s
+allocated memory: 6 470 144	
+
+2015/08/06 19:04:30: Loaded 5 files - timestep: 40. Time elapsed: 7.222026927 s
+allocated memory: 6 580 224	
+
+2015/08/06 19:04:33: For input string: "0.9997451                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                44"
+allocated memory: 6 555 136	
+
+2015/08/06 19:04:33: X: 305 Y: 243 Z: 95
+allocated memory: 6 555 136	
+
+2015/08/06 19:04:33: Line: 880433
+allocated memory: 6 555 136	
+
+2015/08/06 19:04:33: C:\time40\proc011402.res
+allocated memory: 6 555 136	
+
+2015/08/06 19:04:38: Loaded 9 files - timestep: 40. Time elapsed: 10.866614493 s
+allocated memory: 5 813 760	
+
+2015/08/06 19:04:38: Graph updated in: 10.983661s
+allocated memory: 5 813 760	
+FPS - 0,091 [0,000 , 0,990]
+allocated memory: 5 813 760	
+
+2015/08/06 19:04:40: Loaded 13 files - timestep: 40. Time elapsed: 17.920326458 s
+allocated memory: 4 522 496	
+
+2015/08/06 19:04:40: Loaded 14 files - timestep: 40. Time elapsed: 18.039893404 s
+allocated memory: 4 522 496	
+
+2015/08/06 19:04:40: Loaded 16 files - timestep: 40. Time elapsed: 18.19994465 s
+allocated memory: 4 522 496	
+FPS - 0,340 [0,000 , 0,990]
+allocated memory: 5 853 696	
+
+2015/08/06 19:04:43: Loaded 17 files - timestep: 40. Time elapsed: 20.695967479 s
+allocated memory: 5 842 944	
+
+2015/08/06 19:04:43: Loaded 18 files - timestep: 40. Time elapsed: 20.825190703 s
+allocated memory: 5 830 656	
+
+2015/08/06 19:04:43: Loaded 19 files - timestep: 40. Time elapsed: 20.956523843 s
+allocated memory: 5 830 656	
+
+2015/08/06 19:04:43: Loaded 20 files - timestep: 40. Time elapsed: 21.104588225 s
+allocated memory: 5 830 656	
+FPS - 0,358 [0,000 , 0,990]
+allocated memory: 5 766 144	
+
+2015/08/06 19:04:45: Loaded 21 files - timestep: 40. Time elapsed: 23.448284318 s
+allocated memory: 5 736 448	
+
+2015/08/06 19:04:46: Loaded 23 files - timestep: 40. Time elapsed: 23.641321154 s
+allocated memory: 5 736 448	
+
+2015/08/06 19:04:46: Loaded 24 files - timestep: 40. Time elapsed: 23.803323229 s
+allocated memory: 5 736 448	
+FPS - 0,364 [0,000 , 0,990]
+allocated memory: 5 791 744	
+
+2015/08/06 19:04:48: Loaded 25 files - timestep: 40. Time elapsed: 26.202568849 s
+allocated memory: 5 758 976	
+
+2015/08/06 19:04:48: Loaded 26 files - timestep: 40. Time elapsed: 26.238931186 s
+allocated memory: 5 758 976	
+
+2015/08/06 19:04:48: Loaded 27 files - timestep: 40. Time elapsed: 26.465780204 s
+allocated memory: 5 671 936	
+
+2015/08/06 19:04:49: Loaded 28 files - timestep: 40. Time elapsed: 26.630530008 s
+allocated memory: 5 671 936	
+FPS - 0,341 [0,000 , 0,990]
+allocated memory: 5 724 672	
+
+2015/08/06 19:04:51: Loaded 29 files - timestep: 40. Time elapsed: 28.882297375 s
+allocated memory: 5 646 336	
+
+2015/08/06 19:04:51: Loaded 30 files - timestep: 40. Time elapsed: 29.022808066 s
+allocated memory: 5 694 976	
+
+2015/08/06 19:04:51: Loaded 31 files - timestep: 40. Time elapsed: 29.121055178 s
+allocated memory: 5 694 976	
+
+2015/08/06 19:04:51: Loaded 32 files - timestep: 40. Time elapsed: 29.278080108 s
+allocated memory: 5 694 976	
+FPS - 0,354 [0,000 , 0,990]
+allocated memory: 5 625 856	
+
+2015/08/06 19:04:54: Loaded 33 files - timestep: 40. Time elapsed: 31.678539774 s
+allocated memory: 5 670 912	
+
+2015/08/06 19:04:54: Loaded 34 files - timestep: 40. Time elapsed: 31.803265679 s
+allocated memory: 5 611 008	
+
+2015/08/06 19:04:54: Loaded 35 files - timestep: 40. Time elapsed: 31.908924991 s
+allocated memory: 5 611 008	
+
+2015/08/06 19:04:54: Loaded 36 files - timestep: 40. Time elapsed: 32.051772499 s
+allocated memory: 5 611 008	
+FPS - 0,354 [0,000 , 0,990]
+allocated memory: 5 652 480	
+
+2015/08/06 19:04:56: Loaded 37 files - timestep: 40. Time elapsed: 34.326911699 s
+allocated memory: 5 608 960	
+
+2015/08/06 19:04:56: Loaded 38 files - timestep: 40. Time elapsed: 34.47986342 s
+allocated memory: 5 608 960	
+
+2015/08/06 19:04:57: Loaded 40 files - timestep: 40. Time elapsed: 34.810507428 s
+allocated memory: 5 643 264	
+FPS - 0,371 [0,000 , 0,990]
+allocated memory: 5 609 984	
+
+2015/08/06 19:04:59: Loaded 41 files - timestep: 40. Time elapsed: 37.037683417 s
+allocated memory: 5 642 240	
+
+2015/08/06 19:04:59: Loaded 42 files - timestep: 40. Time elapsed: 37.248886209 s
+allocated memory: 5 642 240	
+
+2015/08/06 19:04:59: Loaded 44 files - timestep: 40. Time elapsed: 37.359205226 s
+allocated memory: 5 642 240	
+FPS - 0,361 [0,000 , 0,990]
+allocated memory: 5 618 688	
+
+2015/08/06 19:05:02: Loaded 45 files - timestep: 40. Time elapsed: 39.791603588 s
+allocated memory: 5 636 608	
+
+2015/08/06 19:05:02: Loaded 46 files - timestep: 40. Time elapsed: 39.902574714 s
+allocated memory: 5 636 608	
+
+2015/08/06 19:05:02: Loaded 47 files - timestep: 40. Time elapsed: 39.950751264 s
+allocated memory: 5 636 608	
+
+2015/08/06 19:05:02: Loaded 48 files - timestep: 40. Time elapsed: 40.040460105 s
+allocated memory: 5 636 608	
+FPS - 0,358 [0,000 , 0,990]
+allocated memory: 5 660 672	
+
+2015/08/06 19:05:04: Loaded 49 files - timestep: 40. Time elapsed: 42.476025908 s
+allocated memory: 5 657 088	
+
+2015/08/06 19:05:05: Loaded 50 files - timestep: 40. Time elapsed: 42.570134564 s
+allocated memory: 5 657 088	
+
+2015/08/06 19:05:05: Loaded 51 files - timestep: 40. Time elapsed: 42.673692757 s
+allocated memory: 5 679 104	
+
+2015/08/06 19:05:05: Loaded 52 files - timestep: 40. Time elapsed: 42.763440454 s
+allocated memory: 5 679 104	
+FPS - 0,354 [0,000 , 0,990]
+allocated memory: 5 685 760	
+
+2015/08/06 19:05:07: Loaded 53 files - timestep: 40. Time elapsed: 45.137317957 s
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: For input string: "1.001                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                000007"
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: X: 253 Y: 107 Z: 380
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: Line: 848989
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: C:\time40\proc054402.res
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: Loaded 54 files - timestep: 40. Time elapsed: 45.249767051 s
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: Loaded 55 files - timestep: 40. Time elapsed: 45.315126811 s
+allocated memory: 5 704 192	
+
+2015/08/06 19:05:07: Loaded 56 files - timestep: 40. Time elapsed: 45.435222337 s
+allocated memory: 5 704 192	
+FPS - 0,361 [0,000 , 0,990]
+allocated memory: 5 715 456	
+
+2015/08/06 19:05:10: Loaded 57 files - timestep: 40. Time elapsed: 47.842654331 s
+allocated memory: 5 732 864	
+
+2015/08/06 19:05:10: Loaded 58 files - timestep: 40. Time elapsed: 47.954355277 s
+allocated memory: 5 732 864	
+
+2015/08/06 19:05:10: Loaded 59 files - timestep: 40. Time elapsed: 48.01943975 s
+allocated memory: 5 732 864	
+
+2015/08/06 19:05:10: Loaded 60 files - timestep: 40. Time elapsed: 48.236108678 s
+allocated memory: 5 751 808	
+FPS - 0,352 [0,000 , 0,990]
+allocated memory: 5 766 656	
+
+2015/08/06 19:05:12: Loaded 61 files - timestep: 40. Time elapsed: 50.468141947 s
+allocated memory: 5 793 280	
+
+2015/08/06 19:05:13: Loaded 62 files - timestep: 40. Time elapsed: 50.56314794 s
+allocated memory: 5 793 280	
+
+2015/08/06 19:05:13: Loaded 63 files - timestep: 40. Time elapsed: 50.649625193 s
+allocated memory: 5 793 280	
+
+2015/08/06 19:05:13: Loaded 64 files - timestep: 40. Time elapsed: 50.834823886 s
+allocated memory: 5 793 280	
+FPS - 0,492 [0,000 , 0,990]
+allocated memory: 5 793 280	
+FPS - 0,598 [0,000 , 0,990]
+allocated memory: 5 793 280	
+FPS - 0,602 [0,000 , 0,990]
+allocated memory: 5 805 568	
+FPS - 0,635 [0,000 , 0,990]
+allocated memory: 5 805 568	
+FPS - 0,587 [0,000 , 0,990]
+allocated memory: 5 805 568	
+FPS - 0,652 [0,000 , 0,990]
+allocated memory: 5 810 176	
+FPS - 0,642 [0,000 , 0,990]
+allocated memory: 5 810 176	
+FPS - 0,639 [0,000 , 0,990]
+allocated memory: 5 810 176	
+FPS - 0,627 [0,000 , 0,990]
+allocated memory: 5 829 632	
+FPS - 0,636 [0,000 , 0,990]
+allocated memory: 5 829 632	
+FPS - 0,589 [0,000 , 0,990]
+allocated memory: 5 829 632	
+FPS - 0,596 [0,000 , 0,990]
+allocated memory: 5 830 656	
+FPS - 0,648 [0,000 , 0,990]
+allocated memory: 5 830 656	
+FPS - 0,611 [0,000 , 0,990]
+allocated memory: 5 830 656	
+
+2015/08/06 19:05:54: Graph updated in: 18.668865s
+allocated memory: 6 625 792	
+FPS - 0,054 [0,000 , 0,990]
+allocated memory: 6 625 792	
+FPS - 0,528 [0,000 , 0,990]
+allocated memory: 6 625 792	
+FPS - 0,567 [0,000 , 0,990]
+allocated memory: 6 625 792	
+FPS - 0,509 [0,000 , 0,990]
+allocated memory: 6 563 840	
+FPS - 0,542 [0,000 , 0,990]
+allocated memory: 6 563 840	
+FPS - 0,552 [0,000 , 0,990]
+allocated memory: 6 563 840	
+
+2015/08/06 19:06:07: Graph updated in: 3.9210010000000004s
+allocated memory: 6 647 808	
+FPS - 0,255 [0,000 , 0,990]
+allocated memory: 6 647 808	
+FPS - 0,511 [0,000 , 0,990]
+allocated memory: 6 647 808	
+FPS - 0,523 [0,000 , 0,990]
+allocated memory: 6 647 808	
+FPS - 0,429 [0,000 , 0,990]
+allocated memory: 6 782 976	
+FPS - 0,474 [0,000 , 0,990]
+allocated memory: 6 782 976	
+FPS - 0,487 [0,000 , 0,990]
+allocated memory: 6 782 976	
+FPS - 0,470 [0,000 , 0,990]
+allocated memory: 6 881 792	
+
+2015/08/06 19:06:23: Graph updated in: 3.4493780000000003s
+allocated memory: 6 881 792	
+FPS - 0,290 [0,000 , 0,990]
+allocated memory: 6 881 792	
+FPS - 0,515 [0,000 , 0,990]
+allocated memory: 6 881 792	
+FPS - 0,515 [0,000 , 0,990]
+allocated memory: 6 881 792	
+
+2015/08/06 19:06:33: Graph updated in: 5.5463450000000005s
+allocated memory: 6 975 488	
+FPS - 0,180 [0,000 , 0,990]
+allocated memory: 6 975 488	
+
+2015/08/06 19:06:33: Assigning: 4 threads to do the job
+allocated memory: 6 975 488	
+
+2015/08/06 19:06:33: Start reading files
+allocated memory: 6 975 488	
+FPS - 0,359 [0,000 , 0,990]
+allocated memory: 7 267 328	
+
+2015/08/06 19:06:36: Loaded 1 files - timestep: 10. Time elapsed: 3.065762609 s
+allocated memory: 7 267 328	
+
+2015/08/06 19:06:39: Graph updated in: 2.770581s
+allocated memory: 7 338 496	
+FPS - 0,361 [0,000 , 0,990]
+allocated memory: 7 338 496	
+
+2015/08/06 19:06:39: Loaded 5 files - timestep: 10. Time elapsed: 6.074907169 s
+allocated memory: 7 338 496	
+
+2015/08/06 19:06:39: Loaded 8 files - timestep: 10. Time elapsed: 6.229630838 s
+allocated memory: 7 128 064	
+
+2015/08/06 19:06:41: Graph updated in: 2.6277109999999997s
+allocated memory: 7 321 600	
+FPS - 0,381 [0,000 , 0,990]
+allocated memory: 7 321 600	
+
+2015/08/06 19:06:42: Loaded 9 files - timestep: 10. Time elapsed: 9.020648297 s
+allocated memory: 7 068 672	
+
+2015/08/06 19:06:42: Loaded 11 files - timestep: 10. Time elapsed: 9.065302943 s
+allocated memory: 7 068 672	
+
+2015/08/06 19:06:42: Loaded 12 files - timestep: 10. Time elapsed: 9.1301004 s
+allocated memory: 7 068 672	
+FPS - 0,365 [0,000 , 0,990]
+allocated memory: 7 321 088	
+
+2015/08/06 19:06:45: Loaded 13 files - timestep: 10. Time elapsed: 11.915770856 s
+allocated memory: 7 323 648	
+
+2015/08/06 19:06:45: Loaded 15 files - timestep: 10. Time elapsed: 11.952716756 s
+allocated memory: 7 323 648	
+FPS - 0,382 [0,000 , 0,990]
+allocated memory: 7 317 504	
+
+2015/08/06 19:06:48: Loaded 17 files - timestep: 10. Time elapsed: 14.767143805 s
+allocated memory: 7 320 576	
+
+2015/08/06 19:06:48: Loaded 18 files - timestep: 10. Time elapsed: 14.817086805 s
+allocated memory: 7 320 576	
+
+2015/08/06 19:06:48: Loaded 20 files - timestep: 10. Time elapsed: 14.902194958 s
+allocated memory: 7 320 576	
+
+2015/08/06 19:06:49: Graph updated in: 2.7503s
+allocated memory: 7 303 680	
+FPS - 0,364 [0,000 , 0,990]
+allocated memory: 7 303 680	
+
+2015/08/06 19:06:51: Loaded 21 files - timestep: 10. Time elapsed: 17.727875384 s
+allocated memory: 7 313 920	
+
+2015/08/06 19:06:51: Loaded 22 files - timestep: 10. Time elapsed: 17.799329562 s
+allocated memory: 7 313 920	
+
+2015/08/06 19:06:51: Loaded 24 files - timestep: 10. Time elapsed: 17.890062571 s
+allocated memory: 7 313 920	
+
+2015/08/06 19:06:52: Graph updated in: 2.701547s
+allocated memory: 7 322 112	
+FPS - 0,370 [0,000 , 0,990]
+allocated memory: 7 322 112	
+
+2015/08/06 19:06:54: Loaded 25 files - timestep: 10. Time elapsed: 20.666043393 s
+allocated memory: 7 332 352	
+
+2015/08/06 19:06:54: Loaded 26 files - timestep: 10. Time elapsed: 20.725112992 s
+allocated memory: 7 332 352	
+
+2015/08/06 19:06:54: Loaded 28 files - timestep: 10. Time elapsed: 20.838817186 s
+allocated memory: 7 332 352	
+FPS - 0,328 [0,000 , 0,990]
+allocated memory: 6 160 384	
+
+2015/08/06 19:06:57: Loaded 29 files - timestep: 10. Time elapsed: 23.905499126 s
+allocated memory: 5 598 208	
+
+2015/08/06 19:06:57: Loaded 30 files - timestep: 10. Time elapsed: 23.982526475 s
+allocated memory: 5 598 208	
+
+2015/08/06 19:06:57: Loaded 32 files - timestep: 10. Time elapsed: 24.051477784 s
+allocated memory: 5 598 208	
+FPS - 0,397 [0,000 , 0,990]
+allocated memory: 6 159 872	
+
+2015/08/06 19:07:00: Loaded 33 files - timestep: 10. Time elapsed: 26.679420982 s
+allocated memory: 6 164 992	
+
+2015/08/06 19:07:00: Loaded 34 files - timestep: 10. Time elapsed: 26.770833959 s
+allocated memory: 6 164 992	
+
+2015/08/06 19:07:00: Loaded 36 files - timestep: 10. Time elapsed: 26.938981038 s
+allocated memory: 6 147 584	
+
+2015/08/06 19:07:00: Graph updated in: 2.555914s
+allocated memory: 6 147 584	
+FPS - 0,391 [0,000 , 0,990]
+allocated memory: 6 147 584	
+
+2015/08/06 19:07:03: Loaded 37 files - timestep: 10. Time elapsed: 29.45793583 s
+allocated memory: 6 146 560	
+
+2015/08/06 19:07:03: Loaded 38 files - timestep: 10. Time elapsed: 29.59376189 s
+allocated memory: 6 146 560	
+
+2015/08/06 19:07:03: Graph updated in: 2.525817s
+allocated memory: 6 146 560	
+FPS - 0,396 [0,000 , 0,990]
+allocated memory: 6 146 560	
+
+2015/08/06 19:07:03: Loaded 40 files - timestep: 10. Time elapsed: 29.727724362 s
+allocated memory: 6 146 560	
+FPS - 0,403 [0,000 , 0,990]
+allocated memory: 6 159 360	
+
+2015/08/06 19:07:05: Loaded 41 files - timestep: 10. Time elapsed: 32.32569069 s
+allocated memory: 6 167 040	
+
+2015/08/06 19:07:05: Loaded 42 files - timestep: 10. Time elapsed: 32.411041139 s
+allocated memory: 6 167 040	
+
+2015/08/06 19:07:06: Loaded 43 files - timestep: 10. Time elapsed: 32.454080357 s
+allocated memory: 6 167 040	
+
+2015/08/06 19:07:06: Loaded 44 files - timestep: 10. Time elapsed: 32.540568973 s
+allocated memory: 6 167 040	
+FPS - 0,398 [0,000 , 0,990]
+allocated memory: 6 181 888	
+
+2015/08/06 19:07:08: Loaded 45 files - timestep: 10. Time elapsed: 35.114066354 s
+allocated memory: 6 203 392	
+
+2015/08/06 19:07:08: Loaded 46 files - timestep: 10. Time elapsed: 35.255280839 s
+allocated memory: 6 203 392	
+FPS - 0,375 [0,000 , 0,990]
+allocated memory: 6 218 752	
+
+2015/08/06 19:07:11: Loaded 49 files - timestep: 10. Time elapsed: 38.083149992 s
+allocated memory: 6 246 400	
+
+2015/08/06 19:07:11: Loaded 50 files - timestep: 10. Time elapsed: 38.178672834 s
+allocated memory: 6 246 400	
+
+2015/08/06 19:07:11: Loaded 51 files - timestep: 10. Time elapsed: 38.25907473 s
+allocated memory: 6 246 400	
+
+2015/08/06 19:07:13: Graph updated in: 2.661812s
+allocated memory: 6 262 272	
+FPS - 0,376 [0,000 , 0,990]
+allocated memory: 6 262 272	
+
+2015/08/06 19:07:14: Loaded 53 files - timestep: 10. Time elapsed: 40.946510903 s
+allocated memory: 6 294 016	
+
+2015/08/06 19:07:14: Loaded 54 files - timestep: 10. Time elapsed: 41.102097087 s
+allocated memory: 6 294 016	
+
+2015/08/06 19:07:14: Loaded 55 files - timestep: 10. Time elapsed: 41.152673135 s
+allocated memory: 6 294 016	
+
+2015/08/06 19:07:16: Graph updated in: 2.6274450000000003s
+allocated memory: 6 309 376	
+FPS - 0,381 [0,000 , 0,990]
+allocated memory: 6 309 376	
+
+2015/08/06 19:07:17: Loaded 57 files - timestep: 10. Time elapsed: 43.86096691 s
+allocated memory: 6 342 144	
+
+2015/08/06 19:07:17: Loaded 58 files - timestep: 10. Time elapsed: 43.949807006 s
+allocated memory: 6 342 144	
+
+2015/08/06 19:07:17: Loaded 59 files - timestep: 10. Time elapsed: 44.020555557 s
+allocated memory: 6 342 144	
+
+2015/08/06 19:07:17: Loaded 60 files - timestep: 10. Time elapsed: 44.091464662 s
+allocated memory: 6 342 144	
+FPS - 0,406 [0,000 , 0,990]
+allocated memory: 6 342 144	
+
+2015/08/06 19:07:20: Loaded 61 files - timestep: 10. Time elapsed: 46.564172473 s
+allocated memory: 6 356 992	
+
+2015/08/06 19:07:20: Loaded 62 files - timestep: 10. Time elapsed: 46.716227223 s
+allocated memory: 6 356 992	
+
+2015/08/06 19:07:20: Loaded 64 files - timestep: 10. Time elapsed: 46.821072773 s
+allocated memory: 6 388 736	
+FPS - 0,457 [0,000 , 0,990]
+allocated memory: 6 388 736	
+FPS - 0,701 [0,000 , 0,990]
+allocated memory: 6 388 736	
+FPS - 0,686 [0,000 , 0,990]
+allocated memory: 6 388 736	
+FPS - 0,689 [0,000 , 0,990]
+allocated memory: 6 388 736	
+FPS - 0,670 [0,000 , 0,990]
+allocated memory: 6 403 072	
+
+2015/08/06 19:07:45: Graph updated in: 17.864705999999998s
+allocated memory: 7 336 960	
+FPS - 0,056 [0,000 , 0,990]
+allocated memory: 7 336 960	
+FPS - 0,500 [0,000 , 0,990]
+allocated memory: 7 336 960	
+FPS - 0,325 [0,000 , 0,990]
+allocated memory: 7 892 992	
+FPS - 0,543 [0,000 , 0,990]
+allocated memory: 7 892 992	
+FPS - 0,528 [0,000 , 0,990]
+allocated memory: 7 892 992	
+FPS - 0,368 [0,000 , 0,990]
+allocated memory: 7 521 280	
+FPS - 0,498 [0,000 , 0,990]
+allocated memory: 7 521 280	
+FPS - 0,353 [0,000 , 0,990]
+allocated memory: 7 282 176	
+FPS - 0,471 [0,000 , 0,990]
+allocated memory: 7 282 176	
+FPS - 0,357 [0,000 , 0,990]
+allocated memory: 7 472 128	
+
+2015/08/06 19:08:11: Graph updated in: 5.207273s
+allocated memory: 7 056 896	
+FPS - 0,192 [0,000 , 0,990]
+allocated memory: 7 056 896	
+FPS - 0,530 [0,000 , 0,990]
+allocated memory: 7 056 896	
+FPS - 0,349 [0,000 , 0,990]
+allocated memory: 7 520 256	
+FPS - 0,549 [0,000 , 0,990]
+allocated memory: 7 520 256	
+
+2015/08/06 19:08:23: Graph updated in: 4.903744s
+allocated memory: 7 520 256	
+FPS - 0,204 [0,000 , 0,990]
+allocated memory: 7 520 256	
+FPS - 0,321 [0,000 , 0,990]
+allocated memory: 7 520 256	
+2015/08/06 21:11:32: Time elapsed: 0.581637201 s
+allocated memory: 1 005 056	
+
+2015/08/06 21:11:32: Assigning: 4 threads to do the job
+allocated memory: 1 393 152	
+
+2015/08/06 21:11:32: Start reading files
+allocated memory: 1 393 152	
+FPS - 1,235
+allocated memory: 1 639 936	
+FPS - 3,344
+allocated memory: 3 286 528	
+FPS - 2,249
+allocated memory: 3 327 488	
+
+2015/08/06 21:11:35: Loaded 1 files - timestep: 10. Time elapsed: 2.288731961 s
+allocated memory: 3 327 488	
+FPS - 1,813
+allocated memory: 4 131 840	
+
+2015/08/06 21:11:37: Loaded 5 files - timestep: 10. Time elapsed: 4.368560191 s
+allocated memory: 4 191 232	
+FPS - 1,559
+allocated memory: 4 907 520	
+FPS - 1,325
+allocated memory: 4 940 800	
+
+2015/08/06 21:11:39: Loaded 9 files - timestep: 10. Time elapsed: 6.545250305 s
+allocated memory: 4 940 800	
+
+2015/08/06 21:11:40: Loaded 10 files - timestep: 10. Time elapsed: 6.982111163 s
+allocated memory: 4 940 800	
+FPS - 1,235
+allocated memory: 4 940 288	
+
+2015/08/06 21:11:41: Loaded 13 files - timestep: 10. Time elapsed: 8.79105155 s
+allocated memory: 4 940 288	
+FPS - 0,853
+allocated memory: 4 973 568	
+
+2015/08/06 21:11:43: Loaded 16 files - timestep: 10. Time elapsed: 9.408752342 s
+allocated memory: 4 973 568	
+FPS - 0,880
+allocated memory: 4 976 128	
+
+2015/08/06 21:11:44: Loaded 17 files - timestep: 10. Time elapsed: 10.872151008 s
+allocated memory: 4 976 128	
+FPS - 3,117 [0,000 , 0,000]
+allocated memory: 5 008 384	
+
+2015/08/06 21:11:45: Loaded 21 files - timestep: 10. Time elapsed: 12.770182217 s
+allocated memory: 5 008 384	
+
+2015/08/06 21:11:46: Loaded 22 files - timestep: 10. Time elapsed: 13.553086248 s
+allocated memory: 5 008 384	
+FPS - 3,603 [0,000 , 0,000]
+allocated memory: 5 010 944	
+
+2015/08/06 21:11:46: Loaded 24 files - timestep: 10. Time elapsed: 13.926880909 s
+allocated memory: 5 010 944	
+FPS - 68,101 [0,000 , 0,000]
+allocated memory: 5 010 944	
+
+2015/08/06 21:11:47: Loaded 25 files - timestep: 10. Time elapsed: 15.197882753 s
+allocated memory: 5 010 944	
+
+2015/08/06 21:11:48: Loaded 26 files - timestep: 10. Time elapsed: 15.796088077 s
+allocated memory: 5 041 664	
+FPS - 3,180 [0,000 , 0,000]
+allocated memory: 5 041 664	
+
+2015/08/06 21:11:48: Loaded 27 files - timestep: 10. Time elapsed: 15.976085291 s
+allocated memory: 5 041 664	
+FPS - 167,933 [0,000 , 0,000]
+allocated memory: 5 044 736	
+
+2015/08/06 21:11:49: Loaded 29 files - timestep: 10. Time elapsed: 17.375959195 s
+allocated memory: 5 044 736	
+
+2015/08/06 21:11:50: Loaded 30 files - timestep: 10. Time elapsed: 17.748136228 s
+allocated memory: 5 044 736	
+
+2015/08/06 21:11:50: Loaded 31 files - timestep: 10. Time elapsed: 18.033481912 s
+allocated memory: 5 044 736	
+FPS - 143,757 [0,000 , 0,000]
+allocated memory: 5 044 736	
+FPS - 154,942 [0,000 , 0,000]
+allocated memory: 5 073 408	
+
+2015/08/06 21:11:52: Loaded 33 files - timestep: 10. Time elapsed: 19.469295876 s
+allocated memory: 5 073 408	
+
+2015/08/06 21:11:52: Loaded 34 files - timestep: 10. Time elapsed: 20.090338958 s
+allocated memory: 5 073 408	
+FPS - 153,211 [0,000 , 0,000]
+allocated memory: 5 077 504	
+
+2015/08/06 21:11:52: Loaded 35 files - timestep: 10. Time elapsed: 20.360881869 s
+allocated memory: 5 077 504	
+
+2015/08/06 21:11:52: Loaded 36 files - timestep: 10. Time elapsed: 20.420821314 s
+allocated memory: 5 077 504	

@@ -1,0 +1,260 @@
+2015/08/07 10:33:42: Time elapsed: 0.582679697 s
+allocated memory: 1 005 056	
+
+2015/08/07 10:33:43: Assigning: 4 threads to do the job
+allocated memory: 1 392 640	
+
+2015/08/07 10:33:43: Start reading files
+allocated memory: 1 392 640	
+FPS - 1,038
+allocated memory: 1 642 496	
+FPS - 2,876
+allocated memory: 3 294 208	
+
+2015/08/07 10:33:45: Loaded 1 files - timestep: 80. Time elapsed: 2.319712837 s
+allocated memory: 3 334 144	
+FPS - 2,654
+allocated memory: 3 334 144	
+FPS - 5,680
+allocated memory: 4 148 736	
+
+2015/08/07 10:33:47: Loaded 5 files - timestep: 80. Time elapsed: 4.535727455 s
+allocated memory: 4 207 616	
+
+2015/08/07 10:33:47: Loaded 8 files - timestep: 80. Time elapsed: 4.607034277 s
+allocated memory: 4 207 616	
+FPS - 8,043
+allocated memory: 4 207 616	
+FPS - 4,599
+allocated memory: 4 908 032	
+
+2015/08/07 10:33:49: Loaded 9 files - timestep: 80. Time elapsed: 6.723310252 s
+allocated memory: 4 940 800	
+
+2015/08/07 10:33:50: Loaded 11 files - timestep: 80. Time elapsed: 6.785917517 s
+allocated memory: 4 940 800	
+FPS - 3,824
+allocated memory: 4 940 800	
+FPS - 2,820
+allocated memory: 4 941 312	
+
+2015/08/07 10:33:52: Loaded 13 files - timestep: 80. Time elapsed: 8.987189845 s
+allocated memory: 4 941 312	
+FPS - 2,998
+allocated memory: 4 941 312	
+
+2015/08/07 10:33:52: Loaded 15 files - timestep: 80. Time elapsed: 9.075856191 s
+allocated memory: 4 941 312	
+FPS - 2,449
+allocated memory: 4 973 568	
+
+2015/08/07 10:33:54: Loaded 17 files - timestep: 80. Time elapsed: 11.045282562 s
+allocated memory: 4 974 592	
+FPS - 2,902
+allocated memory: 4 974 592	
+FPS - 3,065
+allocated memory: 5 006 848	
+
+2015/08/07 10:33:56: Loaded 21 files - timestep: 80. Time elapsed: 13.153266228 s
+allocated memory: 5 006 848	
+
+2015/08/07 10:33:56: Loaded 23 files - timestep: 80. Time elapsed: 13.391559234 s
+allocated memory: 5 006 848	
+FPS - 2,771
+allocated memory: 5 010 944	
+FPS - 25,379
+allocated memory: 5 010 944	
+
+2015/08/07 10:33:58: Loaded 25 files - timestep: 80. Time elapsed: 15.267203921 s
+allocated memory: 5 010 944	
+
+2015/08/07 10:33:58: Loaded 26 files - timestep: 80. Time elapsed: 15.333691951 s
+allocated memory: 5 010 944	
+
+2015/08/07 10:33:58: Loaded 27 files - timestep: 80. Time elapsed: 15.461321007 s
+allocated memory: 5 041 152	
+
+2015/08/07 10:33:58: Loaded 28 files - timestep: 80. Time elapsed: 15.681735439 s
+allocated memory: 5 041 152	
+FPS - 194,793
+allocated memory: 5 041 152	
+FPS - 15,999
+allocated memory: 5 043 712	
+
+2015/08/07 10:34:00: Loaded 29 files - timestep: 80. Time elapsed: 17.580086288 s
+allocated memory: 5 043 712	
+
+2015/08/07 10:34:00: Loaded 31 files - timestep: 80. Time elapsed: 17.701410521 s
+allocated memory: 5 043 712	
+
+2015/08/07 10:34:01: Loaded 32 files - timestep: 80. Time elapsed: 17.914864721 s
+allocated memory: 5 043 712	
+FPS - 15,366
+allocated memory: 5 043 712	
+FPS - 10,396
+allocated memory: 5 072 384	
+
+2015/08/07 10:34:02: Loaded 33 files - timestep: 80. Time elapsed: 19.71897422 s
+allocated memory: 5 072 384	
+
+2015/08/07 10:34:02: Loaded 34 files - timestep: 80. Time elapsed: 19.782544803 s
+allocated memory: 5 072 384	
+
+2015/08/07 10:34:03: Loaded 35 files - timestep: 80. Time elapsed: 19.989568449 s
+allocated memory: 5 076 992	
+FPS - 13,266
+allocated memory: 5 076 992	
+
+2015/08/07 10:34:03: Loaded 36 files - timestep: 80. Time elapsed: 20.252817193 s
+allocated memory: 5 076 992	
+FPS - 14,495
+allocated memory: 5 076 992	
+
+2015/08/07 10:34:05: Loaded 37 files - timestep: 80. Time elapsed: 21.984698706 s
+allocated memory: 5 102 592	
+
+2015/08/07 10:34:05: Loaded 38 files - timestep: 80. Time elapsed: 22.055440659 s
+allocated memory: 5 102 592	
+FPS - 15,200
+allocated memory: 5 102 592	
+
+2015/08/07 10:34:05: Loaded 39 files - timestep: 80. Time elapsed: 22.231288786 s
+allocated memory: 5 102 592	
+
+2015/08/07 10:34:05: Loaded 40 files - timestep: 80. Time elapsed: 22.482584391 s
+allocated memory: 5 102 592	
+FPS - 18,402
+allocated memory: 5 106 176	
+
+2015/08/07 10:34:07: Loaded 41 files - timestep: 80. Time elapsed: 24.140697636 s
+allocated memory: 5 106 176	
+
+2015/08/07 10:34:07: Loaded 42 files - timestep: 80. Time elapsed: 24.252174248 s
+allocated memory: 5 106 176	
+FPS - 17,298
+allocated memory: 5 106 176	
+
+2015/08/07 10:34:07: Loaded 43 files - timestep: 80. Time elapsed: 24.451235489 s
+allocated memory: 5 106 176	
+
+2015/08/07 10:34:07: Loaded 44 files - timestep: 80. Time elapsed: 24.721617114 s
+allocated memory: 5 106 176	
+FPS - 18,776
+allocated memory: 5 129 216	
+FPS - 22,422
+allocated memory: 5 129 216	
+
+2015/08/07 10:34:09: Loaded 45 files - timestep: 80. Time elapsed: 26.385685118 s
+allocated memory: 5 129 216	
+
+2015/08/07 10:34:09: Loaded 46 files - timestep: 80. Time elapsed: 26.544846356 s
+allocated memory: 5 132 288	
+
+2015/08/07 10:34:09: Loaded 47 files - timestep: 80. Time elapsed: 26.744025996 s
+allocated memory: 5 132 288	
+
+2015/08/07 10:34:10: Loaded 48 files - timestep: 80. Time elapsed: 27.185804616 s
+allocated memory: 5 132 288	
+FPS - 20,272
+allocated memory: 5 132 288	
+FPS - 22,316
+allocated memory: 5 153 280	
+
+2015/08/07 10:34:11: Loaded 49 files - timestep: 80. Time elapsed: 28.806209151 s
+allocated memory: 5 153 280	
+
+2015/08/07 10:34:12: Loaded 50 files - timestep: 80. Time elapsed: 28.926615153 s
+allocated memory: 5 153 280	
+
+2015/08/07 10:34:12: Loaded 51 files - timestep: 80. Time elapsed: 29.127938066 s
+allocated memory: 5 153 280	
+
+2015/08/07 10:34:12: Loaded 52 files - timestep: 80. Time elapsed: 29.391085639 s
+allocated memory: 5 153 280	
+FPS - 25,149
+allocated memory: 5 153 280	
+FPS - 20,903
+allocated memory: 4 839 424	
+
+2015/08/07 10:34:14: Loaded 53 files - timestep: 80. Time elapsed: 31.162328312 s
+allocated memory: 4 839 424	
+
+2015/08/07 10:34:14: Loaded 55 files - timestep: 80. Time elapsed: 31.29722991 s
+allocated memory: 4 839 424	
+FPS - 14,259
+allocated memory: 4 776 448	
+
+2015/08/07 10:34:14: Loaded 56 files - timestep: 80. Time elapsed: 31.770001503 s
+allocated memory: 4 776 448	
+FPS - 18,872
+allocated memory: 4 776 448	
+
+2015/08/07 10:34:16: Loaded 57 files - timestep: 80. Time elapsed: 33.445192022 s
+allocated memory: 4 498 944	
+FPS - 14,052
+allocated memory: 4 498 944	
+
+2015/08/07 10:34:16: Loaded 58 files - timestep: 80. Time elapsed: 33.518881847 s
+allocated memory: 4 498 944	
+
+2015/08/07 10:34:17: Loaded 60 files - timestep: 80. Time elapsed: 34.110337345 s
+allocated memory: 4 498 944	
+FPS - 13,632
+allocated memory: 4 436 992	
+FPS - 16,955
+allocated memory: 4 436 992	
+
+2015/08/07 10:34:18: Loaded 61 files - timestep: 80. Time elapsed: 35.747366086 s
+allocated memory: 4 191 232	
+
+2015/08/07 10:34:18: Loaded 63 files - timestep: 80. Time elapsed: 35.831852921 s
+allocated memory: 4 191 232	
+
+2015/08/07 10:34:19: Loaded 64 files - timestep: 80. Time elapsed: 36.186508044 s
+allocated memory: 4 191 232	
+FPS - 22,477
+allocated memory: 4 191 232	
+FPS - 23,604
+allocated memory: 4 191 232	
+FPS - 19,493
+allocated memory: 4 191 232	
+FPS - 23,214
+allocated memory: 4 191 232	
+FPS - 22,664
+allocated memory: 4 191 232	
+FPS - 23,129
+allocated memory: 4 191 232	
+FPS - 23,345
+allocated memory: 4 191 232	
+FPS - 24,956
+allocated memory: 4 191 232	
+FPS - 23,348
+allocated memory: 4 191 232	
+FPS - 24,422
+allocated memory: 4 191 232	
+FPS - 23,406
+allocated memory: 4 191 232	
+FPS - 23,572
+allocated memory: 4 191 232	
+FPS - 24,951
+allocated memory: 4 191 232	
+FPS - 23,341
+allocated memory: 4 191 232	
+FPS - 24,255
+allocated memory: 4 191 232	
+FPS - 23,460
+allocated memory: 4 191 232	
+FPS - 24,064
+allocated memory: 4 191 232	
+FPS - 24,186
+allocated memory: 4 191 232	
+FPS - 24,468
+allocated memory: 4 191 232	
+FPS - 23,355
+allocated memory: 4 191 232	
+FPS - 23,927
+allocated memory: 4 191 232	
+FPS - 23,595
+allocated memory: 4 191 232	
+FPS - 23,950
+allocated memory: 4 191 232	

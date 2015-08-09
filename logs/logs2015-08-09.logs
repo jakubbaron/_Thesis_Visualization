@@ -1,0 +1,12 @@
+2015/08/09 14:56:49: Time elapsed: 0.484858515 s
+allocated memory: 1 005 056	
+
+2015/08/09 14:56:49: Assigning: 4 threads to do the job
+allocated memory: 1 659 904	
+
+2015/08/09 14:56:49: Start reading files
+allocated memory: 1 659 904	
+FPS - 1,245
+allocated memory: 1 659 904	
+FPS - 3,219
+allocated memory: 3 161 088	

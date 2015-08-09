@@ -13,6 +13,9 @@ import java.util.Calendar;
 import java.util.Hashtable;
 import java.util.Properties;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public final class Parameters {
 	public static enum plotEnum {
 		OpenGL, jzy3D, ImprovedOpenGL
@@ -271,14 +274,17 @@ public final class Parameters {
 				Parameters.listOfPathsToFiles = feedListOfPathsToFiles();
 			}
 
-		} catch (IOException io) {
-			io.printStackTrace();
+		} catch (Exception io) {
+			JOptionPane.showMessageDialog(new JFrame(), io.getMessage());
+			System.exit(404);
 		} finally {
 			if (input != null) {
 				try {
 					input.close();
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(new JFrame(), e.getMessage());
+					System.exit(404);
 				}
 			}
 		}
@@ -398,13 +404,14 @@ public final class Parameters {
 
 			prop.store(output, comment);
 		} catch (IOException io) {
-			io.printStackTrace();
+			JOptionPane.showMessageDialog(new JFrame(), io.getMessage());
 		} finally {
 			if (output != null) {
 				try {
 					output.close();
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(new JFrame(), e.getMessage());
 				}
 			}
 		}

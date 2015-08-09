@@ -26,7 +26,7 @@ public class ViewModifier {
 	public static void main(String[] args) {
 
 		try {
-			Parameters.loadProperties("config2015-06-18.properties");
+			Parameters.loadProperties(null);
 
 			ViewModifier vm = new ViewModifier();
 			vm.start();
